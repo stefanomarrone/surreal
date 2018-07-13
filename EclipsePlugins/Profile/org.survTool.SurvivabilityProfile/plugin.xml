@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Survivabiity_profile.profile -->
+      <package
+            uri="http:///Survivability_profile/TypesLibrary.ecore"
+            class="org.survTool.SurvivabilityProfile.profile.Survivability_profile.TypesLibrary.TypesLibraryPackage"
+            genModel="model/Survivabiity_profile.profile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Survivabiity_profile.profile -->
+      <package
+            uri="http:///Survivability_profile/MisuseCaseExtensions.ecore"
+            class="org.survTool.SurvivabilityProfile.profile.Survivability_profile.MisuseCaseExtensions.MisuseCaseExtensionsPackage"
+            genModel="model/Survivabiity_profile.profile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Survivabiity_profile.profile -->
+      <package
+            uri="http:///Survivability_profile/SurvivabilityModelExtensions.ecore"
+            class="org.survTool.SurvivabilityProfile.profile.Survivability_profile.SurvivabilityModelExtensions.SurvivabilityModelExtensionsPackage"
+            genModel="model/Survivabiity_profile.profile.genmodel"/>
+   </extension>
+   <extension
+         point="org.eclipse.uml2.uml.generated_package">
+      <profile
+            location="platform:/plugin/org.survTool.SurvivabilityProfile/model/Survivability_profile.profile.uml#_wkScEP1lEeepcPFrLzXu5A"
+            uri="http://org.survTool.SurvivabilityProfile/profile/Survivability_profile/1.0">
+      </profile>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+      <profile
+            iconpath="img/camaleon.jpg"
+            name="SurvivabilityProfile"
+            path="platform:/plugin/org.survTool.SurvivabilityProfile/model/Survivability.profile.uml">
+      </profile>
+   </extension>
+
+</plugin>
