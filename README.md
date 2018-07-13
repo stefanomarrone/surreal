@@ -1,2 +1,2 @@
 # surreal
-SURvivability Requirements Elicitation adn Assessment tooL
+SURvivability Requirements Elicitation and Assessment tooL
