@@ -1,0 +1,17 @@
+/**
+ */
+package org.surreal.SurvivabilityProfile.profile.Survivability_Profile.MisuseCaseExtensions;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>recognition</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ *
+ * @see org.surreal.SurvivabilityProfile.profile.Survivability_Profile.MisuseCaseExtensions.MisuseCaseExtensionsPackage#getrecognition()
+ * @model
+ * @generated
+ */
+public interface recognition extends strategy {
+} // recognition
