@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <notation:Diagram xmi:id="_cJMFIH6vEeiDVe8zgaCPEQ" type="UseCase" name="MisuseCaseDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_dejVkH6vEeiDVe8zgaCPEQ" type="Actor_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_derRYH6vEeiDVe8zgaCPEQ" type="Actor_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_derRYX6vEeiDVe8zgaCPEQ" y="15"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_der4cH6vEeiDVe8zgaCPEQ" type="Actor_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_der4cX6vEeiDVe8zgaCPEQ" x="20" y="100"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_der4cn6vEeiDVe8zgaCPEQ" type="Actor_QualifiedNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_der4c36vEeiDVe8zgaCPEQ" x="20" y="80"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_der4dH6vEeiDVe8zgaCPEQ" type="Actor_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_der4dX6vEeiDVe8zgaCPEQ" y="15"/>
+      </children>
+      <element xmi:type="uml:Actor" href="provaSurvivabilityProfile.uml#_deSP0H6vEeiDVe8zgaCPEQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dejVkX6vEeiDVe8zgaCPEQ" x="80" y="220"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_d4dqYH6vEeiDVe8zgaCPEQ" type="UseCase_Shape" fillColor="13420443">
+      <children xmi:type="notation:DecorationNode" xmi:id="_d4eRcH6vEeiDVe8zgaCPEQ" type="UseCase_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_d4eRcX6vEeiDVe8zgaCPEQ" type="UseCase_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_d4e4gH6vEeiDVe8zgaCPEQ" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_d4gGoH6vEeiDVe8zgaCPEQ" type="UseCase_ExtensionPointCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_d4gGoX6vEeiDVe8zgaCPEQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_d4gGon6vEeiDVe8zgaCPEQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d4gGo36vEeiDVe8zgaCPEQ"/>
+      </children>
+      <element xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_d4b1MH6vEeiDVe8zgaCPEQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d4dqYX6vEeiDVe8zgaCPEQ" x="260" y="20"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_eNmM4H6vEeiDVe8zgaCPEQ" type="UseCase_Shape" fillColor="13420443">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eNmM4n6vEeiDVe8zgaCPEQ" type="UseCase_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eNmz8H6vEeiDVe8zgaCPEQ" type="UseCase_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eNmz8X6vEeiDVe8zgaCPEQ" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_eNmz8n6vEeiDVe8zgaCPEQ" type="UseCase_ExtensionPointCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_eNmz836vEeiDVe8zgaCPEQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_eNmz9H6vEeiDVe8zgaCPEQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eNmz9X6vEeiDVe8zgaCPEQ"/>
+      </children>
+      <element xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_eNkXsH6vEeiDVe8zgaCPEQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eNmM4X6vEeiDVe8zgaCPEQ" x="260" y="220"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_ecXBoH6vEeiDVe8zgaCPEQ" type="UseCase_Shape" fillColor="10265827">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ecXBon6vEeiDVe8zgaCPEQ" type="UseCase_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_ecXBo36vEeiDVe8zgaCPEQ" type="UseCase_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ecXBpH6vEeiDVe8zgaCPEQ" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_ecXBpX6vEeiDVe8zgaCPEQ" type="UseCase_ExtensionPointCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_ecXBpn6vEeiDVe8zgaCPEQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_ecXBp36vEeiDVe8zgaCPEQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ecXBqH6vEeiDVe8zgaCPEQ"/>
+      </children>
+      <element xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_ecVzgH6vEeiDVe8zgaCPEQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ecXBoX6vEeiDVe8zgaCPEQ" x="540" y="60"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_IqaYsI9MEeinlvO2lyFijg" type="UseCase_Shape" fillColor="13420443">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Iqbm0I9MEeinlvO2lyFijg" type="UseCase_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_IqcN4I9MEeinlvO2lyFijg" type="UseCase_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_IqcN4Y9MEeinlvO2lyFijg" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_IqcN4o9MEeinlvO2lyFijg" type="UseCase_ExtensionPointCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_IqcN449MEeinlvO2lyFijg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_IqcN5I9MEeinlvO2lyFijg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IqcN5Y9MEeinlvO2lyFijg"/>
+      </children>
+      <element xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_IqSc4I9MEeinlvO2lyFijg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IqaYsY9MEeinlvO2lyFijg" x="260" y="443"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_ShZr8I9MEeinlvO2lyFijg" type="UseCase_Shape" fillColor="10265827">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ShZr8o9MEeinlvO2lyFijg" type="UseCase_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_ShZr849MEeinlvO2lyFijg" type="UseCase_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ShZr9I9MEeinlvO2lyFijg" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_ShZr9Y9MEeinlvO2lyFijg" type="UseCase_ExtensionPointCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_ShZr9o9MEeinlvO2lyFijg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_ShZr949MEeinlvO2lyFijg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ShZr-I9MEeinlvO2lyFijg"/>
+      </children>
+      <element xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_ShX2wI9MEeinlvO2lyFijg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ShZr8Y9MEeinlvO2lyFijg" x="540" y="260"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_T3k0sI9MEeinlvO2lyFijg" type="UseCase_Shape" fillColor="10265827">
+      <children xmi:type="notation:DecorationNode" xmi:id="_T3k0so9MEeinlvO2lyFijg" type="UseCase_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_T3k0s49MEeinlvO2lyFijg" type="UseCase_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_T3k0tI9MEeinlvO2lyFijg" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_T3k0tY9MEeinlvO2lyFijg" type="UseCase_ExtensionPointCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_T3k0to9MEeinlvO2lyFijg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_T3k0t49MEeinlvO2lyFijg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T3k0uI9MEeinlvO2lyFijg"/>
+      </children>
+      <element xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_T3jmkI9MEeinlvO2lyFijg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T3k0sY9MEeinlvO2lyFijg" x="540" y="420"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_cAEl0I9MEeinlvO2lyFijg" type="UseCase_Shape" fillColor="10265827">
+      <children xmi:type="notation:DecorationNode" xmi:id="_cAEl0o9MEeinlvO2lyFijg" type="UseCase_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_cAEl049MEeinlvO2lyFijg" type="UseCase_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_cAEl1I9MEeinlvO2lyFijg" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_cAEl1Y9MEeinlvO2lyFijg" type="UseCase_ExtensionPointCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_cAEl1o9MEeinlvO2lyFijg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_cAEl149MEeinlvO2lyFijg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cAEl2I9MEeinlvO2lyFijg"/>
+      </children>
+      <element xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_cACwoI9MEeinlvO2lyFijg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cAEl0Y9MEeinlvO2lyFijg" x="540" y="600"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_se2FYI9MEeinlvO2lyFijg" type="UseCase_Shape" fillColor="10011046">
+      <children xmi:type="notation:DecorationNode" xmi:id="_se2FYo9MEeinlvO2lyFijg" type="UseCase_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_se2FY49MEeinlvO2lyFijg" type="UseCase_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_se2FZI9MEeinlvO2lyFijg" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_se2scI9MEeinlvO2lyFijg" type="UseCase_ExtensionPointCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_se2scY9MEeinlvO2lyFijg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_se2sco9MEeinlvO2lyFijg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_se2sc49MEeinlvO2lyFijg"/>
+      </children>
+      <element xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_sezpII9MEeinlvO2lyFijg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_se2FYY9MEeinlvO2lyFijg" x="800" y="60"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_vkwtcI9MEeinlvO2lyFijg" type="UseCase_Shape" fillColor="10011046">
+      <children xmi:type="notation:DecorationNode" xmi:id="_vkxUgI9MEeinlvO2lyFijg" type="UseCase_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_vkxUgY9MEeinlvO2lyFijg" type="UseCase_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_vkxUgo9MEeinlvO2lyFijg" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_vkxUg49MEeinlvO2lyFijg" type="UseCase_ExtensionPointCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_vkxUhI9MEeinlvO2lyFijg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_vkxUhY9MEeinlvO2lyFijg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vkxUho9MEeinlvO2lyFijg"/>
+      </children>
+      <element xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_vkvfUI9MEeinlvO2lyFijg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vkwtcY9MEeinlvO2lyFijg" x="800" y="280" width="181"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_xnc98I9MEeinlvO2lyFijg" type="UseCase_Shape" fillColor="10011046">
+      <children xmi:type="notation:DecorationNode" xmi:id="_xnc98o9MEeinlvO2lyFijg" type="UseCase_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_xnc9849MEeinlvO2lyFijg" type="UseCase_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xnc99I9MEeinlvO2lyFijg" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_xnc99Y9MEeinlvO2lyFijg" type="UseCase_ExtensionPointCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_xnc99o9MEeinlvO2lyFijg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_xnc9949MEeinlvO2lyFijg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xnc9-I9MEeinlvO2lyFijg"/>
+      </children>
+      <element xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_xnbv0I9MEeinlvO2lyFijg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xnc98Y9MEeinlvO2lyFijg" x="820" y="420"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_0N2YcI9MEeinlvO2lyFijg" type="UseCase_Shape" fillColor="10011046">
+      <children xmi:type="notation:DecorationNode" xmi:id="_0N2_gI9MEeinlvO2lyFijg" type="UseCase_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_0N2_gY9MEeinlvO2lyFijg" type="UseCase_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_0N2_go9MEeinlvO2lyFijg" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_0N2_g49MEeinlvO2lyFijg" type="UseCase_ExtensionPointCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_0N2_hI9MEeinlvO2lyFijg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_0N2_hY9MEeinlvO2lyFijg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0N2_ho9MEeinlvO2lyFijg"/>
+      </children>
+      <element xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_0N1KUI9MEeinlvO2lyFijg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0N2YcY9MEeinlvO2lyFijg" x="820" y="600"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_rFGOwI9NEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_rFGOwY9NEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_rFG10I9NEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_Xe_AQI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rFGOwo9NEeinlvO2lyFijg" x="740" y="-40"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_r4HAE49NEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_r4HAFI9NEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_r4HnII9NEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_YMoJYI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r4HAFY9NEeinlvO2lyFijg" x="740" y="-40"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_soCBI49NEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_soCBJI9NEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_soCBJo9NEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_ZdQDwI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_soCBJY9NEeinlvO2lyFijg" x="740" y="160"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_tcLa4I9NEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_tcLa4Y9NEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_tcMB8I9NEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_a7NPgI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tcLa4o9NEeinlvO2lyFijg" x="740" y="320"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_uH54c49NEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_uH54dI9NEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_uH54do9NEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_dwjsAI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uH54dY9NEeinlvO2lyFijg" x="740" y="500"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_vM7m0I9NEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_vM7m0Y9NEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_vM7m049NEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_2QY38I9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vM7m0o9NEeinlvO2lyFijg" x="1000" y="-40"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_wA1I8I9NEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_wA1I8Y9NEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_wA1I849NEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_3juIEI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wA1I8o9NEeinlvO2lyFijg" x="1000" y="180"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_wtVCkI9NEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_wtVCkY9NEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_wtVCk49NEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_6tHh8I9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wtVCko9NEeinlvO2lyFijg" x="1020" y="320"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_3kjZFo9NEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_3kjZF49NEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_3kjZGY9NEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_d4b1MH6vEeiDVe8zgaCPEQ"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3kjZGI9NEeinlvO2lyFijg" x="460" y="20"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_LhS0Vo9OEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_LhS0V49OEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_LhS0WY9OEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_eNkXsH6vEeiDVe8zgaCPEQ"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LhS0WI9OEeinlvO2lyFijg" x="460" y="220"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_Mbpjwo9OEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_Mbpjw49OEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_MbpjxY9OEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_IqSc4I9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MbpjxI9OEeinlvO2lyFijg" x="460" y="443"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_t5GK9o9OEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_t5GK949OEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_t5GyAI9OEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_ecVzgH6vEeiDVe8zgaCPEQ"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t5GK-I9OEeinlvO2lyFijg" x="740" y="60"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_vNOFRI9OEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_vNOFRY9OEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_vNOFR49OEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_ShX2wI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vNOFRo9OEeinlvO2lyFijg" x="740" y="260"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_v_DK1o9OEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_v_DK149OEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_v_DK2Y9OEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_T3jmkI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_v_DK2I9OEeinlvO2lyFijg" x="740" y="420"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_cIVpqo9PEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_cIVpq49PEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_cIVprY9PEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_cACwoI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cIVprI9PEeinlvO2lyFijg" x="740" y="600"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_npDTwI9PEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_npDTwY9PEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_npDTw49PEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_sezpII9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_npDTwo9PEeinlvO2lyFijg" x="1000" y="60"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_oVlCkI9PEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_oVlCkY9PEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_oVlCk49PEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_vkvfUI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oVlCko9PEeinlvO2lyFijg" x="1000" y="280"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_o_tkto9PEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_o_tkt49PEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_o_tkuY9PEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_xnbv0I9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o_tkuI9PEeinlvO2lyFijg" x="1020" y="420"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_pvkUVo9PEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_pvkUV49PEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_pvkUWY9PEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_0N1KUI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pvkUWI9PEeinlvO2lyFijg" x="1020" y="600"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_Z-P7MI9QEeinlvO2lyFijg" type="Constraint_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Z-QiQI9QEeinlvO2lyFijg" type="Constraint_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Z-QiQY9QEeinlvO2lyFijg" type="Constraint_BodyLabel"/>
+      <element xmi:type="uml:Constraint" href="provaSurvivabilityProfile.uml#_Z-MQ0I9QEeinlvO2lyFijg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z-P7MY9QEeinlvO2lyFijg" x="1020" y="60"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_jrDXto9QEeinlvO2lyFijg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_jrDXt49QEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_jrD-wI9QEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Constraint" href="provaSurvivabilityProfile.uml#_Z-MQ0I9QEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jrDXuI9QEeinlvO2lyFijg" x="1220" y="60"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_cJMFIX6vEeiDVe8zgaCPEQ" name="diagram_compatibility_version" stringValue="1.3.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_cJMFIn6vEeiDVe8zgaCPEQ"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_cJMFI36vEeiDVe8zgaCPEQ" diagramKindId="org.eclipse.papyrus.uml.diagram.useCase">
+      <owner xmi:type="uml:Model" href="provaSurvivabilityProfile.uml#_cEdWIH6vEeiDVe8zgaCPEQ"/>
+    </styles>
+    <element xmi:type="uml:Model" href="provaSurvivabilityProfile.uml#_cEdWIH6vEeiDVe8zgaCPEQ"/>
+    <edges xmi:type="notation:Connector" xmi:id="_MdfBsI9MEeinlvO2lyFijg" type="Association_Edge" source="_dejVkH6vEeiDVe8zgaCPEQ" target="_d4dqYH6vEeiDVe8zgaCPEQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_MdfowI9MEeinlvO2lyFijg" type="Association_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_p9kbcI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_MdfowY9MEeinlvO2lyFijg" y="39"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Mdfowo9MEeinlvO2lyFijg" type="Association_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_p9s-UI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Mdfow49MEeinlvO2lyFijg" x="-1" y="-17"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_MdfBsY9MEeinlvO2lyFijg"/>
+      <element xmi:type="uml:Association" href="provaSurvivabilityProfile.uml#_MdaJMI9MEeinlvO2lyFijg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MdfBso9MEeinlvO2lyFijg" points="[80, 240, -643984, -643984]$[300, 82, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Mekm0I9MEeinlvO2lyFijg" id="(1.0,0.4)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MelN4I9MEeinlvO2lyFijg" id="(0.0,0.6666666666666666)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_NJ6p4I9MEeinlvO2lyFijg" type="Association_Edge" source="_dejVkH6vEeiDVe8zgaCPEQ" target="_eNmM4H6vEeiDVe8zgaCPEQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_NJ7Q8I9MEeinlvO2lyFijg" type="Association_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_O0TvII9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_NJ7Q8Y9MEeinlvO2lyFijg" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_NJ7Q8o9MEeinlvO2lyFijg" type="Association_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_O0cSAI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_NJ7Q849MEeinlvO2lyFijg" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_NJ6p4Y9MEeinlvO2lyFijg"/>
+      <element xmi:type="uml:Association" href="provaSurvivabilityProfile.uml#_NJ40sI9MEeinlvO2lyFijg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NJ6p4o9MEeinlvO2lyFijg" points="[80, 260, -643984, -643984]$[264, 260, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NKR2QI9MEeinlvO2lyFijg" id="(1.0,0.8)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NKSdUI9MEeinlvO2lyFijg" id="(0.02857142857142857,0.6666666666666666)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_PxhlUI9MEeinlvO2lyFijg" type="Association_Edge" source="_IqaYsI9MEeinlvO2lyFijg" target="_dejVkH6vEeiDVe8zgaCPEQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_PxhlU49MEeinlvO2lyFijg" type="Association_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_pfCsYI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_PxhlVI9MEeinlvO2lyFijg" x="-1" y="39"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_PxhlVY9MEeinlvO2lyFijg" type="Association_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_pfNEcI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_PxhlVo9MEeinlvO2lyFijg" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_PxhlUY9MEeinlvO2lyFijg"/>
+      <element xmi:type="uml:Association" href="provaSurvivabilityProfile.uml#_PxfwII9MEeinlvO2lyFijg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PxhlUo9MEeinlvO2lyFijg" points="[260, 390, -643984, -643984]$[100, 270, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Px28gI9MEeinlvO2lyFijg" id="(0.0,0.5)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Px28gY9MEeinlvO2lyFijg" id="(0.6666666666666666,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_XfBcgI9MEeinlvO2lyFijg" type="Dependency_Edge" source="_ecXBoH6vEeiDVe8zgaCPEQ" target="_d4dqYH6vEeiDVe8zgaCPEQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_XfBcg49MEeinlvO2lyFijg" type="Dependency_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_oKhJcI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_XfBchI9MEeinlvO2lyFijg" x="-1" y="38"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_XfBchY9MEeinlvO2lyFijg" type="Dependency_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_oKpsUI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_XfBcho9MEeinlvO2lyFijg" x="-1" y="-18"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_XfBcgY9MEeinlvO2lyFijg"/>
+      <element xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_Xe_AQI9MEeinlvO2lyFijg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_XfBcgo9MEeinlvO2lyFijg" points="[520, 149, -643984, -643984]$[395, 120, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XfevgI9MEeinlvO2lyFijg" id="(0.14285714285714285,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XfevgY9MEeinlvO2lyFijg" id="(1.0,0.6666666666666666)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_YMpXgI9MEeinlvO2lyFijg" type="Dependency_Edge" source="_ecXBoH6vEeiDVe8zgaCPEQ" target="_eNmM4H6vEeiDVe8zgaCPEQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_YMp-kI9MEeinlvO2lyFijg" type="Dependency_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_oKyPMI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_YMp-kY9MEeinlvO2lyFijg" x="1" y="38"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_YMp-ko9MEeinlvO2lyFijg" type="Dependency_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_oK6yEI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_YMp-k49MEeinlvO2lyFijg" y="-19"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_YMpXgY9MEeinlvO2lyFijg"/>
+      <element xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_YMoJYI9MEeinlvO2lyFijg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_YMpXgo9MEeinlvO2lyFijg" points="[500, 170, -643984, -643984]$[395, 240, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YNBK8I9MEeinlvO2lyFijg" id="(0.0,0.5)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YNBK8Y9MEeinlvO2lyFijg" id="(1.0,0.3333333333333333)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_ZdR48I9MEeinlvO2lyFijg" type="Dependency_Edge" source="_ShZr8I9MEeinlvO2lyFijg" target="_eNmM4H6vEeiDVe8zgaCPEQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ZdR4849MEeinlvO2lyFijg" type="Dependency_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_fEziII9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZdR49I9MEeinlvO2lyFijg" x="-1" y="38"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_ZdR49Y9MEeinlvO2lyFijg" type="Dependency_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_fE-hQI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZdR49o9MEeinlvO2lyFijg" x="1" y="-18"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_ZdR48Y9MEeinlvO2lyFijg"/>
+      <element xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_ZdQDwI9MEeinlvO2lyFijg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZdR48o9MEeinlvO2lyFijg" points="[500, 350, -643984, -643984]$[380, 270, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZdpFUI9MEeinlvO2lyFijg" id="(0.0,0.5)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZdpFUY9MEeinlvO2lyFijg" id="(0.8571428571428571,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_a7PEsI9MEeinlvO2lyFijg" type="Dependency_Edge" source="_T3k0sI9MEeinlvO2lyFijg" target="_IqaYsI9MEeinlvO2lyFijg">
+      <children xmi:type="notation:DecorationNode" xmi:id="_a7PEs49MEeinlvO2lyFijg" type="Dependency_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_o5a20I9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_a7PEtI9MEeinlvO2lyFijg" x="-1" y="38"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_a7PEtY9MEeinlvO2lyFijg" type="Dependency_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_o5iyoI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_a7PEto9MEeinlvO2lyFijg" y="-19"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_a7PEsY9MEeinlvO2lyFijg"/>
+      <element xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_a7NPgI9MEeinlvO2lyFijg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_a7PEso9MEeinlvO2lyFijg" points="[520, 490, -643984, -643984]$[360, 417, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_a7lC8I9MEeinlvO2lyFijg" id="(0.0,0.5)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_a7lC8Y9MEeinlvO2lyFijg" id="(0.8571428571428571,0.15)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_dwlhMI9MEeinlvO2lyFijg" type="Dependency_Edge" source="_cAEl0I9MEeinlvO2lyFijg" target="_IqaYsI9MEeinlvO2lyFijg">
+      <children xmi:type="notation:DecorationNode" xmi:id="_dwlhM49MEeinlvO2lyFijg" type="Dependency_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_evn8UI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_dwlhNI9MEeinlvO2lyFijg" y="39"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_dwlhNY9MEeinlvO2lyFijg" type="Dependency_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_evzigI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_dwlhNo9MEeinlvO2lyFijg" x="1" y="-18"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_dwlhMY9MEeinlvO2lyFijg"/>
+      <element xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_dwjsAI9MEeinlvO2lyFijg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dwlhMo9MEeinlvO2lyFijg" points="[380, 509, -643984, -643984]$[340, 419, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dw8GgI9MEeinlvO2lyFijg" id="(0.14285714285714285,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dw8GgY9MEeinlvO2lyFijg" id="(0.5714285714285714,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_2QaGEI9MEeinlvO2lyFijg" type="Dependency_Edge" source="_se2FYI9MEeinlvO2lyFijg" target="_ecXBoH6vEeiDVe8zgaCPEQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_2QaGE49MEeinlvO2lyFijg" type="Dependency_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_-7mUkI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_2QatII9MEeinlvO2lyFijg" x="-1" y="38"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_2QatIY9MEeinlvO2lyFijg" type="Dependency_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_-7wFkI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_2QatIo9MEeinlvO2lyFijg" x="1" y="-19"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_2QaGEY9MEeinlvO2lyFijg"/>
+      <element xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_2QY38I9MEeinlvO2lyFijg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2QaGEo9MEeinlvO2lyFijg" points="[880, 49, -643984, -643984]$[660, 69, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2QvdQI9MEeinlvO2lyFijg" id="(0.14285714285714285,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2QwEUI9MEeinlvO2lyFijg" id="(0.8571428571428571,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_3jv9QI9MEeinlvO2lyFijg" type="Dependency_Edge" source="_vkwtcI9MEeinlvO2lyFijg" target="_ShZr8I9MEeinlvO2lyFijg">
+      <children xmi:type="notation:DecorationNode" xmi:id="_3jv9Q49MEeinlvO2lyFijg" type="Dependency_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="__JMrsI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_3jwkUI9MEeinlvO2lyFijg" x="-1" y="38"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_3jwkUY9MEeinlvO2lyFijg" type="Dependency_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="__JWcsI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_3jwkUo9MEeinlvO2lyFijg" x="-1" y="-19"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_3jv9QY9MEeinlvO2lyFijg"/>
+      <element xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_3juIEI9MEeinlvO2lyFijg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3jv9Qo9MEeinlvO2lyFijg" points="[924, 320, -643984, -643984]$[675, 300, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3kF7gI9MEeinlvO2lyFijg" id="(0.0,0.3333333333333333)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3kF7gY9MEeinlvO2lyFijg" id="(1.0,0.6666666666666666)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_6tJXII9MEeinlvO2lyFijg" type="Dependency_Edge" source="_xnc98I9MEeinlvO2lyFijg" target="_T3k0sI9MEeinlvO2lyFijg">
+      <children xmi:type="notation:DecorationNode" xmi:id="_6tJXI49MEeinlvO2lyFijg" type="Dependency_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_-ss88I9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_6tJXJI9MEeinlvO2lyFijg" x="1" y="39"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_6tJ-MI9MEeinlvO2lyFijg" type="Dependency_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_-s38EI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_6tJ-MY9MEeinlvO2lyFijg" y="-19"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_6tJXIY9MEeinlvO2lyFijg"/>
+      <element xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_6tHh8I9MEeinlvO2lyFijg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6tJXIo9MEeinlvO2lyFijg" points="[920, 529, -643984, -643984]$[660, 470, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6tfVYI9MEeinlvO2lyFijg" id="(0.02857142857142857,0.6666666666666666)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6tfVYY9MEeinlvO2lyFijg" id="(0.8571428571428571,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_7mVo8I9MEeinlvO2lyFijg" type="Dependency_Edge" source="_0N2YcI9MEeinlvO2lyFijg" target="_cAEl0I9MEeinlvO2lyFijg">
+      <children xmi:type="notation:DecorationNode" xmi:id="_7mVo849MEeinlvO2lyFijg" type="Dependency_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_-c3xMI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_7mVo9I9MEeinlvO2lyFijg" x="-1" y="38"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_7mVo9Y9MEeinlvO2lyFijg" type="Dependency_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_-dAUEI9MEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_7mVo9o9MEeinlvO2lyFijg" y="-19"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_7mVo8Y9MEeinlvO2lyFijg"/>
+      <element xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_7mTzwI9MEeinlvO2lyFijg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7mVo8o9MEeinlvO2lyFijg" points="[780, 669, -643984, -643984]$[660, 650, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7ms1UI9MEeinlvO2lyFijg" id="(0.02857142857142857,0.6666666666666666)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7ms1UY9MEeinlvO2lyFijg" id="(0.9642857142857143,0.3333333333333333)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_rFG10Y9NEeinlvO2lyFijg" type="StereotypeCommentLink" source="_XfBcgI9MEeinlvO2lyFijg" target="_rFGOwI9NEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_rFG10o9NEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_rFHc4I9NEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_Xe_AQI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rFG1049NEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rFG11I9NEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rFG11Y9NEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_r4HnIY9NEeinlvO2lyFijg" type="StereotypeCommentLink" source="_YMpXgI9MEeinlvO2lyFijg" target="_r4HAE49NEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_r4HnIo9NEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_r4HnJo9NEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_YMoJYI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_r4HnI49NEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r4HnJI9NEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r4HnJY9NEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_soCBJ49NEeinlvO2lyFijg" type="StereotypeCommentLink" source="_ZdR48I9MEeinlvO2lyFijg" target="_soCBI49NEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_soCBKI9NEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_soCoMo9NEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_ZdQDwI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_soCBKY9NEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_soCoMI9NEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_soCoMY9NEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_tcMB8Y9NEeinlvO2lyFijg" type="StereotypeCommentLink" source="_a7PEsI9MEeinlvO2lyFijg" target="_tcLa4I9NEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_tcMB8o9NEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_tcMB9o9NEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_a7NPgI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_tcMB849NEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tcMB9I9NEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tcMB9Y9NEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_uH54d49NEeinlvO2lyFijg" type="StereotypeCommentLink" source="_dwlhMI9MEeinlvO2lyFijg" target="_uH54c49NEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_uH54eI9NEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_uH6fgo9NEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_dwjsAI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_uH54eY9NEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_uH6fgI9NEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_uH6fgY9NEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_vM7m1I9NEeinlvO2lyFijg" type="StereotypeCommentLink" source="_2QaGEI9MEeinlvO2lyFijg" target="_vM7m0I9NEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_vM7m1Y9NEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_vM7m2Y9NEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_2QY38I9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vM7m1o9NEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vM7m149NEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vM7m2I9NEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_wA1I9I9NEeinlvO2lyFijg" type="StereotypeCommentLink" source="_3jv9QI9MEeinlvO2lyFijg" target="_wA1I8I9NEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_wA1I9Y9NEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_wA1I-Y9NEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_3juIEI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wA1I9o9NEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wA1I949NEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wA1I-I9NEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_wtVpoI9NEeinlvO2lyFijg" type="StereotypeCommentLink" source="_6tJXII9MEeinlvO2lyFijg" target="_wtVCkI9NEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_wtVpoY9NEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_wtVppY9NEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Dependency" href="provaSurvivabilityProfile.uml#_6tHh8I9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wtVpoo9NEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wtVpo49NEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wtVppI9NEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_3kkAII9NEeinlvO2lyFijg" type="StereotypeCommentLink" source="_d4dqYH6vEeiDVe8zgaCPEQ" target="_3kjZFo9NEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_3kkAIY9NEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_3kkAJY9NEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_d4b1MH6vEeiDVe8zgaCPEQ"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3kkAIo9NEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3kkAI49NEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3kkAJI9NEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_LhS0Wo9OEeinlvO2lyFijg" type="StereotypeCommentLink" source="_eNmM4H6vEeiDVe8zgaCPEQ" target="_LhS0Vo9OEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_LhS0W49OEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_LhS0X49OEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_eNkXsH6vEeiDVe8zgaCPEQ"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LhS0XI9OEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LhS0XY9OEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LhS0Xo9OEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_Mbpjxo9OEeinlvO2lyFijg" type="StereotypeCommentLink" source="_IqaYsI9MEeinlvO2lyFijg" target="_Mbpjwo9OEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_Mbpjx49OEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_Mbpjy49OEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_IqSc4I9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MbpjyI9OEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MbpjyY9OEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Mbpjyo9OEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_t5GyAY9OEeinlvO2lyFijg" type="StereotypeCommentLink" source="_ecXBoH6vEeiDVe8zgaCPEQ" target="_t5GK9o9OEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_t5GyAo9OEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_t5GyBo9OEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_ecVzgH6vEeiDVe8zgaCPEQ"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_t5GyA49OEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_t5GyBI9OEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_t5GyBY9OEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_vNOFSI9OEeinlvO2lyFijg" type="StereotypeCommentLink" source="_ShZr8I9MEeinlvO2lyFijg" target="_vNOFRI9OEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_vNOFSY9OEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_vNOFTY9OEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_ShX2wI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vNOFSo9OEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vNOFS49OEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vNOFTI9OEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_v_DK2o9OEeinlvO2lyFijg" type="StereotypeCommentLink" source="_T3k0sI9MEeinlvO2lyFijg" target="_v_DK1o9OEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_v_DK249OEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_v_Dx4o9OEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_T3jmkI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_v_DK3I9OEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_v_Dx4I9OEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_v_Dx4Y9OEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_cIWQsI9PEeinlvO2lyFijg" type="StereotypeCommentLink" source="_cAEl0I9MEeinlvO2lyFijg" target="_cIVpqo9PEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_cIWQsY9PEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_cIWQtY9PEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_cACwoI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cIWQso9PEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cIWQs49PEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cIWQtI9PEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_npDTxI9PEeinlvO2lyFijg" type="StereotypeCommentLink" source="_se2FYI9MEeinlvO2lyFijg" target="_npDTwI9PEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_npDTxY9PEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_npDTyY9PEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_sezpII9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_npDTxo9PEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_npDTx49PEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_npDTyI9PEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_oVlClI9PEeinlvO2lyFijg" type="StereotypeCommentLink" source="_vkwtcI9MEeinlvO2lyFijg" target="_oVlCkI9PEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_oVlClY9PEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_oVlCmY9PEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_vkvfUI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oVlClo9PEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oVlCl49PEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oVlCmI9PEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_o_tkuo9PEeinlvO2lyFijg" type="StereotypeCommentLink" source="_xnc98I9MEeinlvO2lyFijg" target="_o_tkto9PEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_o_tku49PEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_o_tkv49PEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_xnbv0I9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_o_tkvI9PEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_o_tkvY9PEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_o_tkvo9PEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_pvkUWo9PEeinlvO2lyFijg" type="StereotypeCommentLink" source="_0N2YcI9MEeinlvO2lyFijg" target="_pvkUVo9PEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_pvkUW49PEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_pvkUX49PEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:UseCase" href="provaSurvivabilityProfile.uml#_0N1KUI9MEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pvkUXI9PEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pvkUXY9PEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pvkUXo9PEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_jrD-wY9QEeinlvO2lyFijg" type="StereotypeCommentLink" source="_Z-P7MI9QEeinlvO2lyFijg" target="_jrDXto9QEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_jrD-wo9QEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_jrD-xo9QEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Constraint" href="provaSurvivabilityProfile.uml#_Z-MQ0I9QEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jrD-w49QEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_jrD-xI9QEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_jrD-xY9QEeinlvO2lyFijg"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_-3rroI9REeinlvO2lyFijg" type="PapyrusUMLStateMachineDiagram" name="SAM" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_-3rroY9REeinlvO2lyFijg" type="StateMachine_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-3rroo9REeinlvO2lyFijg" type="StateMachine_NameLabel">
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-3rro49REeinlvO2lyFijg" width="851" height="20"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_-3rrpI9REeinlvO2lyFijg" type="StateMachine_RegionCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_-3rrpY9REeinlvO2lyFijg" type="Region_Shape">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-3rrpo9REeinlvO2lyFijg" source="RegionAnnotationKey">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-3rrp49REeinlvO2lyFijg" key="RegionZoneKey" value=""/>
+          </eAnnotations>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Dv6l4I9SEeinlvO2lyFijg" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Dv6l4Y9SEeinlvO2lyFijg" key="fillColor" value="true"/>
+          </eAnnotations>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_-3rrqI9REeinlvO2lyFijg" type="Region_SubvertexCompartment">
+            <children xmi:type="notation:Shape" xmi:id="_H0gcsI9SEeinlvO2lyFijg" type="State_Shape" fillColor="10011046">
+              <children xmi:type="notation:DecorationNode" xmi:id="_H0gcso9SEeinlvO2lyFijg" type="State_NameLabel"/>
+              <children xmi:type="notation:DecorationNode" xmi:id="_H0gcs49SEeinlvO2lyFijg" type="State_FloatingNameLabel">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_H0gctI9SEeinlvO2lyFijg" x="40"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_H0gctY9SEeinlvO2lyFijg" type="State_RegionCompartment">
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H0gcto9SEeinlvO2lyFijg"/>
+              </children>
+              <element xmi:type="uml:State" href="provaSurvivabilityProfile.uml#_H0cyUI9SEeinlvO2lyFijg"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H0gcsY9SEeinlvO2lyFijg" x="309" y="30" width="201" height="61"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_JBUOEI9SEeinlvO2lyFijg" type="State_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_JBUOEo9SEeinlvO2lyFijg" type="State_NameLabel">
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MBA5YI9SEeinlvO2lyFijg" width="201"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_JBUOE49SEeinlvO2lyFijg" type="State_FloatingNameLabel">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_JBUOFI9SEeinlvO2lyFijg" x="40"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_JBUOFY9SEeinlvO2lyFijg" type="State_RegionCompartment">
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JBUOFo9SEeinlvO2lyFijg" y="-1" width="201"/>
+              </children>
+              <element xmi:type="uml:State" href="provaSurvivabilityProfile.uml#_JBRKwI9SEeinlvO2lyFijg"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JBUOEY9SEeinlvO2lyFijg" x="509" y="150" width="201" height="81"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_KN5V8I9SEeinlvO2lyFijg" type="State_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_KN5V8o9SEeinlvO2lyFijg" type="State_NameLabel">
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LiOEkI9SEeinlvO2lyFijg" width="181"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_KN5V849SEeinlvO2lyFijg" type="State_FloatingNameLabel">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_KN59AI9SEeinlvO2lyFijg" x="40"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_KN59AY9SEeinlvO2lyFijg" type="State_RegionCompartment">
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KN59Ao9SEeinlvO2lyFijg" y="-1" width="181"/>
+              </children>
+              <element xmi:type="uml:State" href="provaSurvivabilityProfile.uml#_KN1EgI9SEeinlvO2lyFijg"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KN5V8Y9SEeinlvO2lyFijg" x="69" y="150" width="181" height="81"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_Ph6NQI9SEeinlvO2lyFijg" type="State_Shape" fillColor="10265827">
+              <children xmi:type="notation:DecorationNode" xmi:id="_Ph6NQo9SEeinlvO2lyFijg" type="State_NameLabel"/>
+              <children xmi:type="notation:DecorationNode" xmi:id="_Ph6NQ49SEeinlvO2lyFijg" type="State_FloatingNameLabel">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_Ph6NRI9SEeinlvO2lyFijg" x="40"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_Ph6NRY9SEeinlvO2lyFijg" type="State_RegionCompartment">
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ph6NRo9SEeinlvO2lyFijg"/>
+              </children>
+              <element xmi:type="uml:State" href="provaSurvivabilityProfile.uml#_Ph0GoI9SEeinlvO2lyFijg"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ph6NQY9SEeinlvO2lyFijg" x="309" y="270" width="201" height="81"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_ZYX8FI9SEeinlvO2lyFijg" type="StereotypeComment">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_ZYX8FY9SEeinlvO2lyFijg"/>
+              <styles xmi:type="notation:EObjectValueStyle" xmi:id="_ZYX8F49SEeinlvO2lyFijg" name="BASE_ELEMENT">
+                <eObjectValue xmi:type="uml:State" href="provaSurvivabilityProfile.uml#_H0cyUI9SEeinlvO2lyFijg"/>
+              </styles>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZYX8Fo9SEeinlvO2lyFijg" x="509" y="30"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_Z90ygI9SEeinlvO2lyFijg" type="StereotypeComment">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_Z90ygY9SEeinlvO2lyFijg"/>
+              <styles xmi:type="notation:EObjectValueStyle" xmi:id="_Z90yg49SEeinlvO2lyFijg" name="BASE_ELEMENT">
+                <eObjectValue xmi:type="uml:State" href="provaSurvivabilityProfile.uml#_JBRKwI9SEeinlvO2lyFijg"/>
+              </styles>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z90ygo9SEeinlvO2lyFijg" x="709" y="150"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_ahYyl49SEeinlvO2lyFijg" type="StereotypeComment">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_ahYymI9SEeinlvO2lyFijg"/>
+              <styles xmi:type="notation:EObjectValueStyle" xmi:id="_ahYymo9SEeinlvO2lyFijg" name="BASE_ELEMENT">
+                <eObjectValue xmi:type="uml:State" href="provaSurvivabilityProfile.uml#_Ph0GoI9SEeinlvO2lyFijg"/>
+              </styles>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ahYymY9SEeinlvO2lyFijg" x="509" y="270"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_bL5IJI9SEeinlvO2lyFijg" type="StereotypeComment">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_bL5IJY9SEeinlvO2lyFijg"/>
+              <styles xmi:type="notation:EObjectValueStyle" xmi:id="_bL5IJ49SEeinlvO2lyFijg" name="BASE_ELEMENT">
+                <eObjectValue xmi:type="uml:State" href="provaSurvivabilityProfile.uml#_KN1EgI9SEeinlvO2lyFijg"/>
+              </styles>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bL5IJo9SEeinlvO2lyFijg" x="269" y="150"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_g-bHc49SEeinlvO2lyFijg" type="StereotypeComment">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_g-bHdI9SEeinlvO2lyFijg"/>
+              <styles xmi:type="notation:EObjectValueStyle" xmi:id="_g-bHdo9SEeinlvO2lyFijg" name="BASE_ELEMENT">
+                <eObjectValue xmi:type="uml:Transition" href="provaSurvivabilityProfile.uml#_SzEcAI9SEeinlvO2lyFijg"/>
+              </styles>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_g-bHdY9SEeinlvO2lyFijg" x="100" y="100"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_ik59E49SEeinlvO2lyFijg" type="StereotypeComment">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_ik59FI9SEeinlvO2lyFijg"/>
+              <styles xmi:type="notation:EObjectValueStyle" xmi:id="_ik6kII9SEeinlvO2lyFijg" name="BASE_ELEMENT">
+                <eObjectValue xmi:type="uml:Transition" href="provaSurvivabilityProfile.uml#_XZf0kI9SEeinlvO2lyFijg"/>
+              </styles>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ik59FY9SEeinlvO2lyFijg" x="100" y="100"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_jfy4A49SEeinlvO2lyFijg" type="StereotypeComment">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_jfy4BI9SEeinlvO2lyFijg"/>
+              <styles xmi:type="notation:EObjectValueStyle" xmi:id="_jfy4Bo9SEeinlvO2lyFijg" name="BASE_ELEMENT">
+                <eObjectValue xmi:type="uml:Transition" href="provaSurvivabilityProfile.uml#_ToH0sI9SEeinlvO2lyFijg"/>
+              </styles>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jfy4BY9SEeinlvO2lyFijg" x="100" y="100"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_kseGg49SEeinlvO2lyFijg" type="StereotypeComment">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_kseGhI9SEeinlvO2lyFijg"/>
+              <styles xmi:type="notation:EObjectValueStyle" xmi:id="_kseGho9SEeinlvO2lyFijg" name="BASE_ELEMENT">
+                <eObjectValue xmi:type="uml:Transition" href="provaSurvivabilityProfile.uml#_UxM8oI9SEeinlvO2lyFijg"/>
+              </styles>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kseGhY9SEeinlvO2lyFijg" x="100" y="100"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_lZ5NMI9SEeinlvO2lyFijg" type="StereotypeComment">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_lZ5NMY9SEeinlvO2lyFijg"/>
+              <styles xmi:type="notation:EObjectValueStyle" xmi:id="_lZ5NM49SEeinlvO2lyFijg" name="BASE_ELEMENT">
+                <eObjectValue xmi:type="uml:Transition" href="provaSurvivabilityProfile.uml#_Ww8m0I9SEeinlvO2lyFijg"/>
+              </styles>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lZ5NMo9SEeinlvO2lyFijg" x="100" y="100"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_mHlZoI9SEeinlvO2lyFijg" type="StereotypeComment">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_mHlZoY9SEeinlvO2lyFijg"/>
+              <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mHlZo49SEeinlvO2lyFijg" name="BASE_ELEMENT">
+                <eObjectValue xmi:type="uml:Transition" href="provaSurvivabilityProfile.uml#_UIHjYI9SEeinlvO2lyFijg"/>
+              </styles>
+              <element xsi:nil="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mHlZoo9SEeinlvO2lyFijg" x="100" y="100"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-3rrqY9REeinlvO2lyFijg"/>
+          </children>
+          <element xmi:type="uml:Region" href="provaSurvivabilityProfile.uml#_-3p2cI9REeinlvO2lyFijg"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-3rrqo9REeinlvO2lyFijg" width="851" height="411"/>
+        </children>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-3rrq49REeinlvO2lyFijg" y="20" width="851" height="411"/>
+      </children>
+      <element xmi:type="uml:StateMachine" href="provaSurvivabilityProfile.uml#_-bMj8I9REeinlvO2lyFijg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-3rrrI9REeinlvO2lyFijg" x="30" y="30" width="851" height="431"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_-3rrrY9REeinlvO2lyFijg" name="diagram_compatibility_version" stringValue="1.3.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_-3rrro9REeinlvO2lyFijg"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_-3rrr49REeinlvO2lyFijg" diagramKindId="org.eclipse.papyrus.uml.diagram.stateMachine">
+      <owner xmi:type="uml:Model" href="provaSurvivabilityProfile.uml#_cEdWIH6vEeiDVe8zgaCPEQ"/>
+    </styles>
+    <element xmi:type="uml:StateMachine" href="provaSurvivabilityProfile.uml#_-bMj8I9REeinlvO2lyFijg"/>
+    <edges xmi:type="notation:Connector" xmi:id="_S1sSMI9SEeinlvO2lyFijg" type="Transition_Edge" source="_H0gcsI9SEeinlvO2lyFijg" target="_JBUOEI9SEeinlvO2lyFijg">
+      <children xmi:type="notation:DecorationNode" xmi:id="_S1s5QI9SEeinlvO2lyFijg" type="Transition_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_S1s5QY9SEeinlvO2lyFijg"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_S1s5Qo9SEeinlvO2lyFijg" type="Transition_GuardLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_S1s5Q49SEeinlvO2lyFijg"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_S1s5RI9SEeinlvO2lyFijg" type="Transition_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_S1s5RY9SEeinlvO2lyFijg" x="-46" y="37"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_S1sSMY9SEeinlvO2lyFijg"/>
+      <element xmi:type="uml:Transition" href="provaSurvivabilityProfile.uml#_SzEcAI9SEeinlvO2lyFijg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_S1sSMo9SEeinlvO2lyFijg" points="[500, 80, -643984, -643984]$[640, 200, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_S2F60I9SEeinlvO2lyFijg" id="(0.7960199004975125,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_S2F60Y9SEeinlvO2lyFijg" id="(0.4975124378109453,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_ToPJcI9SEeinlvO2lyFijg" type="Transition_Edge" source="_JBUOEI9SEeinlvO2lyFijg" target="_Ph6NQI9SEeinlvO2lyFijg">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ToPJc49SEeinlvO2lyFijg" type="Transition_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ToPJdI9SEeinlvO2lyFijg"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_ToPJdY9SEeinlvO2lyFijg" type="Transition_GuardLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ToPJdo9SEeinlvO2lyFijg"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_ToPJd49SEeinlvO2lyFijg" type="Transition_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ToPJeI9SEeinlvO2lyFijg" x="-41" y="-42"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_ToPJcY9SEeinlvO2lyFijg"/>
+      <element xmi:type="uml:Transition" href="provaSurvivabilityProfile.uml#_ToH0sI9SEeinlvO2lyFijg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ToPJco9SEeinlvO2lyFijg" points="[620, 281, -643984, -643984]$[500, 320, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Tody8I9SEeinlvO2lyFijg" id="(0.39800995024875624,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Tody8Y9SEeinlvO2lyFijg" id="(0.7960199004975125,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_UIOREI9SEeinlvO2lyFijg" type="Transition_Edge" source="_H0gcsI9SEeinlvO2lyFijg" target="_KN5V8I9SEeinlvO2lyFijg">
+      <children xmi:type="notation:DecorationNode" xmi:id="_UIO4II9SEeinlvO2lyFijg" type="Transition_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UIO4IY9SEeinlvO2lyFijg"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UIO4Io9SEeinlvO2lyFijg" type="Transition_GuardLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UIO4I49SEeinlvO2lyFijg"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UIO4JI9SEeinlvO2lyFijg" type="Transition_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UIO4JY9SEeinlvO2lyFijg" x="-70" y="-21"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_UIOREY9SEeinlvO2lyFijg"/>
+      <element xmi:type="uml:Transition" href="provaSurvivabilityProfile.uml#_UIHjYI9SEeinlvO2lyFijg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UIOREo9SEeinlvO2lyFijg" points="[360, 141, -643984, -643984]$[200, 200, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UIc6kI9SEeinlvO2lyFijg" id="(0.09950248756218906,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UIc6kY9SEeinlvO2lyFijg" id="(0.5524861878453039,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_UxU4cI9SEeinlvO2lyFijg" type="Transition_Edge" source="_H0gcsI9SEeinlvO2lyFijg" target="_Ph6NQI9SEeinlvO2lyFijg">
+      <children xmi:type="notation:DecorationNode" xmi:id="_UxU4c49SEeinlvO2lyFijg" type="Transition_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UxU4dI9SEeinlvO2lyFijg"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UxU4dY9SEeinlvO2lyFijg" type="Transition_GuardLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UxU4do9SEeinlvO2lyFijg"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UxU4d49SEeinlvO2lyFijg" type="Transition_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UxU4eI9SEeinlvO2lyFijg" x="-4" y="28"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_UxU4cY9SEeinlvO2lyFijg"/>
+      <element xmi:type="uml:Transition" href="provaSurvivabilityProfile.uml#_UxM8oI9SEeinlvO2lyFijg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UxU4co9SEeinlvO2lyFijg" points="[440, 141, -643984, -643984]$[440, 320, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UxkJAI9SEeinlvO2lyFijg" id="(0.4975124378109453,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UxkJAY9SEeinlvO2lyFijg" id="(0.4975124378109453,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_WxEioI9SEeinlvO2lyFijg" type="Transition_Edge" source="_KN5V8I9SEeinlvO2lyFijg" target="_H0gcsI9SEeinlvO2lyFijg">
+      <children xmi:type="notation:DecorationNode" xmi:id="_WxEio49SEeinlvO2lyFijg" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_obgkEI9SEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_WxEipI9SEeinlvO2lyFijg"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_WxEipY9SEeinlvO2lyFijg" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_obpG8I9SEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_WxFJsI9SEeinlvO2lyFijg" x="-20" y="-21"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_WxFJsY9SEeinlvO2lyFijg" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_obwbsI9SEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_WxFJso9SEeinlvO2lyFijg" x="-3" y="-36"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_WxEioY9SEeinlvO2lyFijg"/>
+      <element xmi:type="uml:Transition" href="provaSurvivabilityProfile.uml#_Ww8m0I9SEeinlvO2lyFijg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WxEioo9SEeinlvO2lyFijg" points="[160, 200, -643984, -643984]$[160, 120, -643984, -643984]$[340, 120, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WxTMII9SEeinlvO2lyFijg" id="(0.3314917127071823,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WxTMIY9SEeinlvO2lyFijg" id="(0.0,0.6557377049180327)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_XZplkI9SEeinlvO2lyFijg" type="Transition_Edge" source="_JBUOEI9SEeinlvO2lyFijg" target="_H0gcsI9SEeinlvO2lyFijg">
+      <children xmi:type="notation:DecorationNode" xmi:id="_XZplk49SEeinlvO2lyFijg" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_o6zIII9SEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_XZpllI9SEeinlvO2lyFijg"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_XZpllY9SEeinlvO2lyFijg" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_o6510I9SEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_XZpllo9SEeinlvO2lyFijg"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_XZpll49SEeinlvO2lyFijg" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_o7BKkI9SEeinlvO2lyFijg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_XZplmI9SEeinlvO2lyFijg" x="18" y="33"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_XZplkY9SEeinlvO2lyFijg"/>
+      <element xmi:type="uml:Transition" href="provaSurvivabilityProfile.uml#_XZf0kI9SEeinlvO2lyFijg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_XZplko9SEeinlvO2lyFijg" points="[680, 200, -643984, -643984]$[680, 120, -643984, -643984]$[541, 120, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XZ4PEI9SEeinlvO2lyFijg" id="(0.6965174129353234,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XZ4PEY9SEeinlvO2lyFijg" id="(1.0,0.6557377049180327)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_ZYX8GI9SEeinlvO2lyFijg" type="StereotypeCommentLink" source="_H0gcsI9SEeinlvO2lyFijg" target="_ZYX8FI9SEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_ZYX8GY9SEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_ZYYjIo9SEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:State" href="provaSurvivabilityProfile.uml#_H0cyUI9SEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZYX8Go9SEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZYYjII9SEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZYYjIY9SEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_Z90yhI9SEeinlvO2lyFijg" type="StereotypeCommentLink" source="_JBUOEI9SEeinlvO2lyFijg" target="_Z90ygI9SEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_Z90yhY9SEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_Z90yiY9SEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:State" href="provaSurvivabilityProfile.uml#_JBRKwI9SEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Z90yho9SEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Z90yh49SEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Z90yiI9SEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_ahYym49SEeinlvO2lyFijg" type="StereotypeCommentLink" source="_Ph6NQI9SEeinlvO2lyFijg" target="_ahYyl49SEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_ahYynI9SEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_ahYyoI9SEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:State" href="provaSurvivabilityProfile.uml#_Ph0GoI9SEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ahYynY9SEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ahYyno9SEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ahYyn49SEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_bL5IKI9SEeinlvO2lyFijg" type="StereotypeCommentLink" source="_KN5V8I9SEeinlvO2lyFijg" target="_bL5IJI9SEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_bL5IKY9SEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_bL5ILY9SEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:State" href="provaSurvivabilityProfile.uml#_KN1EgI9SEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bL5IKo9SEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bL5IK49SEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bL5ILI9SEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_g-bHd49SEeinlvO2lyFijg" type="StereotypeCommentLink" source="_S1sSMI9SEeinlvO2lyFijg" target="_g-bHc49SEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_g-bHeI9SEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_g-bHfI9SEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Transition" href="provaSurvivabilityProfile.uml#_SzEcAI9SEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_g-bHeY9SEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_g-bHeo9SEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_g-bHe49SEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_ik6kIY9SEeinlvO2lyFijg" type="StereotypeCommentLink" source="_XZplkI9SEeinlvO2lyFijg" target="_ik59E49SEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_ik6kIo9SEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_ik6kJo9SEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Transition" href="provaSurvivabilityProfile.uml#_XZf0kI9SEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ik6kI49SEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ik6kJI9SEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ik6kJY9SEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_jfy4B49SEeinlvO2lyFijg" type="StereotypeCommentLink" source="_ToPJcI9SEeinlvO2lyFijg" target="_jfy4A49SEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_jfy4CI9SEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_jfy4DI9SEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Transition" href="provaSurvivabilityProfile.uml#_ToH0sI9SEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jfy4CY9SEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_jfy4Co9SEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_jfy4C49SEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_kseGh49SEeinlvO2lyFijg" type="StereotypeCommentLink" source="_UxU4cI9SEeinlvO2lyFijg" target="_kseGg49SEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_kseGiI9SEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_kseGjI9SEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Transition" href="provaSurvivabilityProfile.uml#_UxM8oI9SEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kseGiY9SEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kseGio9SEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kseGi49SEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_lZ5NNI9SEeinlvO2lyFijg" type="StereotypeCommentLink" source="_WxEioI9SEeinlvO2lyFijg" target="_lZ5NMI9SEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_lZ5NNY9SEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_lZ5NOY9SEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Transition" href="provaSurvivabilityProfile.uml#_Ww8m0I9SEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lZ5NNo9SEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lZ5NN49SEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lZ5NOI9SEeinlvO2lyFijg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_mHlZpI9SEeinlvO2lyFijg" type="StereotypeCommentLink" source="_UIOREI9SEeinlvO2lyFijg" target="_mHlZoI9SEeinlvO2lyFijg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_mHlZpY9SEeinlvO2lyFijg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_mHlZqY9SEeinlvO2lyFijg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Transition" href="provaSurvivabilityProfile.uml#_UIHjYI9SEeinlvO2lyFijg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mHlZpo9SEeinlvO2lyFijg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mHlZp49SEeinlvO2lyFijg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mHlZqI9SEeinlvO2lyFijg"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>
