@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel"
+    modelDirectory="/org.surreal.SurvivabilityProfile/src" modelPluginID="org.surreal.SurvivabilityProfile"
+    modelName="Survivability" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="8.0" copyrightFields="false"
+    usedGenPackages="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../org.eclipse.uml2.uml/model/UML.genmodel#//uml"
+    importOrganizing="true">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
+    <details key="DUPLICATE_FEATURES" value="DISCARD"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="PROPERTY_DEFAULT_EXPRESSIONS" value="IGNORE"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="DISCARD"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="PROCESS"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="DISCARD"/>
+    <details key="REDEFINING_OPERATIONS" value="REPORT"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="REPORT"/>
+    <details key="DUPLICATE_OPERATIONS" value="DISCARD"/>
+    <details key="NON_API_INVARIANTS" value="IGNORE"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUBSETTING_PROPERTIES" value="REPORT"/>
+    <details key="OPERATION_BODIES" value="IGNORE"/>
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNTYPED_PROPERTIES" value="REPORT"/>
+    <details key="REDEFINING_PROPERTIES" value="REPORT"/>
+    <details key="INVOCATION_DELEGATES" value="IGNORE"/>
+    <details key="VALIDATION_DELEGATES" value="IGNORE"/>
+  </genAnnotations>
+  <foreignModel>Survivability.profile.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="Survivability" basePackage="org.surreal.SurvivabilityProfile"
+      disposableProviderFactory="true" ecorePackage="Survivability.ecore#/">
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Extensions" basePackage="org.surreal.SurvivabilityProfile"
+        disposableProviderFactory="true" ecorePackage="Survivability.ecore#//Extensions">
+      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="MisuseCaseExtensions"
+          basePackage="org.surreal.SurvivabilityProfile" disposableProviderFactory="true"
+          ecorePackage="Survivability.ecore#//Extensions/MisuseCaseExtensions">
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="Survivability.ecore#//Extensions/MisuseCaseExtensions/recovery">
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference Survivability.ecore#//Extensions/MisuseCaseExtensions/recovery/affects"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference Survivability.ecore#//Extensions/MisuseCaseExtensions/recovery/MTTR"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="Survivability.ecore#//Extensions/MisuseCaseExtensions/strategy">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Survivability.ecore#//Extensions/MisuseCaseExtensions/strategy/successProb"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="Survivability.ecore#//Extensions/MisuseCaseExtensions/serviceMS">
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference Survivability.ecore#//Extensions/MisuseCaseExtensions/serviceMS/base_UseCase"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="Survivability.ecore#//Extensions/MisuseCaseExtensions/misuse">
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference Survivability.ecore#//Extensions/MisuseCaseExtensions/misuse/affects"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Survivability.ecore#//Extensions/MisuseCaseExtensions/misuse/successProb"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference Survivability.ecore#//Extensions/MisuseCaseExtensions/misuse/attackDelay"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="Survivability.ecore#//Extensions/MisuseCaseExtensions/service">
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference Survivability.ecore#//Extensions/MisuseCaseExtensions/service/indices"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference Survivability.ecore#//Extensions/MisuseCaseExtensions/service/base_UseCase"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="Survivability.ecore#//Extensions/MisuseCaseExtensions/threatens">
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference Survivability.ecore#//Extensions/MisuseCaseExtensions/threatens/base_Dependency"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="Survivability.ecore#//Extensions/MisuseCaseExtensions/mitigates">
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference Survivability.ecore#//Extensions/MisuseCaseExtensions/mitigates/base_Dependency"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="Survivability.ecore#//Extensions/MisuseCaseExtensions/misuser">
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference Survivability.ecore#//Extensions/MisuseCaseExtensions/misuser/base_Actor"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="Survivability.ecore#//Extensions/MisuseCaseExtensions/resistance"/>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="Survivability.ecore#//Extensions/MisuseCaseExtensions/recognition"/>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="Survivability.ecore#//Extensions/MisuseCaseExtensions/ServiceModeDefinition">
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference Survivability.ecore#//Extensions/MisuseCaseExtensions/ServiceModeDefinition/base_Constraint"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Survivability.ecore#//Extensions/MisuseCaseExtensions/ServiceModeDefinition/formula"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="SurvTypes" basePackage="org.surreal.SurvivabilityProfile"
+          disposableProviderFactory="true" ecorePackage="Survivability.ecore#//Extensions/SurvTypes">
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="Survivability.ecore#//Extensions/SurvTypes/indexKind">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="Survivability.ecore#//Extensions/SurvTypes/indexKind/integerInterval"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="Survivability.ecore#//Extensions/SurvTypes/indexKind/enum"/>
+        </genEnums>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="Survivability.ecore#//Extensions/SurvTypes/index">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Survivability.ecore#//Extensions/SurvTypes/index/name"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Survivability.ecore#//Extensions/SurvTypes/index/kind"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Survivability.ecore#//Extensions/SurvTypes/index/values"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Survivability.ecore#//Extensions/SurvTypes/index/initial"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="Survivability.ecore#//Extensions/SurvTypes/duration">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Survivability.ecore#//Extensions/SurvTypes/duration/value"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Survivability.ecore#//Extensions/SurvTypes/duration/unit"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="Survivability.ecore#//Extensions/SurvTypes/affectConsequence">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Survivability.ecore#//Extensions/SurvTypes/affectConsequence/index"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Survivability.ecore#//Extensions/SurvTypes/affectConsequence/set"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Survivability.ecore#//Extensions/SurvTypes/affectConsequence/inc"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Survivability.ecore#//Extensions/SurvTypes/affectConsequence/dec"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="SAMExtensions" basePackage="org.surreal.SurvivabilityProfile"
+          disposableProviderFactory="true" ecorePackage="Survivability.ecore#//Extensions/SAMExtensions">
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="Survivability.ecore#//Extensions/SAMExtensions/scenario">
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference Survivability.ecore#//Extensions/SAMExtensions/scenario/path"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference Survivability.ecore#//Extensions/SAMExtensions/scenario/base_Transition"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="Survivability.ecore#//Extensions/SAMExtensions/mode">
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference Survivability.ecore#//Extensions/SAMExtensions/mode/base_State"/>
+        </genClasses>
+      </nestedGenPackages>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Survivability" nsURI="http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0"
+    nsPrefix="Survivability">
+  <eClassifiers xsi:type="ecore:EEnum" name="dummy"/>
+  <eSubpackages name="Extensions" nsURI="http://org.surreal.SurvivabilityProfile/profiles/Extensions/1.0"
+      nsPrefix="Extensions">
+    <eSubpackages name="MisuseCaseExtensions" nsURI="http://org.surreal.SurvivabilityProfile/profiles/MisuseCaseExtensions/1.0"
+        nsPrefix="MisuseCaseExtensions">
+      <eClassifiers xsi:type="ecore:EClass" name="recovery" eSuperTypes="#//Extensions/MisuseCaseExtensions/strategy">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="affects" ordered="false"
+            upperBound="-1" eType="#//Extensions/SurvTypes/affectConsequence" containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="MTTR" ordered="false"
+            eType="#//Extensions/SurvTypes/duration" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="strategy" abstract="true" eSuperTypes="#//Extensions/MisuseCaseExtensions/serviceMS">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="successProb" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Real"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="serviceMS" abstract="true">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="base_UseCase" ordered="false"
+            lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//UseCase"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="misuse" eSuperTypes="#//Extensions/MisuseCaseExtensions/serviceMS">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="affects" ordered="false"
+            upperBound="-1" eType="#//Extensions/SurvTypes/affectConsequence" containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="successProb" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Real"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="attackDelay" ordered="false"
+            eType="#//Extensions/SurvTypes/duration" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="service">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="indices" ordered="false"
+            upperBound="-1" eType="#//Extensions/SurvTypes/index" containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="base_UseCase" ordered="false"
+            lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//UseCase"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="threatens">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="base_Dependency" ordered="false"
+            lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Dependency"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="mitigates">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="base_Dependency" ordered="false"
+            lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Dependency"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="misuser">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="base_Actor" ordered="false"
+            lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Actor"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="resistance" eSuperTypes="#//Extensions/MisuseCaseExtensions/strategy"/>
+      <eClassifiers xsi:type="ecore:EClass" name="recognition" eSuperTypes="#//Extensions/MisuseCaseExtensions/strategy"/>
+      <eClassifiers xsi:type="ecore:EClass" name="ServiceModeDefinition">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="base_Constraint" ordered="false"
+            lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Constraint"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="formula" ordered="false"
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      </eClassifiers>
+    </eSubpackages>
+    <eSubpackages name="SurvTypes" nsURI="http://org.surreal.SurvivabilityProfile/profiles/SurvTypes/1.0"
+        nsPrefix="SurvTypes">
+      <eClassifiers xsi:type="ecore:EClass" name="index">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false"
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="kind" ordered="false"
+            lowerBound="1" eType="#//Extensions/SurvTypes/indexKind"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="values" ordered="false"
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="initial" ordered="false"
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="indexKind">
+        <eLiterals name="integerInterval"/>
+        <eLiterals name="enum" value="1"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="duration">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" ordered="false"
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Real"
+            defaultValueLiteral="0.0"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="unit" ordered="false"
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="affectConsequence">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="index" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="set" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="inc" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="dec" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+      </eClassifiers>
+    </eSubpackages>
+    <eSubpackages name="SAMExtensions" nsURI="http://org.surreal.SurvivabilityProfile/profiles/SAMExtensions/1.0"
+        nsPrefix="SAMExtensions">
+      <eClassifiers xsi:type="ecore:EClass" name="scenario">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="path" ordered="false"
+            upperBound="-1" eType="#//Extensions/MisuseCaseExtensions/serviceMS"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="base_Transition" ordered="false"
+            lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Transition"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="mode">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="base_State" ordered="false"
+            lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//State"/>
+      </eClassifiers>
+    </eSubpackages>
+  </eSubpackages>
+</ecore:EPackage>

@@ -6,53 +6,72 @@
 
 <plugin>
 
-
-
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated Survivability_Profile.profile -->
+      <!-- @generated Survivability -->
       <package
-            uri="http:///Survivability_profile/TypesLibrary.ecore"
-            class="org.surreal.SurvivabilityProfile.profile.Survivability_Profile.TypesLibrary.TypesLibraryPackage"
-            genModel="model/Survivability_Profile.profile.genmodel"/>
+            uri="http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0"
+            class="org.surreal.SurvivabilityProfile.Survivability.SurvivabilityPackage"
+            genModel="model/Survivability.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated Survivability_Profile.profile -->
+      <!-- @generated Survivability -->
       <package
-            uri="http:///Survivability_profile/MisuseCaseExtensions.ecore"
-            class="org.surreal.SurvivabilityProfile.profile.Survivability_Profile.MisuseCaseExtensions.MisuseCaseExtensionsPackage"
-            genModel="model/Survivability_Profile.profile.genmodel"/>
+            uri="http://org.surreal.SurvivabilityProfile/profiles/MisuseCaseExtensions/1.0"
+            class="org.surreal.SurvivabilityProfile.MisuseCaseExtensions.MisuseCaseExtensionsPackage"
+            genModel="model/Survivability.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated Survivability_Profile.profile -->
+      <!-- @generated Survivability -->
       <package
-            uri="http:///Survivability_profile/SurvivabilityModelExtensions.ecore"
-            class="org.surreal.SurvivabilityProfile.profile.Survivability_Profile.SurvivabilityModelExtensions.SurvivabilityModelExtensionsPackage"
-            genModel="model/Survivability_Profile.profile.genmodel"/>
+            uri="http://org.surreal.SurvivabilityProfile/profiles/SurvTypes/1.0"
+            class="org.surreal.SurvivabilityProfile.SurvTypes.SurvTypesPackage"
+            genModel="model/Survivability.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Survivability -->
+      <package
+            uri="http://org.surreal.SurvivabilityProfile/profiles/SAMExtensions/1.0"
+            class="org.surreal.SurvivabilityProfile.SAMExtensions.SAMExtensionsPackage"
+            genModel="model/Survivability.genmodel"/>
+   </extension>
+   <extension
+         point="org.eclipse.emf.ecore.uri_mapping">
+      <mapping
+            source="pathmap://SURV_PROFILES/"
+            target="platform:/plugin/org.surreal.SurvivabilityProfile/model/">
+      </mapping>
    </extension>
    <extension
          point="org.eclipse.uml2.uml.generated_package">
       <profile
-            location="platform:/plugin/org.surreal.SurvivabilityProfile/model/Survivability.profile.uml#_wkScEP1lEeepcPFrLzXu5A"
-            uri="http://org.surreal.SurvivabilityProfile/profile/Survivability_profile/1.0">
+            location="pathmap://SURV_PROFILES/Survivability.profile.uml#_wkScEP1lEeepcPFrLzXu5A"
+            uri="http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0">
+      </profile>
+      <profile
+            location="pathmap://SURV_PROFILES/Survivability.profile.uml#_oxi5wI83EeiiMcgOEavNRg"
+            uri="http://org.surreal.SurvivabilityProfile/profiles/MisuseCaseExtensions/1.0">
+      </profile>
+      <profile
+            location="pathmap://SURV_PROFILES/Survivability.profile.uml#_0v4UAI83EeiiMcgOEavNRg"
+            uri="http://org.surreal.SurvivabilityProfile/profiles/SAMExtensions/1.0">
+      </profile>
+      <profile
+            location="pathmap://SURV_PROFILES/Survivability.profile.uml#_-PPKYI83EeiiMcgOEavNRg"
+            uri="http://org.surreal.SurvivabilityProfile/profiles/SurvTypes/1.0">
       </profile>
    </extension>
    <extension
          point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
       <profile
-            description="SurvProfile"
+            description="SurvProfile (v 1.0)"
             iconpath="img/camaleon.jpg"
-            name="SurvivabilityProfile"
-            path="platform:/plugin/org.surreal.SurvivabilityProfile/model/Survivability.profile.uml"
-            provider="Surreal Team">
+            name="Survivability Profile"
+            path="pathmap://SURV_PROFILES/Survivability.profile.uml"
+            provider="Surreal team">
       </profile>
    </extension>
-   <extension
-         point="org.eclipse.emf.ecore.uri_mapping">
-      <mapping
-            source="pathmap://Survivability_PROFILE/"
-            target="platform:/plugin/org.surreal.SurvivabilityProfile/model/">
-      </mapping>
-   </extension>
+
 </plugin>

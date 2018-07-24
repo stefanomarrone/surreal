@@ -6,20 +6,21 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Automatic-Module-Name: org.survTool.SurvivabilityProfile
-Bundle-RequiredExecutionEnvironment: JavaSE-9
-Export-Package: org.surreal.SurvivabilityProfile.profile.Survivability_Profile.MisuseCaseExtensions,
- org.surreal.SurvivabilityProfile.profile.Survivability_Profile.MisuseCaseExtensions.impl,
- org.surreal.SurvivabilityProfile.profile.Survivability_Profile.MisuseCaseExtensions.util,
- org.surreal.SurvivabilityProfile.profile.Survivability_Profile.SurvivabilityModelExtensions,
- org.surreal.SurvivabilityProfile.profile.Survivability_Profile.SurvivabilityModelExtensions.impl,
- org.surreal.SurvivabilityProfile.profile.Survivability_Profile.SurvivabilityModelExtensions.util,
- org.surreal.SurvivabilityProfile.profile.Survivability_Profile.TypesLibrary,
- org.surreal.SurvivabilityProfile.profile.Survivability_Profile.TypesLibrary.impl,
- org.surreal.SurvivabilityProfile.profile.Survivability_Profile.TypesLibrary.util
+Automatic-Module-Name: org.surreal.SurvivabilityProfile
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: org.surreal.SurvivabilityProfile.MisuseCaseExtensions,
+ org.surreal.SurvivabilityProfile.MisuseCaseExtensions.impl,
+ org.surreal.SurvivabilityProfile.MisuseCaseExtensions.util,
+ org.surreal.SurvivabilityProfile.SAMExtensions,
+ org.surreal.SurvivabilityProfile.SAMExtensions.impl,
+ org.surreal.SurvivabilityProfile.SAMExtensions.util,
+ org.surreal.SurvivabilityProfile.SurvTypes,
+ org.surreal.SurvivabilityProfile.SurvTypes.impl,
+ org.surreal.SurvivabilityProfile.SurvTypes.util,
+ org.surreal.SurvivabilityProfile.Survivability,
+ org.surreal.SurvivabilityProfile.Survivability.impl
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.uml2.types;visibility:=reexport,
  org.eclipse.uml2.uml;visibility:=reexport,
- org.eclipse.papyrus.extensionpoints.editors,
  org.eclipse.papyrus.uml.extensionpoints
