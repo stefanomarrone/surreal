@@ -1,9 +1,9 @@
-package engine.specific;
+package engine.solver.specific;
 
 import org.eclipse.uml2.uml.Model;
 import org.eclipse.uml2.uml.StateMachine;
 
-import engine.Solver;
+import engine.solver.Solver;
 import engine.query.QueryInstantiation;
 import engine.results.BooleanResult;
 import engine.results.Result;
