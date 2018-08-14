@@ -21,5 +21,6 @@ Repository structure:
 - Eclipse plugins
 
   - **Profile/org.surreal.SurvivabilityProfile**: Eclipse *plugin* project of the Survivability Profile
+  - **Gui/org.surreal.SurvivabilityPropertiesGui**: Eclipe *plugin* project of the Gui for the selection of surv. properties
 
 Wiki: detailed explanation for the usage of the tool
