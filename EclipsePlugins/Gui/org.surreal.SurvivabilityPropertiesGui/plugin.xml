@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            description="%category.description"
+            id="org.surreal.SurvivabilityPropertiesGui.category.gui"
+            name="%category.name">
+      </category>
+      <command
+            categoryId="org.surreal.SurvivabilityPropertiesGui.category.gui"
+            description="%command.description"
+            id="org.surreal.SurvivabilityPropertiesGui.command.guiPropertySelection"
+            name="%command.name">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="org.surreal.survivabilityGui.handlers.HandlerGuiInitializer"
+            commandId="org.surreal.SurvivabilityPropertiesGui.command.guiPropertySelection">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.jdt.ui.PackageExplorer">
+         <menu
+               id="survPropertyCheckerMenu"
+               label="%menu.label">
+            <command
+                  commandId="org.surreal.SurvivabilityPropertiesGui.command.guiPropertySelection"
+                  id="org.surreal.SurvivabilityPropertiesGui.menu.command.guiPropertySelection"
+                  label="%command.label"
+                  mnemonic="%command.mnemonic"
+                  style="push"
+                  tooltip="%command.tooltip">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+
+</plugin>
