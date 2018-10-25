@@ -1,0 +1,12 @@
+package test;
+
+import org.eclipse.uml2.uml.Model;
+import org.prgmdl.sss.ucd2nusmv.utils.UMLReader;
+
+public class TestReaderQuery {
+
+	public static void main(String[] args) {
+		UMLReader ur = new UMLReader();
+		Model m = ur.read(args[0]);
+	}
+}

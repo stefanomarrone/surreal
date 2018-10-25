@@ -1,0 +1,90 @@
+Package org.surreal.samgen.modes.condition;
+
+Helpers
+eol = 11 | 9 | 10 | 13 | 10 13;
+sp = ' ';
+char = [['a'..'z']+['A'..'Z']];
+echar = [[['a'..'z']+['A'..'Z']]+'_' ];
+digit = ['0'..'9'];
+all = [0 .. 0xFFFF];  
+opaquechar = [all - '#'];
+opaque = '#' opaquechar* '#';
+
+Tokens
+spaces = eol+;
+space = sp+;
+identifier = char (digit | echar)* ;
+number = digit*;
+dot = '.';
+not = '!';
+or='|';
+and='&';
+lt = '<';
+gt = '>';
+eq = '==';
+neq = '!=';
+lteq = '<=';
+gteq = '>=';
+l_par = '(';
+r_par = ')';
+opaqueexpr = opaque;
+
+Ignored Tokens
+space,spaces;
+
+Productions
+condition = 
+	{composed} term binop condition |
+	{simple} term;
+
+term = 
+	{nested} l_par term r_par|
+	{unary}  not term |
+	{simple} atomic |
+	{binary} l_par first binop second r_par;
+
+binop = 
+	{andop} and |
+	{orop} or;
+		
+first =
+	{left} term |
+	{meta} opaqueexpr;
+		
+second=
+	{right} term |
+	{meta} opaqueexpr;
+
+atomic =
+	{op} lval op rval |
+	{singleton} modename;
+	
+op =
+	{neq} neq |
+	{eq} eq |
+	{lteq} lteq |
+	{lt} lt |
+	{gteq} gteq |
+	{gt} gt;
+
+lval = 
+	{simple} process dot index;
+
+rval = 
+	{num} nrval |
+	{str} crval;
+		
+modename = 
+	{id} identifier;
+
+process =
+	{id} identifier;
+		
+index =
+	{id} identifier;
+
+nrval = 
+	{num} number;
+
+crval = 
+	{id} identifier;

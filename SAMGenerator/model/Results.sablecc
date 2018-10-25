@@ -1,0 +1,112 @@
+Package org.surreal.samgen.results;
+
+Helpers
+eol = 11 | 9 | 10 | 13 | 10 13;
+sp = ' ';
+char = [['a'..'z']+['A'..'Z']];
+echar = [[['a'..'z']+['A'..'Z']]+'_' ];
+digit = ['0'..'9'];
+all = [0 .. 0xFFFF];  
+opaquechar = [all - '#'];
+opaque = '#' opaquechar* '#';
+
+Tokens
+spaces = eol+;
+space = sp+;
+identifier = char (digit | echar)* ;
+number = digit*;
+dot = '.';
+eq = '=';
+bool_false = 'is false';
+bool_true = 'is true';
+tok_frow_left = '-- specification AG (';
+tok_frow_bmc_left = '-- specification  G (';
+tok_frow_middle = '-> AX !';
+tok_frow_bmc_middle = '->  X !';
+tok_frow_right = ')';
+tok_srow = '-- as demonstrated by the following execution sequence';
+tok_trow = 'Trace Description: CTL Counterexample';
+tok_bmc_trow = 'Trace Description: BMC Counterexample';
+tok_hrow = 'Trace Type: Counterexample';
+tk_no_bound = '-- no counterexample found with bound';
+tok_state_left = '-> State: ';
+tok_state_right = ' <-';
+opaqueexpr = opaque;
+
+
+Ignored Tokens
+space,spaces;
+
+Productions
+result = 
+	{noctr} tfrow |
+	{ctr} ffrow tok_srow tok_trow tok_hrow body |
+	{bmc} fbrow tok_srow tok_bmc_trow tok_hrow body;
+
+t_no_bmc_index_row =
+	{simple} tk_no_bound bound; 
+
+tfrow = 
+	{simple} tok_frow_left srcmode tok_frow_middle trgmode tok_frow_right bool_true;
+
+ffrow = 
+	{simple} tok_frow_left srcmode tok_frow_middle trgmode tok_frow_right bool_false;
+
+fbrow = 
+	{simple} tok_frow_bmc_left srcmode tok_frow_bmc_middle trgmode tok_frow_right bool_false;
+
+body = 
+	{simple} statebody |
+	{concat} statebody body;
+	
+statebody =
+	{header} stateheader steps;
+
+stateheader =
+	{header} tok_state_left fid dot sid tok_state_right;
+
+steps =
+	{simple} step |
+	{concat} step steps;
+
+step =
+	{event} globalname eq label |
+	{index} process dot index eq value;
+
+value = 
+	{num} nrval |
+	{str} crval;
+		
+label = 
+	{id} identifier;
+
+globalname =
+	{id} identifier;
+
+process =
+	{id} identifier;
+		
+index =
+	{id} identifier;
+
+nrval = 
+	{num} number;
+
+crval = 
+	{id} identifier;
+
+fid = 
+	{num} number;
+
+sid = 
+	{num} number;
+
+srcmode = 
+	{id} identifier;
+
+trgmode = 
+	{id} identifier;
+
+bound =
+	{num} number;
+	
