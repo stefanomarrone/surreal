@@ -1,12 +1,12 @@
-package engine;
+package org.surreal.engine;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Hashtable;
 
-import engine.query.Query;
-import engine.solver.Solver;
-import engine.solver.SolverFactory;
+import org.surreal.engine.query.Query;
+import org.surreal.engine.solver.Solver;
+import org.surreal.engine.solver.SolverFactory;
 
 public class FakeRepository implements Repository {
 
@@ -28,7 +28,6 @@ public class FakeRepository implements Repository {
 	public Solver getSolver(int qid) {
 		URL fakeuri = null;
 		try {
-//			fakeuri = new URL("https://www.dropbox.com/s/zlyiyoazcj1jyp1/FakeSolver.jar");
 			fakeuri = new URL("file:///home/stefano/Dropbox/workspace/java-oxygen/Surreal_Engine/run/FakeSolver.jar");
 		} catch (MalformedURLException e) {
 			e.printStackTrace();

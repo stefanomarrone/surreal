@@ -1,12 +1,12 @@
-package engine.solver.specific;
+package org.surreal.engine.solver.specific;
 
 import org.eclipse.uml2.uml.Model;
 import org.eclipse.uml2.uml.StateMachine;
 
-import engine.solver.Solver;
-import engine.query.QueryInstantiation;
-import engine.results.BooleanResult;
-import engine.results.Result;
+import org.surreal.engine.solver.Solver;
+import org.surreal.engine.query.QueryInstantiation;
+import org.surreal.engine.results.BooleanResult;
+import org.surreal.engine.results.Result;
 
 public class FakeSolver implements Solver {
 

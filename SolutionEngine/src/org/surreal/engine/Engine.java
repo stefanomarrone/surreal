@@ -1,13 +1,12 @@
-package engine;
+package org.surreal.engine;
 
 import org.eclipse.uml2.uml.Model;
 import org.eclipse.uml2.uml.StateMachine;
-
-import engine.query.QISet;
-import engine.query.QueryInstantiation;
-import engine.results.Result;
-import engine.results.ResultSet;
-import engine.solver.Solver;
+import org.surreal.engine.query.QISet;
+import org.surreal.engine.query.QueryInstantiation;
+import org.surreal.engine.results.Result;
+import org.surreal.engine.results.ResultSet;
+import org.surreal.engine.solver.Solver;
 
 /**
  * This class is core of the package getting the proper solver for the specified query and invoking the method to solve the query on the actual parameters contained in the Query Instantiation elements

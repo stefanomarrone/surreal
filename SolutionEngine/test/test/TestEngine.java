@@ -1,10 +1,10 @@
 package test;
 
-import engine.Engine;
-import engine.EngineFactory;
-import engine.query.QISet;
-import engine.query.QueryInstantiation;
-import engine.results.ResultSet;
+import org.surreal.engine.Engine;
+import org.surreal.engine.EngineFactory;
+import org.surreal.engine.query.QISet;
+import org.surreal.engine.query.QueryInstantiation;
+import org.surreal.engine.results.ResultSet;
 
 public class TestEngine {
 

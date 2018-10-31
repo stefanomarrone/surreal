@@ -1,4 +1,4 @@
-package engine.query;
+package org.surreal.engine.query;
 
 import java.util.Vector;
 

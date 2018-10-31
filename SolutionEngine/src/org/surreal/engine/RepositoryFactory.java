@@ -1,4 +1,4 @@
-package engine;
+package org.surreal.engine;
 
 /**
  * Factory class for the Repository

@@ -1,6 +1,6 @@
-package engine.results;
+package org.surreal.engine.results;
 
-import engine.query.QueryInstantiation;
+import org.surreal.engine.query.QueryInstantiation;
 
 public abstract class Result {
 	

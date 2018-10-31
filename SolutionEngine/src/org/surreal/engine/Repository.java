@@ -1,7 +1,7 @@
-package engine;
+package org.surreal.engine;
 
-import engine.query.Query;
-import engine.solver.Solver;
+import org.surreal.engine.query.Query;
+import org.surreal.engine.solver.Solver;
 
 /**
  * A Repository should behave according to this interface
