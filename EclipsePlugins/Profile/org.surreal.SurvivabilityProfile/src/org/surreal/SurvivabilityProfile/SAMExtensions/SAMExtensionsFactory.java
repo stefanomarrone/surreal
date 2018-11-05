@@ -31,6 +31,15 @@ public interface SAMExtensionsFactory extends EFactory {
 	scenario createscenario();
 
 	/**
+	 * Returns a new object of class '<em>MSactivation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>MSactivation</em>'.
+	 * @generated
+	 */
+	MSactivation createMSactivation();
+
+	/**
 	 * Returns a new object of class '<em>mode</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

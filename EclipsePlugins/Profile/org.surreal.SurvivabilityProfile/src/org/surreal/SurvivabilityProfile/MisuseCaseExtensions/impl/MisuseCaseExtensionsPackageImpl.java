@@ -530,7 +530,7 @@ public class MisuseCaseExtensionsPackageImpl extends EPackageImpl implements Mis
 		resistanceEClass.getESuperTypes().add(this.getstrategy());
 		recognitionEClass.getESuperTypes().add(this.getstrategy());
 
-		// Initialize classes and features; add operations and parameters
+		// Initialize classes, features, and operations; add parameters
 		initEClass(recoveryEClass, recovery.class, "recovery", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getrecovery_Affects(), theSurvTypesPackage.getaffectConsequence(), null, "affects", null, 0, -1, recovery.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getrecovery_MTTR(), theSurvTypesPackage.getduration(), null, "MTTR", null, 0, 1, recovery.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

@@ -8,7 +8,7 @@ Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Automatic-Module-Name: org.surreal.SurvivabilityProfile
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Export-Package: org.surreal.SurvivabilityProfile.MisuseCaseExtensions,
+Export-Package:  org.surreal.SurvivabilityProfile.MisuseCaseExtensions,
  org.surreal.SurvivabilityProfile.MisuseCaseExtensions.impl,
  org.surreal.SurvivabilityProfile.MisuseCaseExtensions.util,
  org.surreal.SurvivabilityProfile.SAMExtensions,

@@ -93,10 +93,18 @@
     <eSubpackages name="SAMExtensions" nsURI="http://org.surreal.SurvivabilityProfile/profiles/SAMExtensions/1.0"
         nsPrefix="SAMExtensions">
       <eClassifiers xsi:type="ecore:EClass" name="scenario">
-        <eStructuralFeatures xsi:type="ecore:EReference" name="path" ordered="false"
-            upperBound="-1" eType="#//Extensions/MisuseCaseExtensions/serviceMS"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="base_Transition" ordered="false"
             lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Transition"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="path" ordered="false"
+            upperBound="-1" eType="#//Extensions/SAMExtensions/MSactivation" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="MSactivation">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="service" ordered="false"
+            eType="#//Extensions/MisuseCaseExtensions/serviceMS"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="step" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="mode">
         <eStructuralFeatures xsi:type="ecore:EReference" name="base_State" ordered="false"

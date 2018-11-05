@@ -5,7 +5,7 @@
     modelName="Survivability" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="8.0" copyrightFields="false"
     usedGenPackages="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../org.eclipse.uml2.uml/model/UML.genmodel#//uml"
-    importOrganizing="true">
+    operationReflection="true" importOrganizing="true">
   <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
     <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
     <details key="DUPLICATE_FEATURES" value="DISCARD"/>
@@ -111,9 +111,15 @@
           disposableProviderFactory="true" ecorePackage="Survivability.ecore#//Extensions/SAMExtensions">
         <genClasses xsi:type="genmodel:GenClass" ecoreClass="Survivability.ecore#//Extensions/SAMExtensions/scenario">
           <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-              propertySortChoices="true" ecoreFeature="ecore:EReference Survivability.ecore#//Extensions/SAMExtensions/scenario/path"/>
-          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
               propertySortChoices="true" ecoreFeature="ecore:EReference Survivability.ecore#//Extensions/SAMExtensions/scenario/base_Transition"/>
+          <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+              createChild="true" ecoreFeature="ecore:EReference Survivability.ecore#//Extensions/SAMExtensions/scenario/path"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="Survivability.ecore#//Extensions/SAMExtensions/MSactivation">
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference Survivability.ecore#//Extensions/SAMExtensions/MSactivation/service"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Survivability.ecore#//Extensions/SAMExtensions/MSactivation/value"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Survivability.ecore#//Extensions/SAMExtensions/MSactivation/step"/>
         </genClasses>
         <genClasses xsi:type="genmodel:GenClass" ecoreClass="Survivability.ecore#//Extensions/SAMExtensions/mode">
           <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"

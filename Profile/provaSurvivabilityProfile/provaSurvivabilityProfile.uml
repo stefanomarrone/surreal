@@ -76,17 +76,17 @@
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://SURV_PROFILES/Survivability.profile.uml#_oxi5wI83EeiiMcgOEavNRg"/>
     </profileApplication>
-    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_bX9AcI9NEeinlvO2lyFijg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bX9AcY9NEeinlvO2lyFijg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#//SAMExtensions"/>
-      </eAnnotations>
-      <appliedProfile xmi:type="uml:Profile" href="pathmap://SURV_PROFILES/Survivability.profile.uml#_0v4UAI83EeiiMcgOEavNRg"/>
-    </profileApplication>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_bX9ngI9NEeinlvO2lyFijg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bX9ngY9NEeinlvO2lyFijg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#//SurvTypes"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://SURV_PROFILES/Survivability.profile.uml#_-PPKYI83EeiiMcgOEavNRg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_yeUo8OD4Eeir5d_6_K3OQw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yeXsQOD4Eeir5d_6_K3OQw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#//SAMExtensions"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SURV_PROFILES/Survivability.profile.uml#_0v4UAI83EeiiMcgOEavNRg"/>
     </profileApplication>
   </uml:Model>
   <MisuseCaseExtensions:threatens xmi:id="_rEvCYI9NEeinlvO2lyFijg" base_Dependency="_Xe_AQI9MEeinlvO2lyFijg"/>
@@ -145,14 +145,20 @@
     <formula>(GS2,(manageMap.availability > 40))</formula>
     <formula>(GS3,)</formula>
   </MisuseCaseExtensions:ServiceModeDefinition>
-  <SAMExtensions:mode xmi:id="_ZYPZMI9SEeinlvO2lyFijg" base_State="_H0cyUI9SEeinlvO2lyFijg"/>
-  <SAMExtensions:mode xmi:id="_Z9rokI9SEeinlvO2lyFijg" base_State="_JBRKwI9SEeinlvO2lyFijg"/>
-  <SAMExtensions:mode xmi:id="_ahQPsI9SEeinlvO2lyFijg" base_State="_Ph0GoI9SEeinlvO2lyFijg"/>
-  <SAMExtensions:mode xmi:id="_bLv-MI9SEeinlvO2lyFijg" base_State="_KN1EgI9SEeinlvO2lyFijg"/>
-  <SAMExtensions:scenario xmi:id="_g-SkkI9SEeinlvO2lyFijg" path="_t4tJYI9OEeinlvO2lyFijg _now_4I9PEeinlvO2lyFijg" base_Transition="_SzEcAI9SEeinlvO2lyFijg"/>
-  <SAMExtensions:scenario xmi:id="_ikwzII9SEeinlvO2lyFijg" base_Transition="_XZf0kI9SEeinlvO2lyFijg"/>
-  <SAMExtensions:scenario xmi:id="_jffWAI9SEeinlvO2lyFijg" base_Transition="_ToH0sI9SEeinlvO2lyFijg"/>
-  <SAMExtensions:scenario xmi:id="_ksU8kI9SEeinlvO2lyFijg" base_Transition="_UxM8oI9SEeinlvO2lyFijg"/>
-  <SAMExtensions:scenario xmi:id="_lZuOEI9SEeinlvO2lyFijg" base_Transition="_Ww8m0I9SEeinlvO2lyFijg"/>
-  <SAMExtensions:scenario xmi:id="_mHbBkI9SEeinlvO2lyFijg" base_Transition="_UIHjYI9SEeinlvO2lyFijg"/>
+  <SAMExtensions:scenario xmi:id="_6esY0OD4Eeir5d_6_K3OQw" base_Transition="_SzEcAI9SEeinlvO2lyFijg">
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_7phNMOD4Eeir5d_6_K3OQw" service="_t4tJYI9OEeinlvO2lyFijg" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_8APEEOD4Eeir5d_6_K3OQw" service="_vM_bwI9OEeinlvO2lyFijg" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_AoS0UOD5Eeir5d_6_K3OQw" service="_v-xeAI9OEeinlvO2lyFijg" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_HtIwEOD5Eeir5d_6_K3OQw" service="_cIHAII9PEeinlvO2lyFijg" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_Jt_0kOD5Eeir5d_6_K3OQw" service="_t4tJYI9OEeinlvO2lyFijg" value="TRUE" step="1"/>
+  </SAMExtensions:scenario>
+  <SAMExtensions:mode xmi:id="_PVBugOD5Eeir5d_6_K3OQw" base_State="_H0cyUI9SEeinlvO2lyFijg"/>
+  <SAMExtensions:mode xmi:id="_P2F0MOD5Eeir5d_6_K3OQw" base_State="_JBRKwI9SEeinlvO2lyFijg"/>
+  <SAMExtensions:mode xmi:id="_Qa4jUOD5Eeir5d_6_K3OQw" base_State="_Ph0GoI9SEeinlvO2lyFijg"/>
+  <SAMExtensions:mode xmi:id="_RFqlsOD5Eeir5d_6_K3OQw" base_State="_KN1EgI9SEeinlvO2lyFijg"/>
+  <SAMExtensions:scenario xmi:id="_Rv2LIOD5Eeir5d_6_K3OQw" base_Transition="_XZf0kI9SEeinlvO2lyFijg"/>
+  <SAMExtensions:scenario xmi:id="_Szag8OD5Eeir5d_6_K3OQw" base_Transition="_Ww8m0I9SEeinlvO2lyFijg"/>
+  <SAMExtensions:scenario xmi:id="_TgJrIOD5Eeir5d_6_K3OQw" base_Transition="_UIHjYI9SEeinlvO2lyFijg"/>
+  <SAMExtensions:scenario xmi:id="_UJN2QOD5Eeir5d_6_K3OQw" base_Transition="_UxM8oI9SEeinlvO2lyFijg"/>
+  <SAMExtensions:scenario xmi:id="_U-kw8OD5Eeir5d_6_K3OQw" base_Transition="_ToH0sI9SEeinlvO2lyFijg"/>
 </xmi:XMI>

@@ -72,6 +72,12 @@ public class SAMExtensionsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case SAMExtensionsPackage.MSACTIVATION: {
+				MSactivation mSactivation = (MSactivation)theEObject;
+				T result = caseMSactivation(mSactivation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case SAMExtensionsPackage.MODE: {
 				mode mode = (mode)theEObject;
 				T result = casemode(mode);
@@ -94,6 +100,21 @@ public class SAMExtensionsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T casescenario(scenario object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>MSactivation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>MSactivation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMSactivation(MSactivation object) {
 		return null;
 	}
 

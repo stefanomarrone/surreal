@@ -6,6 +6,13 @@
 
 <plugin>
 
+
+
+
+
+
+
+
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated Survivability -->
       <package
@@ -51,27 +58,26 @@
             uri="http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0">
       </profile>
       <profile
-            location="pathmap://SURV_PROFILES/Survivability.profile.uml#_oxi5wI83EeiiMcgOEavNRg"
-            uri="http://org.surreal.SurvivabilityProfile/profiles/MisuseCaseExtensions/1.0">
+            location="pathmap://SURV_PROFILES/Survivability.profile.uml#_-PPKYI83EeiiMcgOEavNRg"
+            uri="http://org.surreal.SurvivabilityProfile/profiles/SurvTypes/1.0">
       </profile>
       <profile
             location="pathmap://SURV_PROFILES/Survivability.profile.uml#_0v4UAI83EeiiMcgOEavNRg"
             uri="http://org.surreal.SurvivabilityProfile/profiles/SAMExtensions/1.0">
       </profile>
       <profile
-            location="pathmap://SURV_PROFILES/Survivability.profile.uml#_-PPKYI83EeiiMcgOEavNRg"
-            uri="http://org.surreal.SurvivabilityProfile/profiles/SurvTypes/1.0">
+            location="pathmap://SURV_PROFILES/Survivability.profile.uml#_oxi5wI83EeiiMcgOEavNRg"
+            uri="http://org.surreal.SurvivabilityProfile/profiles/MisuseCaseExtensions/1.0">
       </profile>
    </extension>
    <extension
          point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
       <profile
-            description="SurvProfile (v 1.0)"
+            description="SurvProfile (v1.0)"
             iconpath="img/camaleon.jpg"
             name="Survivability Profile"
             path="pathmap://SURV_PROFILES/Survivability.profile.uml"
             provider="Surreal team">
       </profile>
    </extension>
-
 </plugin>

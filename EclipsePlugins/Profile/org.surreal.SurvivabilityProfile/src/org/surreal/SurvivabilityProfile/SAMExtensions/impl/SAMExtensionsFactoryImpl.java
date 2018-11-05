@@ -57,6 +57,7 @@ public class SAMExtensionsFactoryImpl extends EFactoryImpl implements SAMExtensi
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case SAMExtensionsPackage.SCENARIO: return createscenario();
+			case SAMExtensionsPackage.MSACTIVATION: return createMSactivation();
 			case SAMExtensionsPackage.MODE: return createmode();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
@@ -71,6 +72,16 @@ public class SAMExtensionsFactoryImpl extends EFactoryImpl implements SAMExtensi
 	public scenario createscenario() {
 		scenarioImpl scenario = new scenarioImpl();
 		return scenario;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MSactivation createMSactivation() {
+		MSactivationImpl mSactivation = new MSactivationImpl();
+		return mSactivation;
 	}
 
 	/**

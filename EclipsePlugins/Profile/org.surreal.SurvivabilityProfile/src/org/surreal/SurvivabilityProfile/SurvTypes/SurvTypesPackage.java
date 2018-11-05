@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.EPackage;
  * <ul>
  *   <li>each class,</li>
  *   <li>each feature of each class,</li>
+ *   <li>each operation of each class,</li>
  *   <li>each enum,</li>
  *   <li>and each data type</li>
  * </ul>
@@ -111,6 +112,15 @@ public interface SurvTypesPackage extends EPackage {
 	int INDEX_FEATURE_COUNT = 4;
 
 	/**
+	 * The number of operations of the '<em>index</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INDEX_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.surreal.SurvivabilityProfile.SurvTypes.impl.durationImpl <em>duration</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -146,6 +156,15 @@ public interface SurvTypesPackage extends EPackage {
 	 * @ordered
 	 */
 	int DURATION_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>duration</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DURATION_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.surreal.SurvivabilityProfile.SurvTypes.impl.affectConsequenceImpl <em>affect Consequence</em>}' class.
@@ -201,6 +220,15 @@ public interface SurvTypesPackage extends EPackage {
 	 * @ordered
 	 */
 	int AFFECT_CONSEQUENCE_FEATURE_COUNT = 4;
+
+	/**
+	 * The number of operations of the '<em>affect Consequence</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AFFECT_CONSEQUENCE_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.surreal.SurvivabilityProfile.SurvTypes.indexKind <em>index Kind</em>}' enum.
@@ -378,6 +406,7 @@ public interface SurvTypesPackage extends EPackage {
 	 * <ul>
 	 *   <li>each class,</li>
 	 *   <li>each feature of each class,</li>
+	 *   <li>each operation of each class,</li>
 	 *   <li>each enum,</li>
 	 *   <li>and each data type</li>
 	 * </ul>

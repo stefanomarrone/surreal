@@ -33,7 +33,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vRx3Ko84EeiiMcgOEavNRg"/>
             </children>
             <element xmi:type="uml:Stereotype" href="Survivability.profile.uml#_dDiR4P1oEeepcPFrLzXu5A"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vRxQEY84EeiiMcgOEavNRg" x="374" y="225"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vRxQEY84EeiiMcgOEavNRg" x="234" y="233"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_wqogcI84EeiiMcgOEavNRg" type="Stereotype_Shape_CN">
             <children xmi:type="notation:DecorationNode" xmi:id="_wqogco84EeiiMcgOEavNRg" type="Stereotype_NameLabel_CN"/>
@@ -231,7 +231,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_is3InI85EeiiMcgOEavNRg"/>
             </children>
             <element xmi:type="uml:Stereotype" href="Survivability.profile.uml#_2D_vcH3tEeiR2JIuBw2sLg"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_is3IkY85EeiiMcgOEavNRg" x="674" y="405"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_is3IkY85EeiiMcgOEavNRg" x="754" y="413"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_kmHwQI85EeiiMcgOEavNRg" type="Stereotype_Shape_CN">
             <children xmi:type="notation:DecorationNode" xmi:id="_kmHwQo85EeiiMcgOEavNRg" type="Stereotype_NameLabel_CN"/>
@@ -256,7 +256,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kmHwTI85EeiiMcgOEavNRg"/>
             </children>
             <element xmi:type="uml:Stereotype" href="Survivability.profile.uml#_gQ9lQP1qEeepcPFrLzXu5A"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kmHwQY85EeiiMcgOEavNRg" x="494" y="405" width="161" height="100"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kmHwQY85EeiiMcgOEavNRg" x="474" y="413" width="241" height="100"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_n1XTcI85EeiiMcgOEavNRg" type="Stereotype_Shape_CN">
             <children xmi:type="notation:DecorationNode" xmi:id="_n1X6gI85EeiiMcgOEavNRg" type="Stereotype_NameLabel_CN"/>
@@ -277,7 +277,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n1X6io85EeiiMcgOEavNRg"/>
             </children>
             <element xmi:type="uml:Stereotype" href="Survivability.profile.uml#_JCjtwIp8EeiBnO8lzZ_6Lw"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n1XTcY85EeiiMcgOEavNRg" x="77" y="403" width="118"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n1XTcY85EeiiMcgOEavNRg" x="54" y="403" width="181"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_siJLoI85EeiiMcgOEavNRg" type="Class_MetaclassShape_CN">
             <children xmi:type="notation:DecorationNode" xmi:id="_siJysI85EeiiMcgOEavNRg" type="Class_MetaclassNameLabel_CN"/>
@@ -321,14 +321,14 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CIgaqo87EeiiMcgOEavNRg"/>
             </children>
             <element xmi:type="uml:Stereotype" href="Survivability.profile.uml#_oNBmYCLZEei1Qdw6Jwl_-A"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CIfzkY87EeiiMcgOEavNRg" x="94" y="345"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CIfzkY87EeiiMcgOEavNRg" x="194" y="425" height="80"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_EffgII87EeiiMcgOEavNRg" type="Stereotype_Shape_CN">
             <children xmi:type="notation:DecorationNode" xmi:id="_EfgHMI87EeiiMcgOEavNRg" type="Stereotype_NameLabel_CN"/>
             <children xmi:type="notation:BasicCompartment" xmi:id="_EfgHMY87EeiiMcgOEavNRg" type="Stereotype_AttributeCompartment_CN">
-              <children xmi:type="notation:Shape" xmi:id="_VUYZoI87EeiiMcgOEavNRg" type="Property_ClassAttributeLabel">
-                <element xmi:type="uml:Property" href="Survivability.profile.uml#_mOZdMIp5EeiBnO8lzZ_6Lw"/>
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_VUYZoY87EeiiMcgOEavNRg"/>
+              <children xmi:type="notation:Shape" xmi:id="_s_KsUNuMEei4GJogMaPn3A" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="Survivability.profile.uml#_s-uAYNuMEei4GJogMaPn3A"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_s_KsUduMEei4GJogMaPn3A"/>
               </children>
               <styles xmi:type="notation:TitleStyle" xmi:id="_EfgHMo87EeiiMcgOEavNRg"/>
               <styles xmi:type="notation:SortingStyle" xmi:id="_EfgHM487EeiiMcgOEavNRg"/>
@@ -342,19 +342,12 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EfgHOo87EeiiMcgOEavNRg"/>
             </children>
             <element xmi:type="uml:Stereotype" href="Survivability.profile.uml#_CX7NACLaEei1Qdw6Jwl_-A"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EffgIY87EeiiMcgOEavNRg" x="74" y="125"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EffgIY87EeiiMcgOEavNRg" x="94" y="113"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_K6plsI87EeiiMcgOEavNRg" type="Class_MetaclassShape_CN">
-            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_K6qMwI87EeiiMcgOEavNRg" source="Stereotype_Annotation">
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_K6qMwY87EeiiMcgOEavNRg" key="StereotypeWithQualifiedNameList" value=""/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_K6qMwo87EeiiMcgOEavNRg" key="StereotypeList" value="StandardProfile::Metaclass"/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_K6qMw487EeiiMcgOEavNRg" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_K6qMxI87EeiiMcgOEavNRg" key="PropStereoDisplay" value=""/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_K6qMxY87EeiiMcgOEavNRg" key="StereotypePropertyLocation" value="Compartment"/>
-            </eAnnotations>
             <children xmi:type="notation:DecorationNode" xmi:id="_K6plso87EeiiMcgOEavNRg" type="Class_MetaclassNameLabel_CN"/>
             <element xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#State"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K6pls487EeiiMcgOEavNRg" x="94" y="245"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K6pls487EeiiMcgOEavNRg" x="14" y="445"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_K68go487EeiiMcgOEavNRg" type="StereotypeComment">
             <styles xmi:type="notation:TitleStyle" xmi:id="_K68gpI87EeiiMcgOEavNRg"/>
@@ -365,16 +358,9 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K68gpY87EeiiMcgOEavNRg" x="334" y="305"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_OdBgQI87EeiiMcgOEavNRg" type="Class_MetaclassShape_CN">
-            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OdBgRI87EeiiMcgOEavNRg" source="Stereotype_Annotation">
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OdBgRY87EeiiMcgOEavNRg" key="StereotypeWithQualifiedNameList" value=""/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OdBgRo87EeiiMcgOEavNRg" key="StereotypeList" value="StandardProfile::Metaclass"/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OdBgR487EeiiMcgOEavNRg" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OdBgSI87EeiiMcgOEavNRg" key="PropStereoDisplay" value=""/>
-              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OdBgSY87EeiiMcgOEavNRg" key="StereotypePropertyLocation" value="Compartment"/>
-            </eAnnotations>
             <children xmi:type="notation:DecorationNode" xmi:id="_OdBgQo87EeiiMcgOEavNRg" type="Class_MetaclassNameLabel_CN"/>
             <element xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Transition"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OdBgQ487EeiiMcgOEavNRg" x="94" y="25"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OdBgQ487EeiiMcgOEavNRg" x="134" y="9"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_OdSmA487EeiiMcgOEavNRg" type="StereotypeComment">
             <styles xmi:type="notation:TitleStyle" xmi:id="_OdSmBI87EeiiMcgOEavNRg"/>
@@ -383,6 +369,35 @@
             </styles>
             <element xsi:nil="true"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OdSmBY87EeiiMcgOEavNRg" x="334" y="85"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_gg5_YNuNEei4GJogMaPn3A" type="DataType_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_gg6mcNuNEei4GJogMaPn3A" type="DataType_NameLabel_CN"/>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_gg6mcduNEei4GJogMaPn3A" type="DataType_AttributeCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_kSVCkNuNEei4GJogMaPn3A" type="Property_DataTypeAttributeLabel">
+                <element xmi:type="uml:Property" href="Survivability.profile.uml#_kR-dQNuNEei4GJogMaPn3A"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_kSVCkduNEei4GJogMaPn3A"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_paeBENuNEei4GJogMaPn3A" type="Property_DataTypeAttributeLabel">
+                <element xmi:type="uml:Property" href="Survivability.profile.uml#_paIp4NuNEei4GJogMaPn3A"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_paeBEduNEei4GJogMaPn3A"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_r74N4NuNEei4GJogMaPn3A" type="Property_DataTypeAttributeLabel">
+                <element xmi:type="uml:Property" href="Survivability.profile.uml#_r7iPoNuNEei4GJogMaPn3A"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_r74N4duNEei4GJogMaPn3A"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_gg6mctuNEei4GJogMaPn3A"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_gg6mc9uNEei4GJogMaPn3A"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_gg6mdNuNEei4GJogMaPn3A"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gg6mdduNEei4GJogMaPn3A"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_gg6mdtuNEei4GJogMaPn3A" type="DataType_OperationCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_gg6md9uNEei4GJogMaPn3A"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_gg6meNuNEei4GJogMaPn3A"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_gg6meduNEei4GJogMaPn3A"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gg6metuNEei4GJogMaPn3A"/>
+            </children>
+            <element xmi:type="uml:DataType" href="Survivability.profile.uml#_ggkoMNuNEei4GJogMaPn3A"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gg5_YduNEei4GJogMaPn3A" x="114" y="245"/>
           </children>
           <styles xmi:type="notation:TitleStyle" xmi:id="_vVIbMo86EeiiMcgOEavNRg"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vVIbM486EeiiMcgOEavNRg"/>
@@ -463,7 +478,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8IduXI87EeiiMcgOEavNRg"/>
             </children>
             <element xmi:type="uml:DataType" href="Survivability.profile.uml#_TlxB0P1mEeepcPFrLzXu5A"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8IduUY87EeiiMcgOEavNRg" x="374" y="45" width="181" height="121"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8IduUY87EeiiMcgOEavNRg" x="377" y="42" width="181" height="132"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_EkYxwI88EeiiMcgOEavNRg" type="DataType_Shape_CN" gradient="16777215, -1, 0">
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lVG11o88EeiiMcgOEavNRg" source="PapyrusCSSForceValue">
@@ -504,7 +519,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EkZY2Y88EeiiMcgOEavNRg"/>
             </children>
             <element xmi:type="uml:DataType" href="Survivability.profile.uml#_2Yo48P1oEeepcPFrLzXu5A"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EkYxwY88EeiiMcgOEavNRg" x="174" y="45" width="161" height="121"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EkYxwY88EeiiMcgOEavNRg" x="174" y="45" width="161" height="129"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_LwE8YI88EeiiMcgOEavNRg" type="DataType_Shape_CN" gradient="16777215, -1, 0">
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lVGOwI88EeiiMcgOEavNRg" source="PapyrusCSSForceValue">
@@ -547,7 +562,7 @@
     <element xmi:type="uml:Package" href="Survivability.profile.uml#_gKRh8I83EeiiMcgOEavNRg"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mw9soY84EeiiMcgOEavNRg" x="40" y="40" width="1361" height="1101"/>
   </children>
-  <styles xmi:type="notation:StringValueStyle" xmi:id="_l65nUY84EeiiMcgOEavNRg" name="diagram_compatibility_version" stringValue="1.4.0"/>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_l65nUY84EeiiMcgOEavNRg" name="diagram_compatibility_version" stringValue="1.3.0"/>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_l65nUo84EeiiMcgOEavNRg"/>
   <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_l65nU484EeiiMcgOEavNRg" diagramKindId="org.eclipse.papyrus.uml.diagram.profile">
     <owner xmi:type="uml:Profile" href="Survivability.profile.uml#_wkScEP1lEeepcPFrLzXu5A"/>
@@ -693,7 +708,7 @@
   <edges xmi:type="notation:Connector" xmi:id="_QqW6gI87EeiiMcgOEavNRg" type="Extension_Edge" source="_EffgII87EeiiMcgOEavNRg" target="_OdBgQI87EeiiMcgOEavNRg">
     <styles xmi:type="notation:FontStyle" xmi:id="_QqW6gY87EeiiMcgOEavNRg"/>
     <element xmi:type="uml:Extension" href="Survivability.profile.uml#_QqHp8I87EeiiMcgOEavNRg"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QqW6go87EeiiMcgOEavNRg" points="[1140, 300, -643984, -643984]$[1160, 190, -643984, -643984]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QqW6go87EeiiMcgOEavNRg" points="[1060, 300, -643984, -643984]$[1080, 190, -643984, -643984]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QqzmcI87EeiiMcgOEavNRg" id="(0.4,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QqzmcY87EeiiMcgOEavNRg" id="(0.4,1.0)"/>
   </edges>
@@ -701,8 +716,8 @@
     <styles xmi:type="notation:FontStyle" xmi:id="_SA2MUY87EeiiMcgOEavNRg"/>
     <element xmi:type="uml:Extension" href="Survivability.profile.uml#_SAni0I87EeiiMcgOEavNRg"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SA2MUo87EeiiMcgOEavNRg" points="[1180, 500, -643984, -643984]$[1200, 470, -643984, -643984]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SBRDEI87EeiiMcgOEavNRg" id="(0.4,0.0)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SBRDEY87EeiiMcgOEavNRg" id="(0.4,1.0)"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SBRDEI87EeiiMcgOEavNRg" id="(0.0,0.5)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SBRDEY87EeiiMcgOEavNRg" id="(1.0,0.4)"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_mKe0EI87EeiiMcgOEavNRg" type="PackageImport_Edge" source="_vVH0II86EeiiMcgOEavNRg" target="_ogiz4I84EeiiMcgOEavNRg">
     <children xmi:type="notation:DecorationNode" xmi:id="_mKfbII87EeiiMcgOEavNRg" type="PackageImport_StereotypeLabel">

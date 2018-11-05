@@ -2,6 +2,7 @@
  */
 package org.surreal.SurvivabilityProfile.SAMExtensions;
 
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -13,6 +14,7 @@ import org.eclipse.emf.ecore.EReference;
  * <ul>
  *   <li>each class,</li>
  *   <li>each feature of each class,</li>
+ *   <li>each operation of each class,</li>
  *   <li>each enum,</li>
  *   <li>and each data type</li>
  * </ul>
@@ -65,22 +67,22 @@ public interface SAMExtensionsPackage extends EPackage {
 	int SCENARIO = 0;
 
 	/**
-	 * The feature id for the '<em><b>Path</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCENARIO__PATH = 0;
-
-	/**
 	 * The feature id for the '<em><b>Base Transition</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SCENARIO__BASE_TRANSITION = 1;
+	int SCENARIO__BASE_TRANSITION = 0;
+
+	/**
+	 * The feature id for the '<em><b>Path</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCENARIO__PATH = 1;
 
 	/**
 	 * The number of structural features of the '<em>scenario</em>' class.
@@ -92,6 +94,70 @@ public interface SAMExtensionsPackage extends EPackage {
 	int SCENARIO_FEATURE_COUNT = 2;
 
 	/**
+	 * The number of operations of the '<em>scenario</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCENARIO_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link org.surreal.SurvivabilityProfile.SAMExtensions.impl.MSactivationImpl <em>MSactivation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.surreal.SurvivabilityProfile.SAMExtensions.impl.MSactivationImpl
+	 * @see org.surreal.SurvivabilityProfile.SAMExtensions.impl.SAMExtensionsPackageImpl#getMSactivation()
+	 * @generated
+	 */
+	int MSACTIVATION = 1;
+
+	/**
+	 * The feature id for the '<em><b>Service</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MSACTIVATION__SERVICE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MSACTIVATION__VALUE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Step</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MSACTIVATION__STEP = 2;
+
+	/**
+	 * The number of structural features of the '<em>MSactivation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MSACTIVATION_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>MSactivation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MSACTIVATION_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.surreal.SurvivabilityProfile.SAMExtensions.impl.modeImpl <em>mode</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -99,7 +165,7 @@ public interface SAMExtensionsPackage extends EPackage {
 	 * @see org.surreal.SurvivabilityProfile.SAMExtensions.impl.SAMExtensionsPackageImpl#getmode()
 	 * @generated
 	 */
-	int MODE = 1;
+	int MODE = 2;
 
 	/**
 	 * The feature id for the '<em><b>Base State</b></em>' reference.
@@ -119,6 +185,15 @@ public interface SAMExtensionsPackage extends EPackage {
 	 */
 	int MODE_FEATURE_COUNT = 1;
 
+	/**
+	 * The number of operations of the '<em>mode</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODE_OPERATION_COUNT = 0;
+
 
 	/**
 	 * Returns the meta object for class '{@link org.surreal.SurvivabilityProfile.SAMExtensions.scenario <em>scenario</em>}'.
@@ -131,17 +206,6 @@ public interface SAMExtensionsPackage extends EPackage {
 	EClass getscenario();
 
 	/**
-	 * Returns the meta object for the reference list '{@link org.surreal.SurvivabilityProfile.SAMExtensions.scenario#getPath <em>Path</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Path</em>'.
-	 * @see org.surreal.SurvivabilityProfile.SAMExtensions.scenario#getPath()
-	 * @see #getscenario()
-	 * @generated
-	 */
-	EReference getscenario_Path();
-
-	/**
 	 * Returns the meta object for the reference '{@link org.surreal.SurvivabilityProfile.SAMExtensions.scenario#getBase_Transition <em>Base Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -151,6 +215,60 @@ public interface SAMExtensionsPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getscenario_Base_Transition();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link org.surreal.SurvivabilityProfile.SAMExtensions.scenario#getPath <em>Path</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Path</em>'.
+	 * @see org.surreal.SurvivabilityProfile.SAMExtensions.scenario#getPath()
+	 * @see #getscenario()
+	 * @generated
+	 */
+	EReference getscenario_Path();
+
+	/**
+	 * Returns the meta object for class '{@link org.surreal.SurvivabilityProfile.SAMExtensions.MSactivation <em>MSactivation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>MSactivation</em>'.
+	 * @see org.surreal.SurvivabilityProfile.SAMExtensions.MSactivation
+	 * @generated
+	 */
+	EClass getMSactivation();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.surreal.SurvivabilityProfile.SAMExtensions.MSactivation#getService <em>Service</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Service</em>'.
+	 * @see org.surreal.SurvivabilityProfile.SAMExtensions.MSactivation#getService()
+	 * @see #getMSactivation()
+	 * @generated
+	 */
+	EReference getMSactivation_Service();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.surreal.SurvivabilityProfile.SAMExtensions.MSactivation#getValue <em>Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see org.surreal.SurvivabilityProfile.SAMExtensions.MSactivation#getValue()
+	 * @see #getMSactivation()
+	 * @generated
+	 */
+	EAttribute getMSactivation_Value();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.surreal.SurvivabilityProfile.SAMExtensions.MSactivation#getStep <em>Step</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Step</em>'.
+	 * @see org.surreal.SurvivabilityProfile.SAMExtensions.MSactivation#getStep()
+	 * @see #getMSactivation()
+	 * @generated
+	 */
+	EAttribute getMSactivation_Step();
 
 	/**
 	 * Returns the meta object for class '{@link org.surreal.SurvivabilityProfile.SAMExtensions.mode <em>mode</em>}'.
@@ -188,6 +306,7 @@ public interface SAMExtensionsPackage extends EPackage {
 	 * <ul>
 	 *   <li>each class,</li>
 	 *   <li>each feature of each class,</li>
+	 *   <li>each operation of each class,</li>
 	 *   <li>each enum,</li>
 	 *   <li>and each data type</li>
 	 * </ul>
@@ -206,7 +325,15 @@ public interface SAMExtensionsPackage extends EPackage {
 		EClass SCENARIO = eINSTANCE.getscenario();
 
 		/**
-		 * The meta object literal for the '<em><b>Path</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Base Transition</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SCENARIO__BASE_TRANSITION = eINSTANCE.getscenario_Base_Transition();
+
+		/**
+		 * The meta object literal for the '<em><b>Path</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -214,12 +341,38 @@ public interface SAMExtensionsPackage extends EPackage {
 		EReference SCENARIO__PATH = eINSTANCE.getscenario_Path();
 
 		/**
-		 * The meta object literal for the '<em><b>Base Transition</b></em>' reference feature.
+		 * The meta object literal for the '{@link org.surreal.SurvivabilityProfile.SAMExtensions.impl.MSactivationImpl <em>MSactivation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.surreal.SurvivabilityProfile.SAMExtensions.impl.MSactivationImpl
+		 * @see org.surreal.SurvivabilityProfile.SAMExtensions.impl.SAMExtensionsPackageImpl#getMSactivation()
+		 * @generated
+		 */
+		EClass MSACTIVATION = eINSTANCE.getMSactivation();
+
+		/**
+		 * The meta object literal for the '<em><b>Service</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SCENARIO__BASE_TRANSITION = eINSTANCE.getscenario_Base_Transition();
+		EReference MSACTIVATION__SERVICE = eINSTANCE.getMSactivation_Service();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MSACTIVATION__VALUE = eINSTANCE.getMSactivation_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Step</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MSACTIVATION__STEP = eINSTANCE.getMSactivation_Step();
 
 		/**
 		 * The meta object literal for the '{@link org.surreal.SurvivabilityProfile.SAMExtensions.impl.modeImpl <em>mode</em>}' class.

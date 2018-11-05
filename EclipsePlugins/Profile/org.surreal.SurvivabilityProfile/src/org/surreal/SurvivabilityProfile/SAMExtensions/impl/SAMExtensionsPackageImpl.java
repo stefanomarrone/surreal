@@ -2,6 +2,7 @@
  */
 package org.surreal.SurvivabilityProfile.SAMExtensions.impl;
 
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -17,6 +18,7 @@ import org.surreal.SurvivabilityProfile.MisuseCaseExtensions.MisuseCaseExtension
 
 import org.surreal.SurvivabilityProfile.MisuseCaseExtensions.impl.MisuseCaseExtensionsPackageImpl;
 
+import org.surreal.SurvivabilityProfile.SAMExtensions.MSactivation;
 import org.surreal.SurvivabilityProfile.SAMExtensions.SAMExtensionsFactory;
 import org.surreal.SurvivabilityProfile.SAMExtensions.SAMExtensionsPackage;
 import org.surreal.SurvivabilityProfile.SAMExtensions.mode;
@@ -43,6 +45,13 @@ public class SAMExtensionsPackageImpl extends EPackageImpl implements SAMExtensi
 	 * @generated
 	 */
 	private EClass scenarioEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mSactivationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -142,7 +151,7 @@ public class SAMExtensionsPackageImpl extends EPackageImpl implements SAMExtensi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getscenario_Path() {
+	public EReference getscenario_Base_Transition() {
 		return (EReference)scenarioEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -151,8 +160,44 @@ public class SAMExtensionsPackageImpl extends EPackageImpl implements SAMExtensi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getscenario_Base_Transition() {
+	public EReference getscenario_Path() {
 		return (EReference)scenarioEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMSactivation() {
+		return mSactivationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMSactivation_Service() {
+		return (EReference)mSactivationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMSactivation_Value() {
+		return (EAttribute)mSactivationEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMSactivation_Step() {
+		return (EAttribute)mSactivationEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -202,8 +247,13 @@ public class SAMExtensionsPackageImpl extends EPackageImpl implements SAMExtensi
 
 		// Create classes and their features
 		scenarioEClass = createEClass(SCENARIO);
-		createEReference(scenarioEClass, SCENARIO__PATH);
 		createEReference(scenarioEClass, SCENARIO__BASE_TRANSITION);
+		createEReference(scenarioEClass, SCENARIO__PATH);
+
+		mSactivationEClass = createEClass(MSACTIVATION);
+		createEReference(mSactivationEClass, MSACTIVATION__SERVICE);
+		createEAttribute(mSactivationEClass, MSACTIVATION__VALUE);
+		createEAttribute(mSactivationEClass, MSACTIVATION__STEP);
 
 		modeEClass = createEClass(MODE);
 		createEReference(modeEClass, MODE__BASE_STATE);
@@ -233,8 +283,9 @@ public class SAMExtensionsPackageImpl extends EPackageImpl implements SAMExtensi
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		MisuseCaseExtensionsPackage theMisuseCaseExtensionsPackage = (MisuseCaseExtensionsPackage)EPackage.Registry.INSTANCE.getEPackage(MisuseCaseExtensionsPackage.eNS_URI);
 		UMLPackage theUMLPackage = (UMLPackage)EPackage.Registry.INSTANCE.getEPackage(UMLPackage.eNS_URI);
+		MisuseCaseExtensionsPackage theMisuseCaseExtensionsPackage = (MisuseCaseExtensionsPackage)EPackage.Registry.INSTANCE.getEPackage(MisuseCaseExtensionsPackage.eNS_URI);
+		TypesPackage theTypesPackage = (TypesPackage)EPackage.Registry.INSTANCE.getEPackage(TypesPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -242,10 +293,15 @@ public class SAMExtensionsPackageImpl extends EPackageImpl implements SAMExtensi
 
 		// Add supertypes to classes
 
-		// Initialize classes and features; add operations and parameters
+		// Initialize classes, features, and operations; add parameters
 		initEClass(scenarioEClass, scenario.class, "scenario", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getscenario_Path(), theMisuseCaseExtensionsPackage.getserviceMS(), null, "path", null, 0, -1, scenario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getscenario_Base_Transition(), theUMLPackage.getTransition(), null, "base_Transition", null, 1, 1, scenario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getscenario_Path(), this.getMSactivation(), null, "path", null, 0, -1, scenario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(mSactivationEClass, MSactivation.class, "MSactivation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getMSactivation_Service(), theMisuseCaseExtensionsPackage.getserviceMS(), null, "service", null, 0, 1, MSactivation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getMSactivation_Value(), theTypesPackage.getString(), "value", null, 0, 1, MSactivation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getMSactivation_Step(), theTypesPackage.getInteger(), "step", null, 0, 1, MSactivation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(modeEClass, mode.class, "mode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getmode_Base_State(), theUMLPackage.getState(), null, "base_State", null, 1, 1, mode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

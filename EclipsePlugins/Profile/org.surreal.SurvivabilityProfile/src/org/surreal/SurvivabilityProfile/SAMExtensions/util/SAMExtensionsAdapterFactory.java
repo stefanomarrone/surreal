@@ -72,6 +72,10 @@ public class SAMExtensionsAdapterFactory extends AdapterFactoryImpl {
 				return createscenarioAdapter();
 			}
 			@Override
+			public Adapter caseMSactivation(MSactivation object) {
+				return createMSactivationAdapter();
+			}
+			@Override
 			public Adapter casemode(mode object) {
 				return createmodeAdapter();
 			}
@@ -106,6 +110,20 @@ public class SAMExtensionsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createscenarioAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.surreal.SurvivabilityProfile.SAMExtensions.MSactivation <em>MSactivation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.surreal.SurvivabilityProfile.SAMExtensions.MSactivation
+	 * @generated
+	 */
+	public Adapter createMSactivationAdapter() {
 		return null;
 	}
 

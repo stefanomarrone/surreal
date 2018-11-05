@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.EReference;
  * <ul>
  *   <li>each class,</li>
  *   <li>each feature of each class,</li>
+ *   <li>each operation of each class,</li>
  *   <li>each enum,</li>
  *   <li>and each data type</li>
  * </ul>
@@ -84,6 +85,15 @@ public interface MisuseCaseExtensionsPackage extends EPackage {
 	int SERVICE_MS_FEATURE_COUNT = 1;
 
 	/**
+	 * The number of operations of the '<em>service MS</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_MS_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.surreal.SurvivabilityProfile.MisuseCaseExtensions.impl.strategyImpl <em>strategy</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -119,6 +129,15 @@ public interface MisuseCaseExtensionsPackage extends EPackage {
 	 * @ordered
 	 */
 	int STRATEGY_FEATURE_COUNT = SERVICE_MS_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>strategy</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRATEGY_OPERATION_COUNT = SERVICE_MS_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.surreal.SurvivabilityProfile.MisuseCaseExtensions.impl.recoveryImpl <em>recovery</em>}' class.
@@ -176,6 +195,15 @@ public interface MisuseCaseExtensionsPackage extends EPackage {
 	int RECOVERY_FEATURE_COUNT = STRATEGY_FEATURE_COUNT + 2;
 
 	/**
+	 * The number of operations of the '<em>recovery</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECOVERY_OPERATION_COUNT = STRATEGY_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.surreal.SurvivabilityProfile.MisuseCaseExtensions.impl.misuseImpl <em>misuse</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -231,6 +259,15 @@ public interface MisuseCaseExtensionsPackage extends EPackage {
 	int MISUSE_FEATURE_COUNT = SERVICE_MS_FEATURE_COUNT + 3;
 
 	/**
+	 * The number of operations of the '<em>misuse</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MISUSE_OPERATION_COUNT = SERVICE_MS_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.surreal.SurvivabilityProfile.MisuseCaseExtensions.impl.serviceImpl <em>service</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -268,6 +305,15 @@ public interface MisuseCaseExtensionsPackage extends EPackage {
 	int SERVICE_FEATURE_COUNT = 2;
 
 	/**
+	 * The number of operations of the '<em>service</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.surreal.SurvivabilityProfile.MisuseCaseExtensions.impl.threatensImpl <em>threatens</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -294,6 +340,15 @@ public interface MisuseCaseExtensionsPackage extends EPackage {
 	 * @ordered
 	 */
 	int THREATENS_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>threatens</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREATENS_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.surreal.SurvivabilityProfile.MisuseCaseExtensions.impl.mitigatesImpl <em>mitigates</em>}' class.
@@ -324,6 +379,15 @@ public interface MisuseCaseExtensionsPackage extends EPackage {
 	int MITIGATES_FEATURE_COUNT = 1;
 
 	/**
+	 * The number of operations of the '<em>mitigates</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MITIGATES_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.surreal.SurvivabilityProfile.MisuseCaseExtensions.impl.misuserImpl <em>misuser</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -350,6 +414,15 @@ public interface MisuseCaseExtensionsPackage extends EPackage {
 	 * @ordered
 	 */
 	int MISUSER_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>misuser</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MISUSER_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link org.surreal.SurvivabilityProfile.MisuseCaseExtensions.impl.resistanceImpl <em>resistance</em>}' class.
@@ -389,6 +462,15 @@ public interface MisuseCaseExtensionsPackage extends EPackage {
 	int RESISTANCE_FEATURE_COUNT = STRATEGY_FEATURE_COUNT + 0;
 
 	/**
+	 * The number of operations of the '<em>resistance</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESISTANCE_OPERATION_COUNT = STRATEGY_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.surreal.SurvivabilityProfile.MisuseCaseExtensions.impl.recognitionImpl <em>recognition</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -426,6 +508,15 @@ public interface MisuseCaseExtensionsPackage extends EPackage {
 	int RECOGNITION_FEATURE_COUNT = STRATEGY_FEATURE_COUNT + 0;
 
 	/**
+	 * The number of operations of the '<em>recognition</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECOGNITION_OPERATION_COUNT = STRATEGY_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.surreal.SurvivabilityProfile.MisuseCaseExtensions.impl.ServiceModeDefinitionImpl <em>Service Mode Definition</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -461,6 +552,15 @@ public interface MisuseCaseExtensionsPackage extends EPackage {
 	 * @ordered
 	 */
 	int SERVICE_MODE_DEFINITION_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Service Mode Definition</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_MODE_DEFINITION_OPERATION_COUNT = 0;
 
 
 	/**
@@ -742,6 +842,7 @@ public interface MisuseCaseExtensionsPackage extends EPackage {
 	 * <ul>
 	 *   <li>each class,</li>
 	 *   <li>each feature of each class,</li>
+	 *   <li>each operation of each class,</li>
 	 *   <li>each enum,</li>
 	 *   <li>and each data type</li>
 	 * </ul>
