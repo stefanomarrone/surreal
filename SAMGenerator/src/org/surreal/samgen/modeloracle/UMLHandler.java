@@ -1,15 +1,23 @@
 package org.surreal.samgen.modeloracle;
 
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.util.Hashtable;
 import java.util.Map;
 import java.util.Vector;
 
 import org.eclipse.core.resources.IFile;
+import org.eclipse.emf.common.notify.Adapter;
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EOperation;
+import org.eclipse.emf.ecore.EReference;
+import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.impl.DynamicEObjectImpl;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
@@ -36,6 +44,8 @@ import org.surreal.SurvivabilityProfile.MisuseCaseExtensions.serviceMS;
 import org.surreal.SurvivabilityProfile.MisuseCaseExtensions.impl.misuseImpl;
 import org.surreal.SurvivabilityProfile.MisuseCaseExtensions.impl.recoveryImpl;
 import org.surreal.SurvivabilityProfile.MisuseCaseExtensions.impl.serviceImpl;
+import org.surreal.SurvivabilityProfile.SAMExtensions.MSactivation;
+import org.surreal.SurvivabilityProfile.SAMExtensions.impl.MSactivationImpl;
 import org.surreal.SurvivabilityProfile.SAMExtensions.impl.modeImpl;
 import org.surreal.SurvivabilityProfile.Survivability.SurvivabilityFactory;
 
@@ -186,10 +196,14 @@ public class UMLHandler {
 					t.setSource(src);
 					t.setTarget(dest);
 					EList<String> tempNameList = new BasicEList<String>(t_from.getStepList());
-					EList<serviceMS> tempList = new BasicEList<serviceMS>();
+					EList<MSactivation> tempList = new BasicEList<MSactivation>();
 					for (String s: tempNameList) {
-						s = this.filterMsName(s);
-						tempList.add(this.getServiceMS(s));						
+						String s_name = this.filterMsName(s); 
+						String s_value = this.filterMsValue(s);
+						int s_step = this.filterMsStep(s);
+						serviceMS sms = this.getServiceMS(s_name);
+						MSActivationHelper temp = new MSActivationHelper(sms,s_value,s_step);
+						tempList.add(temp);						
 					}			
 					t.setValue(transitionST,sequenceTV.getName(),tempList);
 				}
@@ -202,6 +216,22 @@ public class UMLHandler {
 		int fcIndex = s.indexOf(')');
 		int lcIndex = s.indexOf('-');
 		retval = s.substring(fcIndex+1,lcIndex);
+		return retval;
+	}
+
+	private String filterMsValue(String s) {
+		String retval = s;
+		int fcIndex = s.indexOf("->") + 1;
+		int lcIndex = s.length();
+		retval = s.substring(fcIndex+1,lcIndex);
+		return retval;
+	}
+
+	private int filterMsStep(String s) {
+		int retval = 0;
+		int fcIndex = s.indexOf("@");
+		int lcIndex = s.indexOf(":");
+		retval = new Integer(s.substring(fcIndex+1,lcIndex));
 		return retval;
 	}
 
