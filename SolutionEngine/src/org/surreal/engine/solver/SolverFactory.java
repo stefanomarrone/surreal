@@ -10,7 +10,10 @@ public class SolverFactory {
 		try {
 		    URL[] urls = new URL[]{uri};
 		    URLClassLoader loader = URLClassLoader.newInstance(urls);
-		    Class<?> s = loader.loadClass("org.surreal.engine.solver.specific.FakeSolver");
+//		    Class<?> s = loader.loadClass("org.surreal.engine.solver.specific.FakeSolver");    
+		    String solverClass = uri.toString().substring(uri.toString().lastIndexOf("/")+1);
+		    solverClass = solverClass.substring(0, solverClass.lastIndexOf('.'));
+		    Class<?> s = loader.loadClass("org.surreal.engine.solver.specific." + solverClass);
 		    retval = new DelegateSolver(s);
 		} catch (ClassNotFoundException e) {
 		    e.printStackTrace();

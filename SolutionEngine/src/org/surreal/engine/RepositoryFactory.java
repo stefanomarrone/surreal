@@ -18,6 +18,8 @@ public class RepositoryFactory {
 		// To add when new repository implementation is available
 		if (tag.equals("fake")) {
 			retval = new FakeRepository();
+		} else if(tag.equals("TrueFalse")) {
+			retval = new TrueFalseFakeRepository();
 		}
 		return retval;
 	}
