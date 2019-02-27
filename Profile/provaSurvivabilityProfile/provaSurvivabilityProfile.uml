@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MisuseCaseExtensions="http://org.surreal.SurvivabilityProfile/profiles/MisuseCaseExtensions/1.0" xmlns:SAMExtensions="http://org.surreal.SurvivabilityProfile/profiles/SAMExtensions/1.0" xmlns:SurvTypes="http://org.surreal.SurvivabilityProfile/profiles/SurvTypes/1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://org.surreal.SurvivabilityProfile/profiles/MisuseCaseExtensions/1.0 http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#//MisuseCaseExtensions http://org.surreal.SurvivabilityProfile/profiles/SAMExtensions/1.0 http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#//SAMExtensions http://org.surreal.SurvivabilityProfile/profiles/SurvTypes/1.0 http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#//SurvTypes">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MisuseCaseExtensions="http://org.surreal.SurvivabilityProfile/profiles/MisuseCaseExtensions/1.0" xmlns:SAMExtensions="http://org.surreal.SurvivabilityProfile/profiles/SAMExtensions/1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://org.surreal.SurvivabilityProfile/profiles/MisuseCaseExtensions/1.0 http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#//MisuseCaseExtensions http://org.surreal.SurvivabilityProfile/profiles/SAMExtensions/1.0 http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#//SAMExtensions">
   <uml:Model xmi:id="_cEdWIH6vEeiDVe8zgaCPEQ" name="provaSurvivabilityProfile">
     <ownedRule xmi:type="uml:Constraint" xmi:id="_Z-MQ0I9QEeinlvO2lyFijg" name="ServiceModes">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_Z-OtEI9QEeinlvO2lyFijg" name="constraintSpec" language="" body=""/>
@@ -97,48 +97,17 @@
   <MisuseCaseExtensions:mitigates xmi:id="_vMs9UI9NEeinlvO2lyFijg" base_Dependency="_2QY38I9MEeinlvO2lyFijg"/>
   <MisuseCaseExtensions:mitigates xmi:id="_wAntkI9NEeinlvO2lyFijg" base_Dependency="_3juIEI9MEeinlvO2lyFijg"/>
   <MisuseCaseExtensions:mitigates xmi:id="_wtGZEI9NEeinlvO2lyFijg" base_Dependency="_6tHh8I9MEeinlvO2lyFijg"/>
-  <MisuseCaseExtensions:service xmi:id="_3kUvkI9NEeinlvO2lyFijg" base_UseCase="_d4b1MH6vEeiDVe8zgaCPEQ">
-    <indices xmi:type="SurvTypes:index" xmi:id="_4NC8cI9NEeinlvO2lyFijg" name="confLevel" values="0,100" initial="100"/>
-  </MisuseCaseExtensions:service>
-  <MisuseCaseExtensions:service xmi:id="_LhEx4I9OEeinlvO2lyFijg" base_UseCase="_eNkXsH6vEeiDVe8zgaCPEQ">
-    <indices xmi:type="SurvTypes:index" xmi:id="_NOUW0I9OEeinlvO2lyFijg" name="respTime" values="0,100" initial="100"/>
-    <indices xmi:type="SurvTypes:index" xmi:id="_Qf6DYI9OEeinlvO2lyFijg" name="confLevel" values="0,100" initial="100"/>
-    <indices xmi:type="SurvTypes:index" xmi:id="_UhtE4I9OEeinlvO2lyFijg" name="availability" values="0,100" initial="100"/>
-  </MisuseCaseExtensions:service>
-  <MisuseCaseExtensions:service xmi:id="_MbcIYI9OEeinlvO2lyFijg" base_UseCase="_IqSc4I9MEeinlvO2lyFijg">
-    <indices xmi:type="SurvTypes:index" xmi:id="_aYOMUI9OEeinlvO2lyFijg" name="confLevel" values="0,100" initial="100"/>
-    <indices xmi:type="SurvTypes:index" xmi:id="_g_O8kI9OEeinlvO2lyFijg" name="integrity" values="0,100" initial="100"/>
-  </MisuseCaseExtensions:service>
-  <MisuseCaseExtensions:misuse xmi:id="_t4tJYI9OEeinlvO2lyFijg" base_UseCase="_ecVzgH6vEeiDVe8zgaCPEQ">
-    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_yPimwI9OEeinlvO2lyFijg" index="confLevel" set="50" inc="" dec=""/>
-  </MisuseCaseExtensions:misuse>
-  <MisuseCaseExtensions:misuse xmi:id="_vM_bwI9OEeinlvO2lyFijg" base_UseCase="_ShX2wI9MEeinlvO2lyFijg">
-    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_Ou7YgI9PEeinlvO2lyFijg" index="respTime" set="40"/>
-    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_RL80kI9PEeinlvO2lyFijg" index="availability" set="80"/>
-  </MisuseCaseExtensions:misuse>
-  <MisuseCaseExtensions:misuse xmi:id="_v-xeAI9OEeinlvO2lyFijg" base_UseCase="_T3jmkI9MEeinlvO2lyFijg">
-    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_UxSjkI9PEeinlvO2lyFijg" index="respTime" set="" dec="10"/>
-    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_YCdZYI9PEeinlvO2lyFijg" index="availability" dec="10"/>
-  </MisuseCaseExtensions:misuse>
-  <MisuseCaseExtensions:misuse xmi:id="_cIHAII9PEeinlvO2lyFijg" base_UseCase="_cACwoI9MEeinlvO2lyFijg">
-    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_dFHa8I9PEeinlvO2lyFijg" index="confLevel" set="low"/>
-    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_OZFO4I9QEeinlvO2lyFijg" index="integrity" set="10"/>
-  </MisuseCaseExtensions:misuse>
-  <MisuseCaseExtensions:recovery xmi:id="_now_4I9PEeinlvO2lyFijg" base_UseCase="_sezpII9MEeinlvO2lyFijg">
-    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_ryWrcI9PEeinlvO2lyFijg" index="confLevel" set="high"/>
-  </MisuseCaseExtensions:recovery>
-  <MisuseCaseExtensions:recovery xmi:id="_oVUj4I9PEeinlvO2lyFijg" base_UseCase="_vkvfUI9MEeinlvO2lyFijg">
-    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_1XG_MI9PEeinlvO2lyFijg" index="respTime" set="100"/>
-    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_4GpuoI9PEeinlvO2lyFijg" index="availability" set="100"/>
-  </MisuseCaseExtensions:recovery>
-  <MisuseCaseExtensions:recovery xmi:id="_o_dGAI9PEeinlvO2lyFijg" base_UseCase="_xnbv0I9MEeinlvO2lyFijg">
-    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_9BhGII9PEeinlvO2lyFijg" index="respTime" inc="7"/>
-    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="__ApFQI9PEeinlvO2lyFijg" index="availability" inc="7"/>
-  </MisuseCaseExtensions:recovery>
-  <MisuseCaseExtensions:recovery xmi:id="_pvVDwI9PEeinlvO2lyFijg" base_UseCase="_0N1KUI9MEeinlvO2lyFijg">
-    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_Bmd4AI9QEeinlvO2lyFijg" index="confLevel" set="high"/>
-    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_Kphz8I9QEeinlvO2lyFijg" index="integrity" set="50"/>
-  </MisuseCaseExtensions:recovery>
+  <MisuseCaseExtensions:service xmi:id="_3kUvkI9NEeinlvO2lyFijg" base_UseCase="_d4b1MH6vEeiDVe8zgaCPEQ"/>
+  <MisuseCaseExtensions:service xmi:id="_LhEx4I9OEeinlvO2lyFijg" base_UseCase="_eNkXsH6vEeiDVe8zgaCPEQ"/>
+  <MisuseCaseExtensions:service xmi:id="_MbcIYI9OEeinlvO2lyFijg" base_UseCase="_IqSc4I9MEeinlvO2lyFijg"/>
+  <MisuseCaseExtensions:misuse xmi:id="_t4tJYI9OEeinlvO2lyFijg" base_UseCase="_ecVzgH6vEeiDVe8zgaCPEQ"/>
+  <MisuseCaseExtensions:misuse xmi:id="_vM_bwI9OEeinlvO2lyFijg" base_UseCase="_ShX2wI9MEeinlvO2lyFijg"/>
+  <MisuseCaseExtensions:misuse xmi:id="_v-xeAI9OEeinlvO2lyFijg" base_UseCase="_T3jmkI9MEeinlvO2lyFijg"/>
+  <MisuseCaseExtensions:misuse xmi:id="_cIHAII9PEeinlvO2lyFijg" base_UseCase="_cACwoI9MEeinlvO2lyFijg"/>
+  <MisuseCaseExtensions:recovery xmi:id="_now_4I9PEeinlvO2lyFijg" base_UseCase="_sezpII9MEeinlvO2lyFijg"/>
+  <MisuseCaseExtensions:recovery xmi:id="_oVUj4I9PEeinlvO2lyFijg" base_UseCase="_vkvfUI9MEeinlvO2lyFijg"/>
+  <MisuseCaseExtensions:recovery xmi:id="_o_dGAI9PEeinlvO2lyFijg" base_UseCase="_xnbv0I9MEeinlvO2lyFijg"/>
+  <MisuseCaseExtensions:recovery xmi:id="_pvVDwI9PEeinlvO2lyFijg" base_UseCase="_0N1KUI9MEeinlvO2lyFijg"/>
   <MisuseCaseExtensions:ServiceModeDefinition xmi:id="_jqxD0I9QEeinlvO2lyFijg" base_Constraint="_Z-MQ0I9QEeinlvO2lyFijg">
     <formula>(GS0,(coordinateLand.confLevel > 90) &amp; (manageMap.confLevel > 90) &amp; (updateMap.confLevel > 90) &amp; (manageMap.availability > 80))</formula>
     <formula>(GS1,(coordinateLand.confLevel > 50) &amp; (manageMap.confLevel > 50) &amp; (updateMap.confLevel > 50) &amp; (manageMap.availability > 70))</formula>
@@ -153,9 +122,9 @@
     <path xmi:type="SAMExtensions:MSactivation" xmi:id="_Jt_0kOD5Eeir5d_6_K3OQw" service="_t4tJYI9OEeinlvO2lyFijg" value="TRUE" step="1"/>
   </SAMExtensions:scenario>
   <SAMExtensions:mode xmi:id="_PVBugOD5Eeir5d_6_K3OQw" base_State="_H0cyUI9SEeinlvO2lyFijg"/>
-  <SAMExtensions:mode xmi:id="_P2F0MOD5Eeir5d_6_K3OQw" base_State="_JBRKwI9SEeinlvO2lyFijg"/>
-  <SAMExtensions:mode xmi:id="_Qa4jUOD5Eeir5d_6_K3OQw" base_State="_Ph0GoI9SEeinlvO2lyFijg"/>
-  <SAMExtensions:mode xmi:id="_RFqlsOD5Eeir5d_6_K3OQw" base_State="_KN1EgI9SEeinlvO2lyFijg"/>
+  <SAMExtensions:mode xmi:id="_P2F0MOD5Eeir5d_6_K3OQw" base_State="_JBRKwI9SEeinlvO2lyFijg" severity="2"/>
+  <SAMExtensions:mode xmi:id="_Qa4jUOD5Eeir5d_6_K3OQw" base_State="_Ph0GoI9SEeinlvO2lyFijg" severity="3"/>
+  <SAMExtensions:mode xmi:id="_RFqlsOD5Eeir5d_6_K3OQw" base_State="_KN1EgI9SEeinlvO2lyFijg" severity="2"/>
   <SAMExtensions:scenario xmi:id="_Rv2LIOD5Eeir5d_6_K3OQw" base_Transition="_XZf0kI9SEeinlvO2lyFijg"/>
   <SAMExtensions:scenario xmi:id="_Szag8OD5Eeir5d_6_K3OQw" base_Transition="_Ww8m0I9SEeinlvO2lyFijg"/>
   <SAMExtensions:scenario xmi:id="_TgJrIOD5Eeir5d_6_K3OQw" base_Transition="_UIHjYI9SEeinlvO2lyFijg"/>

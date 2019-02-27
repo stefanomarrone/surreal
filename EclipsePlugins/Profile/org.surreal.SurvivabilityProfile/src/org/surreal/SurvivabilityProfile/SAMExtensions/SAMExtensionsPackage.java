@@ -177,13 +177,22 @@ public interface SAMExtensionsPackage extends EPackage {
 	int MODE__BASE_STATE = 0;
 
 	/**
+	 * The feature id for the '<em><b>Severity</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODE__SEVERITY = 1;
+
+	/**
 	 * The number of structural features of the '<em>mode</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MODE_FEATURE_COUNT = 1;
+	int MODE_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>mode</em>' class.
@@ -292,6 +301,17 @@ public interface SAMExtensionsPackage extends EPackage {
 	EReference getmode_Base_State();
 
 	/**
+	 * Returns the meta object for the attribute '{@link org.surreal.SurvivabilityProfile.SAMExtensions.mode#getSeverity <em>Severity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Severity</em>'.
+	 * @see org.surreal.SurvivabilityProfile.SAMExtensions.mode#getSeverity()
+	 * @see #getmode()
+	 * @generated
+	 */
+	EAttribute getmode_Severity();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -391,6 +411,14 @@ public interface SAMExtensionsPackage extends EPackage {
 		 * @generated
 		 */
 		EReference MODE__BASE_STATE = eINSTANCE.getmode_Base_State();
+
+		/**
+		 * The meta object literal for the '<em><b>Severity</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODE__SEVERITY = eINSTANCE.getmode_Severity();
 
 	}
 

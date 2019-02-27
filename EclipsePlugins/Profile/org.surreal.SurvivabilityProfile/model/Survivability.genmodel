@@ -124,6 +124,7 @@
         <genClasses xsi:type="genmodel:GenClass" ecoreClass="Survivability.ecore#//Extensions/SAMExtensions/mode">
           <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
               propertySortChoices="true" ecoreFeature="ecore:EReference Survivability.ecore#//Extensions/SAMExtensions/mode/base_State"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Survivability.ecore#//Extensions/SAMExtensions/mode/severity"/>
         </genClasses>
       </nestedGenPackages>
     </nestedGenPackages>

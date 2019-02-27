@@ -35,7 +35,7 @@ public interface affectConsequence extends EObject {
 	 * @return the value of the '<em>Index</em>' attribute.
 	 * @see #setIndex(String)
 	 * @see org.surreal.SurvivabilityProfile.SurvTypes.SurvTypesPackage#getaffectConsequence_Index()
-	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.String" required="true" ordered="false"
 	 * @generated
 	 */
 	String getIndex();

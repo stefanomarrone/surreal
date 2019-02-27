@@ -363,7 +363,7 @@ public class SurvTypesPackageImpl extends EPackageImpl implements SurvTypesPacka
 		initEAttribute(getduration_Unit(), theTypesPackage.getString(), "unit", null, 1, 1, duration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(affectConsequenceEClass, affectConsequence.class, "affectConsequence", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getaffectConsequence_Index(), theTypesPackage.getString(), "index", null, 0, 1, affectConsequence.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getaffectConsequence_Index(), theTypesPackage.getString(), "index", null, 1, 1, affectConsequence.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getaffectConsequence_Set(), theTypesPackage.getString(), "set", null, 0, 1, affectConsequence.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getaffectConsequence_Inc(), theTypesPackage.getString(), "inc", null, 0, 1, affectConsequence.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getaffectConsequence_Dec(), theTypesPackage.getString(), "dec", null, 0, 1, affectConsequence.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);

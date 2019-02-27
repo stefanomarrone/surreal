@@ -716,7 +716,7 @@
   <notation:Diagram xmi:id="_-3rroI9REeinlvO2lyFijg" type="PapyrusUMLStateMachineDiagram" name="SAM" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_-3rroY9REeinlvO2lyFijg" type="StateMachine_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_-3rroo9REeinlvO2lyFijg" type="StateMachine_NameLabel">
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-3rro49REeinlvO2lyFijg" width="851" height="20"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-3rro49REeinlvO2lyFijg" width="851" height="16"/>
       </children>
       <children xmi:type="notation:BasicCompartment" xmi:id="_-3rrpI9REeinlvO2lyFijg" type="StateMachine_RegionCompartment">
         <children xmi:type="notation:Shape" xmi:id="_-3rrpY9REeinlvO2lyFijg" type="Region_Shape">
@@ -860,7 +860,7 @@
           <element xmi:type="uml:Region" href="provaSurvivabilityProfile.uml#_-3p2cI9REeinlvO2lyFijg"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-3rrqo9REeinlvO2lyFijg" width="851" height="411"/>
         </children>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-3rrq49REeinlvO2lyFijg" y="20" width="851" height="411"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-3rrq49REeinlvO2lyFijg" y="16" width="851" height="415"/>
       </children>
       <element xmi:type="uml:StateMachine" href="provaSurvivabilityProfile.uml#_-bMj8I9REeinlvO2lyFijg"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-3rrrI9REeinlvO2lyFijg" x="30" y="30" width="851" height="431"/>

@@ -32,7 +32,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated Survivability -->
       <package
-            uri="http://org.surreal.SurvivabilityProfile/profiles/SurvTypes/1.0"
+            uri="http://org.surreal.SurvivabilityProfile"
             class="org.surreal.SurvivabilityProfile.SurvTypes.SurvTypesPackage"
             genModel="model/Survivability.genmodel"/>
    </extension>

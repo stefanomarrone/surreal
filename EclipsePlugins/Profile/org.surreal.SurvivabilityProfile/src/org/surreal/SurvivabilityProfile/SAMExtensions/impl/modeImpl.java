@@ -24,6 +24,7 @@ import org.surreal.SurvivabilityProfile.SAMExtensions.mode;
  * </p>
  * <ul>
  *   <li>{@link org.surreal.SurvivabilityProfile.SAMExtensions.impl.modeImpl#getBase_State <em>Base State</em>}</li>
+ *   <li>{@link org.surreal.SurvivabilityProfile.SAMExtensions.impl.modeImpl#getSeverity <em>Severity</em>}</li>
  * </ul>
  *
  * @generated
@@ -38,6 +39,26 @@ public class modeImpl extends MinimalEObjectImpl.Container implements mode {
 	 * @ordered
 	 */
 	protected State base_State;
+
+	/**
+	 * The default value of the '{@link #getSeverity() <em>Severity</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSeverity()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int SEVERITY_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getSeverity() <em>Severity</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSeverity()
+	 * @generated
+	 * @ordered
+	 */
+	protected int severity = SEVERITY_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -101,12 +122,35 @@ public class modeImpl extends MinimalEObjectImpl.Container implements mode {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public int getSeverity() {
+		return severity;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setSeverity(int newSeverity) {
+		int oldSeverity = severity;
+		severity = newSeverity;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SAMExtensionsPackage.MODE__SEVERITY, oldSeverity, severity));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case SAMExtensionsPackage.MODE__BASE_STATE:
 				if (resolve) return getBase_State();
 				return basicGetBase_State();
+			case SAMExtensionsPackage.MODE__SEVERITY:
+				return getSeverity();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -121,6 +165,9 @@ public class modeImpl extends MinimalEObjectImpl.Container implements mode {
 		switch (featureID) {
 			case SAMExtensionsPackage.MODE__BASE_STATE:
 				setBase_State((State)newValue);
+				return;
+			case SAMExtensionsPackage.MODE__SEVERITY:
+				setSeverity((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -137,6 +184,9 @@ public class modeImpl extends MinimalEObjectImpl.Container implements mode {
 			case SAMExtensionsPackage.MODE__BASE_STATE:
 				setBase_State((State)null);
 				return;
+			case SAMExtensionsPackage.MODE__SEVERITY:
+				setSeverity(SEVERITY_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -151,8 +201,26 @@ public class modeImpl extends MinimalEObjectImpl.Container implements mode {
 		switch (featureID) {
 			case SAMExtensionsPackage.MODE__BASE_STATE:
 				return base_State != null;
+			case SAMExtensionsPackage.MODE__SEVERITY:
+				return severity != SEVERITY_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (severity: ");
+		result.append(severity);
+		result.append(')');
+		return result.toString();
 	}
 
 } //modeImpl

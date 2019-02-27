@@ -56,7 +56,7 @@
             upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
       </eClassifiers>
     </eSubpackages>
-    <eSubpackages name="SurvTypes" nsURI="http://org.surreal.SurvivabilityProfile/profiles/SurvTypes/1.0"
+    <eSubpackages name="SurvTypes" nsURI="http://org.surreal.SurvivabilityProfile"
         nsPrefix="SurvTypes">
       <eClassifiers xsi:type="ecore:EClass" name="index">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false"
@@ -81,7 +81,7 @@
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="affectConsequence">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="index" ordered="false"
-            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="set" ordered="false"
             eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="inc" ordered="false"
@@ -109,6 +109,8 @@
       <eClassifiers xsi:type="ecore:EClass" name="mode">
         <eStructuralFeatures xsi:type="ecore:EReference" name="base_State" ordered="false"
             lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//State"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="severity" ordered="false"
+            eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
       </eClassifiers>
     </eSubpackages>
   </eSubpackages>

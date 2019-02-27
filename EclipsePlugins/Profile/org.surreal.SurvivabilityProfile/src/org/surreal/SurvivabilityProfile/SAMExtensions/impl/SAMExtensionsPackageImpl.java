@@ -223,6 +223,15 @@ public class SAMExtensionsPackageImpl extends EPackageImpl implements SAMExtensi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getmode_Severity() {
+		return (EAttribute)modeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public SAMExtensionsFactory getSAMExtensionsFactory() {
 		return (SAMExtensionsFactory)getEFactoryInstance();
 	}
@@ -257,6 +266,7 @@ public class SAMExtensionsPackageImpl extends EPackageImpl implements SAMExtensi
 
 		modeEClass = createEClass(MODE);
 		createEReference(modeEClass, MODE__BASE_STATE);
+		createEAttribute(modeEClass, MODE__SEVERITY);
 	}
 
 	/**
@@ -305,6 +315,7 @@ public class SAMExtensionsPackageImpl extends EPackageImpl implements SAMExtensi
 
 		initEClass(modeEClass, mode.class, "mode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getmode_Base_State(), theUMLPackage.getState(), null, "base_State", null, 1, 1, mode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getmode_Severity(), theTypesPackage.getInteger(), "severity", null, 0, 1, mode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 	}
 
 } //SAMExtensionsPackageImpl
