@@ -38,7 +38,7 @@ public interface SurvTypesPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://org.surreal.SurvivabilityProfile";
+	String eNS_URI = "http://org.surreal.SurvivabilityProfile/profiles/SurvTypes/1.0";
 
 	/**
 	 * The package namespace name.

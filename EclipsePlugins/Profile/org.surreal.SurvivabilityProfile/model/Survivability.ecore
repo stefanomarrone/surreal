@@ -56,7 +56,7 @@
             upperBound="-1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
       </eClassifiers>
     </eSubpackages>
-    <eSubpackages name="SurvTypes" nsURI="http://org.surreal.SurvivabilityProfile"
+    <eSubpackages name="SurvTypes" nsURI="http://org.surreal.SurvivabilityProfile/profiles/SurvTypes/1.0"
         nsPrefix="SurvTypes">
       <eClassifiers xsi:type="ecore:EClass" name="index">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false"

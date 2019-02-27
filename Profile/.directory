@@ -1,6 +1,9 @@
 [Dolphin]
-HeaderColumnWidths=317,72,95
+HeaderColumnWidths=454,72,95
 PreviewsShown=false
-Timestamp=2018,11,5,11,17,13
+Timestamp=2019,2,27,10,23,29
 Version=4
 ViewMode=1
+
+[Settings]
+HiddenFilesShown=true

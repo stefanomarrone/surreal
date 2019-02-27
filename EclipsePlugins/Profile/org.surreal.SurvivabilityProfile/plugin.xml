@@ -32,7 +32,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated Survivability -->
       <package
-            uri="http://org.surreal.SurvivabilityProfile"
+            uri="http://org.surreal.SurvivabilityProfile/profiles/SurvTypes/1.0"
             class="org.surreal.SurvivabilityProfile.SurvTypes.SurvTypesPackage"
             genModel="model/Survivability.genmodel"/>
    </extension>
@@ -73,7 +73,7 @@
    <extension
          point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
       <profile
-            description="SurvProfile (v1.0)"
+            description="SurvProfile (v1.0) 2019"
             iconpath="img/camaleon.jpg"
             name="Survivability Profile"
             path="pathmap://SURV_PROFILES/Survivability.profile.uml"
