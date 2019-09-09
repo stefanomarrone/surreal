@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="/home/stefano/code/github/surreal/site/repository/MultipleThreatImpactSolver.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/Surreal/multiplethreat.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <file path="/Surreal_Solvers/lib/org.eclipse.uml2.types_2.0.0.v20150906-1225.jar"/>
+        <file path="/Surreal_Solvers/lib/org.eclipse.emf.ecore.xmi_2.10.2.v20150123-0348.jar"/>
+        <file path="/Surreal_Solvers/.project"/>
+        <file path="/Surreal_Solvers/lib/org.eclipse.emf.common_2.11.0.v20150512-0501.jar"/>
+        <file path="/Surreal_Solvers/lib/org.eclipse.uml2.common_2.0.1.v20150202-0947.jar"/>
+        <javaElement handleIdentifier="=Surreal_Solvers/src&lt;org.surreal.engine.solver.specific{MultipleThreatImpactSolver.java"/>
+        <javaElement handleIdentifier="=Surreal_Solvers/src&lt;org.surreal.engine.solver.specific{SolverTransformation_P8.java"/>
+        <file path="/Surreal_Solvers/.classpath"/>
+        <file path="/Surreal_Solvers/lib/org.eclipse.uml2.uml.profile.standard_1.0.0.v20150202-0947.jar"/>
+        <file path="/Surreal_Solvers/lib/org.eclipse.uml2.uml.resources_5.1.0.v20150906-1225.jar"/>
+        <file path="/Surreal_Solvers/lib/org.eclipse.emf.mapping.ecore2xml_2.9.0.v20160526-0356.jar"/>
+        <file path="/Surreal_Solvers/lib/org.eclipse.emf.ecore_2.11.0.v20150512-0501.jar"/>
+        <javaElement handleIdentifier="=Surreal_Solvers/src&lt;org.surreal.engine.solver.specific{StateMachineQuery.java"/>
+        <file path="/Surreal_Solvers/repository.json"/>
+        <file path="/Surreal_Solvers/reversibility.jardesc"/>
+        <file path="/Surreal_Solvers/lib/json-simple-1.1.jar"/>
+        <file path="/Surreal_Solvers/lib/org.eclipse.uml2.uml_5.1.0.v20150906-1225.jar"/>
+    </selectedElements>
+</jardesc>

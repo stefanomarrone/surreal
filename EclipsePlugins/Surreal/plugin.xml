@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="org.surreal.samgen.handlers.CTLHandler"
+            id="org.surreal.samgen.commands.ctl"
+            name="SAM Generation">
+      </command>
+      <command
+            defaultHandler="org.surreal.survivabilityGui.handlers.HandlerGuiInitializer"
+            description="GUI Query Initializer"
+            id="org.surreal.SurvivabilityPropertiesGui.command.guiPropertySelection"
+            name="guiinitializer">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               id="org.surreal.menus.sampleMenu"
+               label="Surreal"
+               mnemonic="S">
+            <command
+                  commandId="org.surreal.samgen.commands.ctl"
+                  id="org.surreal.samgen.menus.samgencmd"
+                  label="SAM Generation"
+                  mnemonic="C"
+                  style="push">
+            </command>
+            <command
+                  commandId="org.surreal.SurvivabilityPropertiesGui.command.guiPropertySelection"
+                  id="org.surreal.menu.command.guiPropertySelection"
+                  label="Query Instancer"
+                  mnemonic="Q"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="org.surreal.samgen.toolbars.sampleToolbar">
+            <command
+                  commandId="org.surreal.samgen.commands.ctl"
+                  icon="icons/SAM.png"
+                  id="org.surreal.samgen.toolbars.sampleCommand"
+                  tooltip="Generation of the SAM model">
+            </command>
+            <command
+                  commandId="org.surreal.SurvivabilityPropertiesGui.command.guiPropertySelection"
+                  icon="icons/QRY.png"
+                  id="org.surreal.samgen.toolbars.queryIco"
+                  tooltip="Analysis of the generated SAM">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+
+
+</plugin>
