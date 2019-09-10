@@ -1,7 +1,7 @@
 # surreal
 SURvivability Requirements Elicitation and Assessment tooL
 
-##Repository structure:
+## Repository structure:
 - plugins: ready-to-use jar to put in the dropins folder in order to use the Surreal framework
 
 - Profile
@@ -21,13 +21,13 @@ SURvivability Requirements Elicitation and Assessment tooL
   - **Surreal_solvers/**: Eclipse projects related to the three implemented solvers
   - **Gui/org.surreal.SurvivabilityPropertiesGui**: Eclipe *plugin* project of the Gui for the selection of surv. properties
 
-##Framework usage:
-###prerequisites:
+## Framework usage:
+### prerequisites:
   - docker
   - NuSMV
   - a version of Eclipse with modeling tools installed (the project has been developer under Oxygen but Photon works as well)
 
-###setting:
+### setting:
   - extract from this repository, the two plugins in the *plugin* folder
   - open the org.surreal_**.jar file and edit the *configuration.ini* file under the *configuration* folder
 	  - keep *kind=json*
@@ -35,7 +35,7 @@ SURvivability Requirements Elicitation and Assessment tooL
 	  - in case you have not a NuSMV tool that can be launched from the command line independently from the folder you stay in, report in the *tool* entry the absolute path and the name of the NuSMV tool
   - save and close the jar and put both the plugin files into the dropinf folder of your Eclipse environment.
 
-###usage:
+### usage:
   - open your Eclipse environment as prepared before
   - create a generic Eclipse project
   - add a Survivability Profile conformant UML model (MUCD) to the project
