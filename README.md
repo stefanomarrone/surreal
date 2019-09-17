@@ -25,10 +25,10 @@ SURvivability Requirements Elicitation and Assessment tooL
 ### prerequisites:
   - docker
   - NuSMV
-  - a version of Eclipse with modeling tools installed (the project has been developer under Oxygen but Photon works as well)
+  - a version of Eclipse with modeling tools installed (the project has been developer under Oxygen but Photon works as well). You can install all the modeling tools by checking all the Modeling section from "Install New Software"
 
 ### setting:
-  - extract from this repository, the two plugins in the *plugin* folder
+  - extract from this repository, the two plugins in the *dropins* folder
   - open the org.surreal_**.jar file and edit the *configuration.ini* file under the *configuration* folder
 	  - keep *kind=json*
 	  - change the *url* value if you don't wnat to use the embedded docker web server (in this case, write down the url of the server you want to use)
