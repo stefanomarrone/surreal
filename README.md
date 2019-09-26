@@ -25,18 +25,19 @@ SURvivability Requirements Elicitation and Assessment tooL
 ### prerequisites:
   - docker
   - NuSMV
-  - a version of Eclipse with modeling tools installed (the project has been developer under Oxygen but Photon works as well). You can install all the modeling tools by checking all the Modeling section from "Install New Software"
+  - a version of Eclipse with modeling tools installed (the project has been developer under Oxygen but Photon works as well). The suggested configuration is a *Modeling Edition* of Eclipse.
 
 ### setting:
-  - extract from this repository, the two plugins in the *dropins* folder
-  - open the org.surreal_**.jar file and edit the *configuration.ini* file under the *configuration* folder
-	  - keep *kind=json*
-	  - change the *url* value if you don't wnat to use the embedded docker web server (in this case, write down the url of the server you want to use)
-	  - in case you have not a NuSMV tool that can be launched from the command line independently from the folder you stay in, report in the *tool* entry the absolute path and the name of the NuSMV tool
-  - save and close the jar and put both the plugin files into the dropinf folder of your Eclipse environment.
+  - extract from this repository the two jar files contained in the *plugins* folder and put them into a temporary folder;
+  - open the *org.surreal_**.jar* file and edit the *configuration.ini* file under the *configuration* folder
+	  - keep *kind=json* unchanged (future use);
+	  - change the *url* value if you don't want to use the embedded docker web server (in this case, write down the url of the server you want to use);
+	  - in case you have not a NuSMV tool that can be launched from the command line independently from the folder you stay in, report in the *tool* entry, the tool name with its absolute path;
+  - save and close the jar and put both the plugin files into the *dropins* folder of your Eclipse environment.
 
 ### usage:
-  - open your Eclipse environment as prepared before
+  - open your Eclipse environment as prepared before;
+-----
   - create a generic Eclipse project
   - add a Survivability Profile conformant UML model (MUCD) to the project
   - select the model
