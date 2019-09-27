@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MisuseCaseExtensions="http://org.surreal.SurvivabilityProfile/profiles/MisuseCaseExtensions/1.0" xmlns:SAMExtensions="http://org.surreal.SurvivabilityProfile/profiles/SAMExtensions/1.0" xmlns:SurvTypes="http://org.surreal.SurvivabilityProfile/profiles/SurvTypes/1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://org.surreal.SurvivabilityProfile/profiles/MisuseCaseExtensions/1.0 http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#//MisuseCaseExtensions http://org.surreal.SurvivabilityProfile/profiles/SAMExtensions/1.0 http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#//SAMExtensions http://org.surreal.SurvivabilityProfile/profiles/SurvTypes/1.0 http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#//SurvTypes">
+  <uml:Model xmi:id="_FxHVIKezEemtL5iEr-5V3w" name="C2ISrunningExample">
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_S-1fYKfOEem_L8PldQPwOg" visibility="public">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S-5JwKfOEem_L8PldQPwOg" name="constraintSpec" body="">
+        <language>Natural language</language>
+      </specification>
+    </ownedRule>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_F9qjYKezEemtL5iEr-5V3w">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_kbvZ8Ke0EemtL5iEr-5V3w" name="Military staff"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_tznIQKe0EemtL5iEr-5V3w" name="Sensor"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_w8asQKe0EemtL5iEr-5V3w" name="UpdateMap"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_DY2yYKe1EemtL5iEr-5V3w" name="ExchangeInformation"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ZUElIKe4EemtL5iEr-5V3w" memberEnd="_ZUI2kKe4EemtL5iEr-5V3w _ZUJdoKe4EemtL5iEr-5V3w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZUHocKe4EemtL5iEr-5V3w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZUIPgKe4EemtL5iEr-5V3w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ZUI2kKe4EemtL5iEr-5V3w" name="exchange information" type="_DY2yYKe1EemtL5iEr-5V3w" association="_ZUElIKe4EemtL5iEr-5V3w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ZUJdoKe4EemtL5iEr-5V3w" name="military staff" type="_kbvZ8Ke0EemtL5iEr-5V3w" association="_ZUElIKe4EemtL5iEr-5V3w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_aEWLgKe4EemtL5iEr-5V3w" memberEnd="_aEWykqe4EemtL5iEr-5V3w _aEWyk6e4EemtL5iEr-5V3w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aEWykKe4EemtL5iEr-5V3w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aEWykae4EemtL5iEr-5V3w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_aEWykqe4EemtL5iEr-5V3w" name="update map" type="_w8asQKe0EemtL5iEr-5V3w" association="_aEWLgKe4EemtL5iEr-5V3w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_aEWyk6e4EemtL5iEr-5V3w" name="sensor" type="_tznIQKe0EemtL5iEr-5V3w" association="_aEWLgKe4EemtL5iEr-5V3w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_M5znYKe5EemtL5iEr-5V3w" name="Jamming"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_agYx0Ke5EemtL5iEr-5V3w" client="_M5znYKe5EemtL5iEr-5V3w" supplier="_DY2yYKe1EemtL5iEr-5V3w"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_qi7BUKe5EemtL5iEr-5V3w" name="ManipulateInformation"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_4EV-8Ke5EemtL5iEr-5V3w" name="DestroyNode"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_P_HWAKe6EemtL5iEr-5V3w" client="_qi7BUKe5EemtL5iEr-5V3w" supplier="_DY2yYKe1EemtL5iEr-5V3w"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_QmuIkKe6EemtL5iEr-5V3w" client="_qi7BUKe5EemtL5iEr-5V3w" supplier="_w8asQKe0EemtL5iEr-5V3w"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_Rt0TgKe6EemtL5iEr-5V3w" client="_4EV-8Ke5EemtL5iEr-5V3w" supplier="_w8asQKe0EemtL5iEr-5V3w"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_D2FcwKe8EemtL5iEr-5V3w" name="RestoreOriginalCommunication"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_bjR1YKe9EemtL5iEr-5V3w" client="_D2FcwKe8EemtL5iEr-5V3w" supplier="_M5znYKe5EemtL5iEr-5V3w"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Bt1E4Ke-EemtL5iEr-5V3w" name="ChooseAlternativeCommunication"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_HfZa4Ke-EemtL5iEr-5V3w" client="_Bt1E4Ke-EemtL5iEr-5V3w" supplier="_M5znYKe5EemtL5iEr-5V3w"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Oax4oKe-EemtL5iEr-5V3w" name="RestoreOriginalData"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_g2SKoKe-EemtL5iEr-5V3w" client="_Oax4oKe-EemtL5iEr-5V3w" supplier="_qi7BUKe5EemtL5iEr-5V3w"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_w9W74Ke-EemtL5iEr-5V3w" name="Reconfigure"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_24CKkKe-EemtL5iEr-5V3w" client="_w9W74Ke-EemtL5iEr-5V3w" supplier="_4EV-8Ke5EemtL5iEr-5V3w"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_V80hINlrEemUX_XmX1dp5g" name="SM Container">
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_V80hIdlrEemUX_XmX1dp5g" name="global mode">
+        <region xmi:type="uml:Region" xmi:id="_V81IMNlrEemUX_XmX1dp5g" name="main">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_1Rx9AN35EemBIoqLXMGINA" annotatedElement="_V_Xe0dlrEemUX_XmX1dp5g">
+            <body>path= {
+(Jamming,FALSE,0)
+(DestroyNode,FALSE,0)
+(RestoreOriginalCommunication,ENABLED,0)
+(ChooseAlternativaCommunication,ENABLED,0)
+(Reconfigure,ENABLED,0)
+(ManipulateInformation,TRUE,1)
+(RestoreOriginalCommunication,OK,1)
+(ChooseAlternativeCommunication,OK,1)
+(Reconfigure,OK,1)
+(ManipulateInformation,FALSE,2)
+(RestoreOriginalCommunication,KO,2)
+(ChooseAlternativeCommunication,KO,2)
+(RestoreOriginalData,KO,2)
+(Reconfigure,KO,2)}</body>
+          </ownedComment>
+          <transition xmi:type="uml:Transition" xmi:id="_V_Xe0dlrEemUX_XmX1dp5g" name="T_GS3_GS2" source="_V81IMdlrEemUX_XmX1dp5g" target="_V_W3wNlrEemUX_XmX1dp5g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_V_YF7tlrEemUX_XmX1dp5g" name="T_GS3_GS1" source="_V81IMdlrEemUX_XmX1dp5g" target="_V_W3wtlrEemUX_XmX1dp5g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_V_YF_tlrEemUX_XmX1dp5g" name="T_GS3_GS0" source="_V81IMdlrEemUX_XmX1dp5g" target="_V_W3xNlrEemUX_XmX1dp5g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_V_YtBNlrEemUX_XmX1dp5g" name="T_GS2_GS3" source="_V_W3wNlrEemUX_XmX1dp5g" target="_V81IMdlrEemUX_XmX1dp5g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_V_YtDNlrEemUX_XmX1dp5g" name="T_GS2_GS1" source="_V_W3wNlrEemUX_XmX1dp5g" target="_V_W3wtlrEemUX_XmX1dp5g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_V_ZUCdlrEemUX_XmX1dp5g" name="T_GS2_GS0" source="_V_W3wNlrEemUX_XmX1dp5g" target="_V_W3xNlrEemUX_XmX1dp5g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_V_Z7ENlrEemUX_XmX1dp5g" name="T_GS1_GS3" source="_V_W3wtlrEemUX_XmX1dp5g" target="_V81IMdlrEemUX_XmX1dp5g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_V_Z7GtlrEemUX_XmX1dp5g" name="T_GS1_GS2" source="_V_W3wtlrEemUX_XmX1dp5g" target="_V_W3wNlrEemUX_XmX1dp5g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_V_aiKNlrEemUX_XmX1dp5g" name="T_GS1_GS0" source="_V_W3wtlrEemUX_XmX1dp5g" target="_V_W3xNlrEemUX_XmX1dp5g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_V_aiMdlrEemUX_XmX1dp5g" name="T_GS0_GS3" source="_V_W3xNlrEemUX_XmX1dp5g" target="_V81IMdlrEemUX_XmX1dp5g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_V_bJPtlrEemUX_XmX1dp5g" name="T_GS0_GS2" source="_V_W3xNlrEemUX_XmX1dp5g" target="_V_W3wNlrEemUX_XmX1dp5g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_V_bwTdlrEemUX_XmX1dp5g" name="T_GS0_GS1" source="_V_W3xNlrEemUX_XmX1dp5g" target="_V_W3wtlrEemUX_XmX1dp5g"/>
+          <subvertex xmi:type="uml:State" xmi:id="_V81IMdlrEemUX_XmX1dp5g" name="GS3"/>
+          <subvertex xmi:type="uml:State" xmi:id="_V_W3wNlrEemUX_XmX1dp5g" name="GS2"/>
+          <subvertex xmi:type="uml:State" xmi:id="_V_W3wtlrEemUX_XmX1dp5g" name="GS1"/>
+          <subvertex xmi:type="uml:State" xmi:id="_V_W3xNlrEemUX_XmX1dp5g" name="GS0"/>
+        </region>
+      </ownedBehavior>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UU2N4Ke_EemtL5iEr-5V3w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UU4qIKe_EemtL5iEr-5V3w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SURV_PROFILES/Survivability.profile.uml#_wkScEP1lEeepcPFrLzXu5A"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UU5RMKe_EemtL5iEr-5V3w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UU5RMae_EemtL5iEr-5V3w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#//MisuseCaseExtensions"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SURV_PROFILES/Survivability.profile.uml#_oxi5wI83EeiiMcgOEavNRg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UU54QKe_EemtL5iEr-5V3w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UU6fUKe_EemtL5iEr-5V3w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#//SAMExtensions"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SURV_PROFILES/Survivability.profile.uml#_0v4UAI83EeiiMcgOEavNRg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UU6fUae_EemtL5iEr-5V3w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UU6fUqe_EemtL5iEr-5V3w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#//SurvTypes"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SURV_PROFILES/Survivability.profile.uml#_-PPKYI83EeiiMcgOEavNRg"/>
+    </profileApplication>
+  </uml:Model>
+  <MisuseCaseExtensions:misuse xmi:id="_WTtHQKe_EemtL5iEr-5V3w" base_UseCase="_M5znYKe5EemtL5iEr-5V3w">
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_v1i24KfMEem_L8PldQPwOg" index="avail" set="" dec="10"/>
+  </MisuseCaseExtensions:misuse>
+  <MisuseCaseExtensions:misuse xmi:id="_X1iGYKe_EemtL5iEr-5V3w" base_UseCase="_qi7BUKe5EemtL5iEr-5V3w">
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_hGE8UKfNEem_L8PldQPwOg" index="integLevel" set="50" dec=""/>
+  </MisuseCaseExtensions:misuse>
+  <MisuseCaseExtensions:misuse xmi:id="_Y6pUUKe_EemtL5iEr-5V3w" base_UseCase="_4EV-8Ke5EemtL5iEr-5V3w">
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_4HHPAKfNEem_L8PldQPwOg" index="avail" set="0" dec=""/>
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_9NcPoKfNEem_L8PldQPwOg" index="integLevel" set="10"/>
+  </MisuseCaseExtensions:misuse>
+  <MisuseCaseExtensions:service xmi:id="_bP_bEKe_EemtL5iEr-5V3w" base_UseCase="_DY2yYKe1EemtL5iEr-5V3w">
+    <indices xmi:type="SurvTypes:index" xmi:id="_MX2EoKfLEem_L8PldQPwOg" name="avail" values="0..100" initial="100"/>
+    <indices xmi:type="SurvTypes:index" xmi:id="_ZRTDUKfLEem_L8PldQPwOg" name="integLevel" values="0..100" initial="100"/>
+  </MisuseCaseExtensions:service>
+  <MisuseCaseExtensions:service xmi:id="_cRUVMKe_EemtL5iEr-5V3w" base_UseCase="_w8asQKe0EemtL5iEr-5V3w">
+    <indices xmi:type="SurvTypes:index" xmi:id="_7XXJsKfLEem_L8PldQPwOg" name="avail" values="0..100" initial="100"/>
+    <indices xmi:type="SurvTypes:index" xmi:id="_-rCg8KfLEem_L8PldQPwOg" name="integLevel" values="0..100" initial="100"/>
+  </MisuseCaseExtensions:service>
+  <MisuseCaseExtensions:recovery xmi:id="_fAsFgKe_EemtL5iEr-5V3w" base_UseCase="_D2FcwKe8EemtL5iEr-5V3w">
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_SlmVcKfNEem_L8PldQPwOg" index="avail" set="100"/>
+  </MisuseCaseExtensions:recovery>
+  <MisuseCaseExtensions:recovery xmi:id="_f0C1EKe_EemtL5iEr-5V3w" base_UseCase="_Bt1E4Ke-EemtL5iEr-5V3w">
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_VuuCgKfNEem_L8PldQPwOg" index="avail" inc="10"/>
+  </MisuseCaseExtensions:recovery>
+  <MisuseCaseExtensions:recovery xmi:id="_glLXEKe_EemtL5iEr-5V3w" base_UseCase="_Oax4oKe-EemtL5iEr-5V3w">
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_nDbrkKfNEem_L8PldQPwOg" index="integLevel" set="100"/>
+  </MisuseCaseExtensions:recovery>
+  <MisuseCaseExtensions:recovery xmi:id="_hpR4YKe_EemtL5iEr-5V3w" base_UseCase="_w9W74Ke-EemtL5iEr-5V3w">
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_KBJysKfOEem_L8PldQPwOg" index="avail" set="100"/>
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_L60DAKfOEem_L8PldQPwOg" index="integLevel" set="90"/>
+  </MisuseCaseExtensions:recovery>
+  <MisuseCaseExtensions:threatens xmi:id="_Py4ysKfMEem_L8PldQPwOg" base_Dependency="_agYx0Ke5EemtL5iEr-5V3w"/>
+  <MisuseCaseExtensions:threatens xmi:id="_RgKz4KfMEem_L8PldQPwOg" base_Dependency="_P_HWAKe6EemtL5iEr-5V3w"/>
+  <MisuseCaseExtensions:threatens xmi:id="_SkWNsKfMEem_L8PldQPwOg" base_Dependency="_QmuIkKe6EemtL5iEr-5V3w"/>
+  <MisuseCaseExtensions:threatens xmi:id="_TZWjEKfMEem_L8PldQPwOg" base_Dependency="_Rt0TgKe6EemtL5iEr-5V3w"/>
+  <MisuseCaseExtensions:mitigates xmi:id="_VkeW0KfMEem_L8PldQPwOg" base_Dependency="_HfZa4Ke-EemtL5iEr-5V3w"/>
+  <MisuseCaseExtensions:mitigates xmi:id="_WjuNUKfMEem_L8PldQPwOg" base_Dependency="_g2SKoKe-EemtL5iEr-5V3w"/>
+  <MisuseCaseExtensions:mitigates xmi:id="_XjirkKfMEem_L8PldQPwOg" base_Dependency="_24CKkKe-EemtL5iEr-5V3w"/>
+  <MisuseCaseExtensions:mitigates xmi:id="_YqfskKfMEem_L8PldQPwOg" base_Dependency="_bjR1YKe9EemtL5iEr-5V3w"/>
+  <MisuseCaseExtensions:ServiceModeDefinition xmi:id="_UJHhMKfOEem_L8PldQPwOg" base_Constraint="_S-1fYKfOEem_L8PldQPwOg">
+    <formula>GS0,0,(ExchangeInformation.avail > 90) &amp; (ExchangeInformation.integLevel > 60) &amp; (UpdateMap.avail > 90) &amp; (UpdateMap.integLevel > 60)</formula>
+    <formula>GS1,1,(ExchangeInformation.avail > 80) &amp; (ExchangeInformation.integLevel > 60) &amp; (UpdateMap.avail > 80) &amp; (UpdateMap.integLevel > 60)</formula>
+    <formula>GS2,2,(ExchangeInformation.avail > 50) &amp; (ExchangeInformation.integLevel > 30) &amp; (UpdateMap.avail > 50) &amp; (UpdateMap.integLevel > 30)</formula>
+    <formula>GS3,3,</formula>
+  </MisuseCaseExtensions:ServiceModeDefinition>
+  <SAMExtensions:mode xmi:id="_V_WQsNlrEemUX_XmX1dp5g" base_State="_V81IMdlrEemUX_XmX1dp5g" severity="3"/>
+  <SAMExtensions:mode xmi:id="_V_W3wdlrEemUX_XmX1dp5g" base_State="_V_W3wNlrEemUX_XmX1dp5g" severity="2"/>
+  <SAMExtensions:mode xmi:id="_V_W3w9lrEemUX_XmX1dp5g" base_State="_V_W3wtlrEemUX_XmX1dp5g" severity="1"/>
+  <SAMExtensions:mode xmi:id="_V_Xe0NlrEemUX_XmX1dp5g" base_State="_V_W3xNlrEemUX_XmX1dp5g"/>
+  <SAMExtensions:scenario xmi:id="_V_Xe0tlrEemUX_XmX1dp5g" base_Transition="_V_Xe0dlrEemUX_XmX1dp5g">
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF4NlrEemUX_XmX1dp5g" service="_WTtHQKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF4dlrEemUX_XmX1dp5g" service="_Y6pUUKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF4tlrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF49lrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF5NlrEemUX_XmX1dp5g" service="_hpR4YKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF5dlrEemUX_XmX1dp5g" service="_X1iGYKe_EemtL5iEr-5V3w" value="TRUE" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF5tlrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF59lrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF6NlrEemUX_XmX1dp5g" service="_hpR4YKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF6dlrEemUX_XmX1dp5g" service="_X1iGYKe_EemtL5iEr-5V3w" value="FALSE" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF6tlrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="KO" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF69lrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="KO" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF7NlrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="ENABLED" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF7dlrEemUX_XmX1dp5g" service="_hpR4YKe_EemtL5iEr-5V3w" value="KO" step="2"/>
+  </SAMExtensions:scenario>
+  <SAMExtensions:scenario xmi:id="_V_YF79lrEemUX_XmX1dp5g" base_Transition="_V_YF7tlrEemUX_XmX1dp5g">
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF8NlrEemUX_XmX1dp5g" service="_X1iGYKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF8dlrEemUX_XmX1dp5g" service="_Y6pUUKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF8tlrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF89lrEemUX_XmX1dp5g" service="_hpR4YKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF9NlrEemUX_XmX1dp5g" service="_WTtHQKe_EemtL5iEr-5V3w" value="TRUE" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF9dlrEemUX_XmX1dp5g" service="_X1iGYKe_EemtL5iEr-5V3w" value="TRUE" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF9tlrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF99lrEemUX_XmX1dp5g" service="_hpR4YKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF-NlrEemUX_XmX1dp5g" service="_WTtHQKe_EemtL5iEr-5V3w" value="FALSE" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF-dlrEemUX_XmX1dp5g" service="_X1iGYKe_EemtL5iEr-5V3w" value="FALSE" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF-tlrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="ENABLED" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF-9lrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="ENABLED" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF_NlrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="KO" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YF_dlrEemUX_XmX1dp5g" service="_hpR4YKe_EemtL5iEr-5V3w" value="KO" step="2"/>
+  </SAMExtensions:scenario>
+  <SAMExtensions:scenario xmi:id="_V_Ys8NlrEemUX_XmX1dp5g" base_Transition="_V_YF_tlrEemUX_XmX1dp5g">
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Ys8dlrEemUX_XmX1dp5g" service="_WTtHQKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Ys8tlrEemUX_XmX1dp5g" service="_X1iGYKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Ys89lrEemUX_XmX1dp5g" service="_Y6pUUKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Ys9NlrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Ys9dlrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Ys9tlrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Ys99lrEemUX_XmX1dp5g" service="_hpR4YKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Ys-NlrEemUX_XmX1dp5g" service="_WTtHQKe_EemtL5iEr-5V3w" value="TRUE" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Ys-dlrEemUX_XmX1dp5g" service="_X1iGYKe_EemtL5iEr-5V3w" value="TRUE" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Ys-tlrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Ys-9lrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Ys_NlrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Ys_dlrEemUX_XmX1dp5g" service="_hpR4YKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Ys_tlrEemUX_XmX1dp5g" service="_WTtHQKe_EemtL5iEr-5V3w" value="FALSE" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Ys_9lrEemUX_XmX1dp5g" service="_X1iGYKe_EemtL5iEr-5V3w" value="FALSE" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YtANlrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="KO" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YtAdlrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="KO" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YtAtlrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="KO" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YtA9lrEemUX_XmX1dp5g" service="_hpR4YKe_EemtL5iEr-5V3w" value="KO" step="2"/>
+  </SAMExtensions:scenario>
+  <SAMExtensions:scenario xmi:id="_V_YtBdlrEemUX_XmX1dp5g" base_Transition="_V_YtBNlrEemUX_XmX1dp5g">
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YtBtlrEemUX_XmX1dp5g" service="_X1iGYKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YtB9lrEemUX_XmX1dp5g" service="_Y6pUUKe_EemtL5iEr-5V3w" value="TRUE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YtCNlrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YtCdlrEemUX_XmX1dp5g" service="_Y6pUUKe_EemtL5iEr-5V3w" value="FALSE" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YtCtlrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_YtC9lrEemUX_XmX1dp5g" service="_hpR4YKe_EemtL5iEr-5V3w" value="ENABLED" step="1"/>
+  </SAMExtensions:scenario>
+  <SAMExtensions:scenario xmi:id="_V_ZUANlrEemUX_XmX1dp5g" base_Transition="_V_YtDNlrEemUX_XmX1dp5g">
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUAdlrEemUX_XmX1dp5g" service="_X1iGYKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUAtlrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUA9lrEemUX_XmX1dp5g" service="_WTtHQKe_EemtL5iEr-5V3w" value="TRUE" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUBNlrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUBdlrEemUX_XmX1dp5g" service="_WTtHQKe_EemtL5iEr-5V3w" value="FALSE" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUBtlrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="ENABLED" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUB9lrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="ENABLED" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUCNlrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="KO" step="2"/>
+  </SAMExtensions:scenario>
+  <SAMExtensions:scenario xmi:id="_V_ZUCtlrEemUX_XmX1dp5g" base_Transition="_V_ZUCdlrEemUX_XmX1dp5g">
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUC9lrEemUX_XmX1dp5g" service="_WTtHQKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUDNlrEemUX_XmX1dp5g" service="_X1iGYKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUDdlrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUDtlrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUD9lrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUENlrEemUX_XmX1dp5g" service="_WTtHQKe_EemtL5iEr-5V3w" value="TRUE" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUEdlrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUEtlrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUE9lrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUFNlrEemUX_XmX1dp5g" service="_WTtHQKe_EemtL5iEr-5V3w" value="FALSE" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUFdlrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="KO" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUFtlrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="KO" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_ZUF9lrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="KO" step="2"/>
+  </SAMExtensions:scenario>
+  <SAMExtensions:scenario xmi:id="_V_Z7EdlrEemUX_XmX1dp5g" base_Transition="_V_Z7ENlrEemUX_XmX1dp5g">
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Z7EtlrEemUX_XmX1dp5g" service="_WTtHQKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Z7E9lrEemUX_XmX1dp5g" service="_Y6pUUKe_EemtL5iEr-5V3w" value="TRUE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Z7FNlrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Z7FdlrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Z7FtlrEemUX_XmX1dp5g" service="_Y6pUUKe_EemtL5iEr-5V3w" value="FALSE" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Z7F9lrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Z7GNlrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_Z7GdlrEemUX_XmX1dp5g" service="_hpR4YKe_EemtL5iEr-5V3w" value="ENABLED" step="1"/>
+  </SAMExtensions:scenario>
+  <SAMExtensions:scenario xmi:id="_V_Z7G9lrEemUX_XmX1dp5g" base_Transition="_V_Z7GtlrEemUX_XmX1dp5g">
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_aiINlrEemUX_XmX1dp5g" service="_WTtHQKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_aiIdlrEemUX_XmX1dp5g" service="_X1iGYKe_EemtL5iEr-5V3w" value="TRUE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_aiItlrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_aiI9lrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_aiJNlrEemUX_XmX1dp5g" service="_X1iGYKe_EemtL5iEr-5V3w" value="FALSE" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_aiJdlrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_aiJtlrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_aiJ9lrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="ENABLED" step="1"/>
+  </SAMExtensions:scenario>
+  <SAMExtensions:scenario xmi:id="_V_aiKdlrEemUX_XmX1dp5g" base_Transition="_V_aiKNlrEemUX_XmX1dp5g">
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_aiKtlrEemUX_XmX1dp5g" service="_WTtHQKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_aiK9lrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_aiLNlrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="ENABLED"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_aiLdlrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_aiLtlrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="OK" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_aiL9lrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="KO" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_aiMNlrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="KO" step="2"/>
+  </SAMExtensions:scenario>
+  <SAMExtensions:scenario xmi:id="_V_bJMNlrEemUX_XmX1dp5g" base_Transition="_V_aiMdlrEemUX_XmX1dp5g">
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bJMdlrEemUX_XmX1dp5g" service="_WTtHQKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bJMtlrEemUX_XmX1dp5g" service="_X1iGYKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bJM9lrEemUX_XmX1dp5g" service="_Y6pUUKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bJNNlrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="KO"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bJNdlrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="KO"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bJNtlrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="KO"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bJN9lrEemUX_XmX1dp5g" service="_hpR4YKe_EemtL5iEr-5V3w" value="KO"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bJONlrEemUX_XmX1dp5g" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bJOdlrEemUX_XmX1dp5g" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bJOtlrEemUX_XmX1dp5g" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bJO9lrEemUX_XmX1dp5g" service="_Y6pUUKe_EemtL5iEr-5V3w" value="TRUE" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bJPNlrEemUX_XmX1dp5g" service="_Y6pUUKe_EemtL5iEr-5V3w" value="FALSE" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bJPdlrEemUX_XmX1dp5g" service="_hpR4YKe_EemtL5iEr-5V3w" value="ENABLED" step="2"/>
+  </SAMExtensions:scenario>
+  <SAMExtensions:scenario xmi:id="_V_bJP9lrEemUX_XmX1dp5g" base_Transition="_V_bJPtlrEemUX_XmX1dp5g">
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwQNlrEemUX_XmX1dp5g" service="_WTtHQKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwQdlrEemUX_XmX1dp5g" service="_X1iGYKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwQtlrEemUX_XmX1dp5g" service="_Y6pUUKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwQ9lrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="KO"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwRNlrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="KO"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwRdlrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="KO"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwRtlrEemUX_XmX1dp5g" service="_hpR4YKe_EemtL5iEr-5V3w" value="KO"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwR9lrEemUX_XmX1dp5g" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwSNlrEemUX_XmX1dp5g" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwSdlrEemUX_XmX1dp5g" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwStlrEemUX_XmX1dp5g" service="_X1iGYKe_EemtL5iEr-5V3w" value="TRUE" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwS9lrEemUX_XmX1dp5g" service="_X1iGYKe_EemtL5iEr-5V3w" value="FALSE" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwTNlrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="ENABLED" step="2"/>
+  </SAMExtensions:scenario>
+  <SAMExtensions:scenario xmi:id="_V_bwTtlrEemUX_XmX1dp5g" base_Transition="_V_bwTdlrEemUX_XmX1dp5g">
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwT9lrEemUX_XmX1dp5g" service="_WTtHQKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwUNlrEemUX_XmX1dp5g" service="_X1iGYKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwUdlrEemUX_XmX1dp5g" service="_Y6pUUKe_EemtL5iEr-5V3w" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwUtlrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="KO"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwU9lrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="KO"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwVNlrEemUX_XmX1dp5g" service="_glLXEKe_EemtL5iEr-5V3w" value="KO"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwVdlrEemUX_XmX1dp5g" service="_hpR4YKe_EemtL5iEr-5V3w" value="KO"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwVtlrEemUX_XmX1dp5g" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwV9lrEemUX_XmX1dp5g" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwWNlrEemUX_XmX1dp5g" value="FALSE"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwWdlrEemUX_XmX1dp5g" service="_WTtHQKe_EemtL5iEr-5V3w" value="TRUE" step="1"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwWtlrEemUX_XmX1dp5g" service="_WTtHQKe_EemtL5iEr-5V3w" value="FALSE" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwW9lrEemUX_XmX1dp5g" service="_fAsFgKe_EemtL5iEr-5V3w" value="ENABLED" step="2"/>
+    <path xmi:type="SAMExtensions:MSactivation" xmi:id="_V_bwXNlrEemUX_XmX1dp5g" service="_f0C1EKe_EemtL5iEr-5V3w" value="ENABLED" step="2"/>
+  </SAMExtensions:scenario>
+</xmi:XMI>
