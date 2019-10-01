@@ -69,7 +69,7 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6d9DseEqEemQ7NENoS-K9A" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_6d9qwOEqEemQ7NENoS-K9A" name="alertdriver" type="_UgRGQN-PEemORMNwx65W2A" association="_6d7OgOEqEemQ7NENoS-K9A"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_6d-R0OEqEemQ7NENoS-K9A" name="driver" type="_4tzToN-IEemORMNwx65W2A" association="_6d7OgOEqEemQ7NENoS-K9A"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_6d-R0OEqEemQ7NENoS-K9A" name="driver" type="_K23fsORIEemM4bYIsFFHVw" association="_6d7OgOEqEemQ7NENoS-K9A"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_DnvSsOErEemQ7NENoS-K9A" client="_ViJ5sN-SEemORMNwx65W2A" supplier="_G0qHUN-OEemORMNwx65W2A"/>
     <packagedElement xmi:type="uml:Association" xmi:id="__C1HoOErEemQ7NENoS-K9A" memberEnd="__C1useErEemQ7NENoS-K9A __C1usuErEemQ7NENoS-K9A">
@@ -80,6 +80,7 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="__C1usuErEemQ7NENoS-K9A" name="on-lineinfotaintment" type="_Ke_LYN-LEemORMNwx65W2A" association="__C1HoOErEemQ7NENoS-K9A"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_fGaY4OEsEemQ7NENoS-K9A" client="_jvQGAN-cEemORMNwx65W2A" supplier="_fHYKsN-WEemORMNwx65W2A"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_K23fsORIEemM4bYIsFFHVw" name="RoadSensors"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RuiwMOB5EemsyMYBu-eLZQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RujXQOB5EemsyMYBu-eLZQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#/"/>
