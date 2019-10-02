@@ -9,21 +9,12 @@
     </packageImport>
     <packagedElement xmi:type="uml:Actor" xmi:id="_4tzToN-IEemORMNwx65W2A" name="Driver"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_Ke_LYN-LEemORMNwx65W2A" name="On-LineInfotaintment"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_mUmK4N-MEemORMNwx65W2A" name="MotionControl"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_sJqg0N-MEemORMNwx65W2A" name="OnBoardSensors"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_V2lq4N-NEemORMNwx65W2A" memberEnd="_V2mR8t-NEemORMNwx65W2A _V2m5AN-NEemORMNwx65W2A">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_V2mR8N-NEemORMNwx65W2A" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_V2mR8d-NEemORMNwx65W2A" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_V2mR8t-NEemORMNwx65W2A" name="usecase9" type="_mUmK4N-MEemORMNwx65W2A" association="_V2lq4N-NEemORMNwx65W2A"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_V2m5AN-NEemORMNwx65W2A" name="ads" type="_sJqg0N-MEemORMNwx65W2A" association="_V2lq4N-NEemORMNwx65W2A"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_AazpUN-OEemORMNwx65W2A" name="MaintainSpeed"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_G0qHUN-OEemORMNwx65W2A" name="MaintainDistance"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_VkkRUN-OEemORMNwx65W2A" name="EmergencyBraking"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_UgRGQN-PEemORMNwx65W2A" name="AlertDriver"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_ViJ5sN-SEemORMNwx65W2A" name="TakeControl"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_bT9gQN-SEemORMNwx65W2A" client="_ViJ5sN-SEemORMNwx65W2A" supplier="_mUmK4N-MEemORMNwx65W2A"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_FBBNMN-TEemORMNwx65W2A" name="SendCraftedDABdata"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_K5sQwN-TEemORMNwx65W2A" client="_FBBNMN-TEemORMNwx65W2A" supplier="_Ke_LYN-LEemORMNwx65W2A"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_MHQlMN-VEemORMNwx65W2A" name="SensorsJamming"/>
@@ -81,6 +72,28 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_fGaY4OEsEemQ7NENoS-K9A" client="_jvQGAN-cEemORMNwx65W2A" supplier="_fHYKsN-WEemORMNwx65W2A"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_K23fsORIEemM4bYIsFFHVw" name="RoadSensors"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_vHfm4ORNEemmFaoyWBqZKw" name="OnBoardActuators"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xb4EUORNEemmFaoyWBqZKw" memberEnd="_xb55gORNEemmFaoyWBqZKw _xb55geRNEemmFaoyWBqZKw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xb5ScORNEemmFaoyWBqZKw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xb5SceRNEemmFaoyWBqZKw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_xb55gORNEemmFaoyWBqZKw" name="maintainspeed" type="_AazpUN-OEemORMNwx65W2A" association="_xb4EUORNEemmFaoyWBqZKw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_xb55geRNEemmFaoyWBqZKw" name="onboardactuators" type="_vHfm4ORNEemmFaoyWBqZKw" association="_xb4EUORNEemmFaoyWBqZKw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_yVdXsORNEemmFaoyWBqZKw" memberEnd="_yVd-wuRNEemmFaoyWBqZKw _yVd-w-RNEemmFaoyWBqZKw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yVd-wORNEemmFaoyWBqZKw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yVd-weRNEemmFaoyWBqZKw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_yVd-wuRNEemmFaoyWBqZKw" name="maintaindistance" type="_G0qHUN-OEemORMNwx65W2A" association="_yVdXsORNEemmFaoyWBqZKw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_yVd-w-RNEemmFaoyWBqZKw" name="onboardactuators" type="_vHfm4ORNEemmFaoyWBqZKw" association="_yVdXsORNEemmFaoyWBqZKw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zDqhgORNEemmFaoyWBqZKw" memberEnd="_zDrIkeRNEemmFaoyWBqZKw _zDrIkuRNEemmFaoyWBqZKw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zDqhgeRNEemmFaoyWBqZKw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zDrIkORNEemmFaoyWBqZKw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_zDrIkeRNEemmFaoyWBqZKw" name="emergencybraking" type="_VkkRUN-OEemORMNwx65W2A" association="_zDqhgORNEemmFaoyWBqZKw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_zDrIkuRNEemmFaoyWBqZKw" name="onboardactuators" type="_vHfm4ORNEemmFaoyWBqZKw" association="_zDqhgORNEemmFaoyWBqZKw"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RuiwMOB5EemsyMYBu-eLZQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RujXQOB5EemsyMYBu-eLZQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#/"/>
@@ -107,7 +120,6 @@
     </profileApplication>
   </uml:Model>
   <MisuseCaseExtensions:service xmi:id="_TFYnUOB5EemsyMYBu-eLZQ" base_UseCase="_UgRGQN-PEemORMNwx65W2A"/>
-  <MisuseCaseExtensions:service xmi:id="_TrCSEOB5EemsyMYBu-eLZQ" base_UseCase="_mUmK4N-MEemORMNwx65W2A"/>
   <MisuseCaseExtensions:service xmi:id="_UPj7cOB5EemsyMYBu-eLZQ" base_UseCase="_AazpUN-OEemORMNwx65W2A"/>
   <MisuseCaseExtensions:service xmi:id="_U_AbYOB5EemsyMYBu-eLZQ" base_UseCase="_G0qHUN-OEemORMNwx65W2A"/>
   <MisuseCaseExtensions:service xmi:id="_VskE8OB5EemsyMYBu-eLZQ" base_UseCase="_VkkRUN-OEemORMNwx65W2A"/>
@@ -119,7 +131,6 @@
   <MisuseCaseExtensions:misuse xmi:id="_e-PrsOB5EemsyMYBu-eLZQ" base_UseCase="_FBBNMN-TEemORMNwx65W2A"/>
   <MisuseCaseExtensions:misuse xmi:id="_fzPaAOB5EemsyMYBu-eLZQ" base_UseCase="_fHYKsN-WEemORMNwx65W2A"/>
   <MisuseCaseExtensions:threatens xmi:id="_ic_qgOB5EemsyMYBu-eLZQ" base_Dependency="_bU13wN-XEemORMNwx65W2A"/>
-  <MisuseCaseExtensions:threatens xmi:id="_js-rsOB5EemsyMYBu-eLZQ" base_Dependency="_bT9gQN-SEemORMNwx65W2A"/>
   <MisuseCaseExtensions:threatens xmi:id="_ki3K0OB5EemsyMYBu-eLZQ" base_Dependency="_gdJgQN-VEemORMNwx65W2A"/>
   <MisuseCaseExtensions:threatens xmi:id="_mib14OB5EemsyMYBu-eLZQ" base_Dependency="_VwQqUN-WEemORMNwx65W2A"/>
   <MisuseCaseExtensions:threatens xmi:id="_pYYvUOB5EemsyMYBu-eLZQ" base_Dependency="_QWVNsN-VEemORMNwx65W2A"/>
