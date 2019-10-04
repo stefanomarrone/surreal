@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MisuseCaseExtensions="http://org.surreal.SurvivabilityProfile/profiles/MisuseCaseExtensions/1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://org.surreal.SurvivabilityProfile/profiles/MisuseCaseExtensions/1.0 http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#//MisuseCaseExtensions">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MisuseCaseExtensions="http://org.surreal.SurvivabilityProfile/profiles/MisuseCaseExtensions/1.0" xmlns:SurvTypes="http://org.surreal.SurvivabilityProfile/profiles/SurvTypes/1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://org.surreal.SurvivabilityProfile/profiles/MisuseCaseExtensions/1.0 http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#//MisuseCaseExtensions http://org.surreal.SurvivabilityProfile/profiles/SurvTypes/1.0 http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#//SurvTypes">
   <uml:Model xmi:id="_3W9cgN-IEemORMNwx65W2A" name="SmartCar">
     <ownedRule xmi:type="uml:Constraint" xmi:id="_nHIXAOB8EemsyMYBu-eLZQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_nHJlIOB8EemsyMYBu-eLZQ" visibility="private" language="" body=""/>
@@ -94,6 +94,12 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_zDrIkeRNEemmFaoyWBqZKw" name="emergencybraking" type="_VkkRUN-OEemORMNwx65W2A" association="_zDqhgORNEemmFaoyWBqZKw"/>
       <ownedEnd xmi:type="uml:Property" xmi:id="_zDrIkuRNEemmFaoyWBqZKw" name="onboardactuators" type="_vHfm4ORNEemmFaoyWBqZKw" association="_zDqhgORNEemmFaoyWBqZKw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_3suycOZ-EemLdoj29xQXvw" client="_46OgUOZ-EemLdoj29xQXvw" supplier="_VkkRUN-OEemORMNwx65W2A"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_4e2y8OZ-EemLdoj29xQXvw" client="_fHYKsN-WEemORMNwx65W2A" supplier="_G0qHUN-OEemORMNwx65W2A"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_46OgUOZ-EemLdoj29xQXvw" client="_fHYKsN-WEemORMNwx65W2A" supplier="_AazpUN-OEemORMNwx65W2A"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_AkjuwOZ_EemLdoj29xQXvw" client="_FBBNMN-TEemORMNwx65W2A" supplier="_VkkRUN-OEemORMNwx65W2A"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_BzfAAOZ_EemLdoj29xQXvw" client="_FBBNMN-TEemORMNwx65W2A" supplier="_G0qHUN-OEemORMNwx65W2A"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_Cin98OZ_EemLdoj29xQXvw" client="_FBBNMN-TEemORMNwx65W2A" supplier="_AazpUN-OEemORMNwx65W2A"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RuiwMOB5EemsyMYBu-eLZQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RujXQOB5EemsyMYBu-eLZQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://org.surreal.SurvivabilityProfile/profiles/Survivability/1.0#/"/>
@@ -119,17 +125,44 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://SURV_PROFILES/Survivability.profile.uml#_-PPKYI83EeiiMcgOEavNRg"/>
     </profileApplication>
   </uml:Model>
-  <MisuseCaseExtensions:service xmi:id="_TFYnUOB5EemsyMYBu-eLZQ" base_UseCase="_UgRGQN-PEemORMNwx65W2A"/>
-  <MisuseCaseExtensions:service xmi:id="_UPj7cOB5EemsyMYBu-eLZQ" base_UseCase="_AazpUN-OEemORMNwx65W2A"/>
-  <MisuseCaseExtensions:service xmi:id="_U_AbYOB5EemsyMYBu-eLZQ" base_UseCase="_G0qHUN-OEemORMNwx65W2A"/>
-  <MisuseCaseExtensions:service xmi:id="_VskE8OB5EemsyMYBu-eLZQ" base_UseCase="_VkkRUN-OEemORMNwx65W2A"/>
-  <MisuseCaseExtensions:service xmi:id="_WapS8OB5EemsyMYBu-eLZQ" base_UseCase="_Ke_LYN-LEemORMNwx65W2A"/>
-  <MisuseCaseExtensions:misuse xmi:id="_bqQycOB5EemsyMYBu-eLZQ" base_UseCase="_5C-xEN-WEemORMNwx65W2A"/>
-  <MisuseCaseExtensions:misuse xmi:id="_cSa-oOB5EemsyMYBu-eLZQ" base_UseCase="_ViJ5sN-SEemORMNwx65W2A"/>
-  <MisuseCaseExtensions:misuse xmi:id="_dBKT8OB5EemsyMYBu-eLZQ" base_UseCase="_MHQlMN-VEemORMNwx65W2A"/>
-  <MisuseCaseExtensions:misuse xmi:id="_dtFl0OB5EemsyMYBu-eLZQ" base_UseCase="_vucqoN-WEemORMNwx65W2A"/>
-  <MisuseCaseExtensions:misuse xmi:id="_e-PrsOB5EemsyMYBu-eLZQ" base_UseCase="_FBBNMN-TEemORMNwx65W2A"/>
-  <MisuseCaseExtensions:misuse xmi:id="_fzPaAOB5EemsyMYBu-eLZQ" base_UseCase="_fHYKsN-WEemORMNwx65W2A"/>
+  <MisuseCaseExtensions:service xmi:id="_TFYnUOB5EemsyMYBu-eLZQ" base_UseCase="_UgRGQN-PEemORMNwx65W2A">
+    <indices xmi:type="SurvTypes:index" xmi:id="_uzxi0OaAEemLdoj29xQXvw" name="ASIL" values="0..100" initial="100"/>
+    <indices xmi:type="SurvTypes:index" xmi:id="_wYKGsOaAEemLdoj29xQXvw" name="avail" values="0..6" initial="6"/>
+  </MisuseCaseExtensions:service>
+  <MisuseCaseExtensions:service xmi:id="_UPj7cOB5EemsyMYBu-eLZQ" base_UseCase="_AazpUN-OEemORMNwx65W2A">
+    <indices xmi:type="SurvTypes:index" xmi:id="_me5YAOZ_EemLdoj29xQXvw" name="ASIL" values="0..100" initial="100"/>
+  </MisuseCaseExtensions:service>
+  <MisuseCaseExtensions:service xmi:id="_U_AbYOB5EemsyMYBu-eLZQ" base_UseCase="_G0qHUN-OEemORMNwx65W2A">
+    <indices xmi:type="SurvTypes:index" xmi:id="_TxLfMOaAEemLdoj29xQXvw" name="ASIL" values="0..100" initial="100"/>
+  </MisuseCaseExtensions:service>
+  <MisuseCaseExtensions:service xmi:id="_VskE8OB5EemsyMYBu-eLZQ" base_UseCase="_VkkRUN-OEemORMNwx65W2A">
+    <indices xmi:type="SurvTypes:index" xmi:id="_m0Tx4OaAEemLdoj29xQXvw" name="ASIL" values="0..100" initial="100"/>
+  </MisuseCaseExtensions:service>
+  <MisuseCaseExtensions:service xmi:id="_WapS8OB5EemsyMYBu-eLZQ" base_UseCase="_Ke_LYN-LEemORMNwx65W2A">
+    <indices xmi:type="SurvTypes:index" xmi:id="_pVFFgOaAEemLdoj29xQXvw" name="ASIL" values="0..100" initial="100"/>
+    <indices xmi:type="SurvTypes:index" xmi:id="_rS3n4OaAEemLdoj29xQXvw" name="avail" values="0..6" initial="6"/>
+  </MisuseCaseExtensions:service>
+  <MisuseCaseExtensions:misuse xmi:id="_bqQycOB5EemsyMYBu-eLZQ" base_UseCase="_5C-xEN-WEemORMNwx65W2A">
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_FgrjUOanEemLdoj29xQXvw" index="ASIL" set="50" inc="" dec=""/>
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_Hi4roOanEemLdoj29xQXvw" index="avail" inc="" dec="1"/>
+  </MisuseCaseExtensions:misuse>
+  <MisuseCaseExtensions:misuse xmi:id="_cSa-oOB5EemsyMYBu-eLZQ" base_UseCase="_ViJ5sN-SEemORMNwx65W2A">
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_thYRkOamEemLdoj29xQXvw" index="ASIL" set="0" inc="" dec=""/>
+  </MisuseCaseExtensions:misuse>
+  <MisuseCaseExtensions:misuse xmi:id="_dBKT8OB5EemsyMYBu-eLZQ" base_UseCase="_MHQlMN-VEemORMNwx65W2A">
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_5quB8OamEemLdoj29xQXvw" index="ASIL" inc="" dec="20"/>
+  </MisuseCaseExtensions:misuse>
+  <MisuseCaseExtensions:misuse xmi:id="_dtFl0OB5EemsyMYBu-eLZQ" base_UseCase="_vucqoN-WEemORMNwx65W2A">
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_2w1DsOamEemLdoj29xQXvw" index="ASIL" set="" inc="" dec="20"/>
+  </MisuseCaseExtensions:misuse>
+  <MisuseCaseExtensions:misuse xmi:id="_e-PrsOB5EemsyMYBu-eLZQ" base_UseCase="_FBBNMN-TEemORMNwx65W2A">
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_Acrd8OanEemLdoj29xQXvw" index="ASIL" set="50" dec=""/>
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_CqQIwOanEemLdoj29xQXvw" index="avail" inc="" dec="1"/>
+  </MisuseCaseExtensions:misuse>
+  <MisuseCaseExtensions:misuse xmi:id="_fzPaAOB5EemsyMYBu-eLZQ" base_UseCase="_fHYKsN-WEemORMNwx65W2A">
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_8qF9IOamEemLdoj29xQXvw" index="ASIL" set="50" inc="" dec=""/>
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_-j5XYOamEemLdoj29xQXvw" index="avail" inc="" dec="1"/>
+  </MisuseCaseExtensions:misuse>
   <MisuseCaseExtensions:threatens xmi:id="_ic_qgOB5EemsyMYBu-eLZQ" base_Dependency="_bU13wN-XEemORMNwx65W2A"/>
   <MisuseCaseExtensions:threatens xmi:id="_ki3K0OB5EemsyMYBu-eLZQ" base_Dependency="_gdJgQN-VEemORMNwx65W2A"/>
   <MisuseCaseExtensions:threatens xmi:id="_mib14OB5EemsyMYBu-eLZQ" base_Dependency="_VwQqUN-WEemORMNwx65W2A"/>
@@ -137,12 +170,25 @@
   <MisuseCaseExtensions:threatens xmi:id="_vGVJkOB5EemsyMYBu-eLZQ" base_Dependency="_xneBwN-WEemORMNwx65W2A"/>
   <MisuseCaseExtensions:threatens xmi:id="_x-2O0OB5EemsyMYBu-eLZQ" base_Dependency="_K5sQwN-TEemORMNwx65W2A"/>
   <MisuseCaseExtensions:threatens xmi:id="_yr4T8OB5EemsyMYBu-eLZQ" base_Dependency="_mvDtwN-WEemORMNwx65W2A"/>
-  <MisuseCaseExtensions:recovery xmi:id="_AKtQkOB6EemsyMYBu-eLZQ" base_UseCase="_eHNQsN-iEemORMNwx65W2A"/>
-  <MisuseCaseExtensions:recovery xmi:id="_A0Qj4OB6EemsyMYBu-eLZQ" base_UseCase="_LCSAgN-dEemORMNwx65W2A"/>
-  <MisuseCaseExtensions:recovery xmi:id="_CNDi0OB6EemsyMYBu-eLZQ" base_UseCase="_jvQGAN-cEemORMNwx65W2A"/>
-  <MisuseCaseExtensions:recovery xmi:id="_C4uWAOB6EemsyMYBu-eLZQ" base_UseCase="_QoW_kN-aEemORMNwx65W2A"/>
-  <MisuseCaseExtensions:recovery xmi:id="_DkkIUOB6EemsyMYBu-eLZQ" base_UseCase="_Cdh4kN-aEemORMNwx65W2A"/>
-  <MisuseCaseExtensions:recovery xmi:id="_EY-n0OB6EemsyMYBu-eLZQ" base_UseCase="_nggiYN-iEemORMNwx65W2A"/>
+  <MisuseCaseExtensions:recovery xmi:id="_AKtQkOB6EemsyMYBu-eLZQ" base_UseCase="_eHNQsN-iEemORMNwx65W2A">
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_R_9HcOanEemLdoj29xQXvw" index="ASIL" set="100" inc=""/>
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_Tr99UOanEemLdoj29xQXvw" index="avail" inc="1" dec=""/>
+  </MisuseCaseExtensions:recovery>
+  <MisuseCaseExtensions:recovery xmi:id="_A0Qj4OB6EemsyMYBu-eLZQ" base_UseCase="_LCSAgN-dEemORMNwx65W2A">
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_YIqyIOanEemLdoj29xQXvw" index="ASIL" set="100" inc=""/>
+  </MisuseCaseExtensions:recovery>
+  <MisuseCaseExtensions:recovery xmi:id="_CNDi0OB6EemsyMYBu-eLZQ" base_UseCase="_jvQGAN-cEemORMNwx65W2A">
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_VjHFIOanEemLdoj29xQXvw" index="ASIL" set="100" inc=""/>
+  </MisuseCaseExtensions:recovery>
+  <MisuseCaseExtensions:recovery xmi:id="_C4uWAOB6EemsyMYBu-eLZQ" base_UseCase="_QoW_kN-aEemORMNwx65W2A">
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_PiqloOanEemLdoj29xQXvw" index="ASIL" inc="20" dec=""/>
+  </MisuseCaseExtensions:recovery>
+  <MisuseCaseExtensions:recovery xmi:id="_DkkIUOB6EemsyMYBu-eLZQ" base_UseCase="_Cdh4kN-aEemORMNwx65W2A">
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_Khl4cOanEemLdoj29xQXvw" index="avail" set="0" inc=""/>
+  </MisuseCaseExtensions:recovery>
+  <MisuseCaseExtensions:recovery xmi:id="_EY-n0OB6EemsyMYBu-eLZQ" base_UseCase="_nggiYN-iEemORMNwx65W2A">
+    <affects xmi:type="SurvTypes:affectConsequence" xmi:id="_aPzdwOanEemLdoj29xQXvw" index="avail" set="0" inc=""/>
+  </MisuseCaseExtensions:recovery>
   <MisuseCaseExtensions:mitigates xmi:id="_FoKXwOB6EemsyMYBu-eLZQ" base_Dependency="_qLgJAN-iEemORMNwx65W2A"/>
   <MisuseCaseExtensions:mitigates xmi:id="_GmVQMOB6EemsyMYBu-eLZQ" base_Dependency="_GWbcwN-aEemORMNwx65W2A"/>
   <MisuseCaseExtensions:mitigates xmi:id="_HcUdAOB6EemsyMYBu-eLZQ" base_Dependency="_sguisN-cEemORMNwx65W2A"/>
@@ -150,8 +196,21 @@
   <MisuseCaseExtensions:mitigates xmi:id="_JU5IMOB6EemsyMYBu-eLZQ" base_Dependency="_TLLhoN-aEemORMNwx65W2A"/>
   <MisuseCaseExtensions:mitigates xmi:id="_NlVpsOB6EemsyMYBu-eLZQ" base_Dependency="_QDqPsN-dEemORMNwx65W2A"/>
   <MisuseCaseExtensions:mitigates xmi:id="_OMnsIOB6EemsyMYBu-eLZQ" base_Dependency="_gJaZAN-iEemORMNwx65W2A"/>
-  <MisuseCaseExtensions:ServiceModeDefinition xmi:id="_oiqg4OB8EemsyMYBu-eLZQ" base_Constraint="_nHIXAOB8EemsyMYBu-eLZQ"/>
+  <MisuseCaseExtensions:ServiceModeDefinition xmi:id="_oiqg4OB8EemsyMYBu-eLZQ" base_Constraint="_nHIXAOB8EemsyMYBu-eLZQ">
+    <formula>Optimal,0,(MaintainSpeed.ASIL > 75) &amp; (MaintainDistance.ASIL > 75) &amp; (EmergencyBreaking.ASIL > 75) &amp; (AlertDriver.ASIL > 75) &amp; (On-LineInfotaintment.ASIL > 75) &amp; (AlertDriver.avail > 5) &amp; (On-LineInfotaintment.avail >5)</formula>
+    <formula>DegradedICandEN,1, (MaintainSpeed.ASIL > 75) &amp; (MaintainDistance.ASIL > 75) &amp; (EmergencyBreaking.ASIL > 75) &amp; (AlertDriver.ASIL > 50) &amp; (On-LineInfotaintment.ASIL > 50) &amp; (AlertDriver.avail > 4) &amp; (On-LineInfotaintment.avail > 4)</formula>
+    <formula>DegradedASDSafety, 2,  (MaintainSpeed.ASIL > 50) &amp; (MaintainDistance.ASIL > 50) &amp; (EmergencyBreaking.ASIL > 50) &amp; (AlertDriver.ASIL > 75) &amp; (On-LineInfotaintment.ASIL > 75) &amp; (AlertDriver.avail > 5) &amp; (On-LineInfotaintment.avail >5)</formula>
+    <formula>Degraded,3, (MaintainSpeed.ASIL > 50) &amp; (MaintainDistance.ASIL > 50) &amp; (EmergencyBreaking.ASIL > 50) &amp; (On-LineInfotaintment.ASIL > 50) &amp; (On-LineInfotaintment.avail >4) &amp; (AlertDriver.ASIL > 50) &amp;  (AlertDriver.avail > 4)</formula>
+    <formula>VeryDegraded,4, (MaintainSpeed.ASIL > 25) &amp; (MaintainDistance.ASIL > 25) &amp; (EmergencyBreaking.ASIL > 25) &amp; (On-LineInfotaintment.ASIL > 25) &amp; (On-LineInfotaintment.avail >4) &amp; (AlertDriver.ASIL > 25) &amp;  (AlertDriver.avail > 4)</formula>
+    <formula>WorstDegradation, 5,</formula>
+  </MisuseCaseExtensions:ServiceModeDefinition>
   <MisuseCaseExtensions:mitigates xmi:id="_vfzCIOEsEemQ7NENoS-K9A" base_Dependency="_fGaY4OEsEemQ7NENoS-K9A"/>
   <MisuseCaseExtensions:threatens xmi:id="_AgEsQOEtEemQ7NENoS-K9A" base_Dependency="_96hjIOEoEemQ7NENoS-K9A"/>
   <MisuseCaseExtensions:threatens xmi:id="_Bj6H0OEtEemQ7NENoS-K9A" base_Dependency="_DnvSsOErEemQ7NENoS-K9A"/>
+  <MisuseCaseExtensions:threatens xmi:id="_GJeI0OZ_EemLdoj29xQXvw" base_Dependency="_46OgUOZ-EemLdoj29xQXvw"/>
+  <MisuseCaseExtensions:threatens xmi:id="_IG10cOZ_EemLdoj29xQXvw" base_Dependency="_Cin98OZ_EemLdoj29xQXvw"/>
+  <MisuseCaseExtensions:threatens xmi:id="_JGc3UOZ_EemLdoj29xQXvw" base_Dependency="_BzfAAOZ_EemLdoj29xQXvw"/>
+  <MisuseCaseExtensions:threatens xmi:id="_KERKcOZ_EemLdoj29xQXvw" base_Dependency="_4e2y8OZ-EemLdoj29xQXvw"/>
+  <MisuseCaseExtensions:threatens xmi:id="_LRKbYOZ_EemLdoj29xQXvw" base_Dependency="_3suycOZ-EemLdoj29xQXvw"/>
+  <MisuseCaseExtensions:threatens xmi:id="_MSmDMOZ_EemLdoj29xQXvw" base_Dependency="_AkjuwOZ_EemLdoj29xQXvw"/>
 </xmi:XMI>
