@@ -50,7 +50,8 @@ public abstract class ToolFinder {
 	}
 
 	private String getEmbeddedName() {
-		String path = "platform:/plugin/" + Dictionary.pluginID + "/" + Dictionary.nusmvDir;
+		String slash = this.getSlash();
+		String path = "platform:" + slash + "plugin" + slash + Dictionary.pluginID + slash + Dictionary.getExternalDir();
 		String retval = path + "nusmv";
 		String osname = System.getProperty("os.name");
 		if (osname.contains("Windows")) {
@@ -61,5 +62,17 @@ public abstract class ToolFinder {
 		String bit = System.getProperty("sun.arch.data.model");
 		retval += bit;
 		return retval;
+	}
+	
+	private String getSlash() {
+		String retval = "";
+		String osname = System.getProperty("os.name");
+		if (osname.contains("Windows")) {
+			retval = "\\";	
+		} else if (osname.contains("Linux")) {
+			retval = "/";				
+		}
+		return retval;
+
 	}
 }

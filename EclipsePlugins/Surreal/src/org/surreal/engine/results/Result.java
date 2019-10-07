@@ -1,23 +1,23 @@
 package org.surreal.engine.results;
 
-import org.surreal.engine.query.QueryBinding;
+import org.surreal.engine.query.QueryInstantiation;
 
 public abstract class Result {
 	
-	protected QueryBinding qi;
+	protected QueryInstantiation qi;
 	
-	public Result(QueryBinding qb) {
+	public Result(QueryInstantiation qb) {
 		this.qi = qb;
 	}
 	
 	public Result() {
 	}
 
-	public void setQI(QueryBinding qqi) {
+	public void setQI(QueryInstantiation qqi) {
 		this.qi = qqi;
 	}
 	
-	public QueryBinding getQI() {
+	public QueryInstantiation getQI() {
 		return this.qi;
 	}
 	

@@ -5,7 +5,7 @@ import java.util.Hashtable;
 
 import javax.swing.JCheckBox;
 
-import org.surreal.engine.query.QueryBinding;
+import org.surreal.engine.query.QueryInstantiation;
 
 public class GuiQIElement {
 	private String qid;
@@ -24,11 +24,11 @@ public class GuiQIElement {
 		this.params.put(name,element);		
 	}
 	
-	public QueryBinding generateBinding() {
-		QueryBinding retval = null;
+	public QueryInstantiation generateBinding() {
+		QueryInstantiation retval = null;
 		int counter = 0;
 		if (this.check.isSelected()) {
-			retval = new QueryBinding(counter,this.qid);
+			retval = new QueryInstantiation(counter,this.qid);
 			Enumeration<String> temp = this.params.keys();
 			while (temp.hasMoreElements()) {
 				String name = temp.nextElement();

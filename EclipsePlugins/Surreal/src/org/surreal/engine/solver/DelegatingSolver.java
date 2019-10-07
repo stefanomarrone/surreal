@@ -1,7 +1,7 @@
 package org.surreal.engine.solver;
 
 import org.surreal.common.modeloracle.SAMHandler;
-import org.surreal.engine.query.QueryBinding;
+import org.surreal.engine.query.QueryInstantiation;
 import org.surreal.engine.results.Result;
 
 public class DelegatingSolver implements Solver {
@@ -20,7 +20,7 @@ public class DelegatingSolver implements Solver {
 	}
 
 	@Override
-	public Result solve(QueryBinding qi, SAMHandler h) {
+	public Result solve(QueryInstantiation qi, SAMHandler h) {
 		Result retval = null;
 		if (this.delegated != null) {
 			retval = this.delegated.solve(qi,h);

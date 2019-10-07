@@ -10,6 +10,10 @@ import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.core.commands.ExecutionException;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.jface.viewers.IStructuredSelection;
+import org.surreal.engine.Engine;
+import org.surreal.engine.EngineFactory;
+import org.surreal.engine.query.QueryInstantiationDocument;
+import org.surreal.engine.results.ResultSet;
 import org.surreal.survivabilityGui.gui.GuiPropertySelection;
 import org.surreal.survivabilityGui.tools.ConsoleDisplayManager;
 import org.surreal.survivabilityGui.tools.Resources;
@@ -47,7 +51,15 @@ public class HandlerGuiInitializer extends AbstractHandler {
             GuiPropertySelection.executionEvent = event;
             GuiPropertySelection.structuredSelection = structuredSelection;
             GuiPropertySelection.go();
-            String report = GuiPropertySelection.getReport();
+            QueryInstantiationDocument qid = GuiPropertySelection.getDocument();            
+			String report = null;
+			if (qid.isEmpty()) {
+				report = "No Query Selected!";
+			} else {
+				Engine eng = EngineFactory.generate(GuiPropertySelection.repository,inputFilePathString);
+				ResultSet res = eng.solve(qid);
+				report = res.report();					
+			}				
             console.println(report,0);
         }
         

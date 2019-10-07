@@ -13,9 +13,9 @@ public class SystemModesFactory {
 			String cc = "";
 			int pp = 0;
 			try {
-				nn = st.nextToken(); 
-				pp = (new Integer(st.nextToken())).intValue();
-				cc = st.nextToken(); 
+				nn = st.nextToken().trim(); 
+				pp = (new Integer(st.nextToken().trim())).intValue();
+				cc = st.nextToken().trim(); 
 			} catch (Exception e) {
 			}
 			Mode gm = new Mode(nn,cc,pp);

@@ -8,7 +8,7 @@ import org.eclipse.jface.viewers.IStructuredSelection;
 import org.surreal.common.utils.Configuration;
 import org.surreal.engine.Engine;
 import org.surreal.engine.EngineFactory;
-import org.surreal.engine.query.QueryInstantiation;
+import org.surreal.engine.query.QueryInstantiationDocument;
 import org.surreal.engine.results.ResultSet;
 import org.surreal.survivabilityGui.tools.Resources;
 
@@ -25,7 +25,7 @@ public class TestSolverHandler extends AbstractHandler {
             String repositoryUrl = cfg.get("url");
     		Engine e = EngineFactory.generate(repositoryUrl,modelfilename);
     		QIBindingWrapper wrapper = new QIBindingWrapper(); 
-    		QueryInstantiation qs = wrapper.getInstantiation();
+    		QueryInstantiationDocument qs = wrapper.getInstantiation();
     		ResultSet res = e.solve(qs);
     		String report = res.report();
     		System.out.println(report);

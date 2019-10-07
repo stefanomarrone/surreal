@@ -1,13 +1,13 @@
 package org.surreal.engine.results;
 
-import org.surreal.engine.query.QueryBinding;
+import org.surreal.engine.query.QueryInstantiation;
 import org.surreal.samgen.modes.Transition;
 
 public class ScenarioResult extends Result {
 	
 	protected Transition value;
 	
-	public ScenarioResult(QueryBinding qb) {
+	public ScenarioResult(QueryInstantiation qb) {
 		super(qb);
 		this.value = new Transition();
 	}

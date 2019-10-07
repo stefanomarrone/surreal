@@ -3,13 +3,13 @@ package org.surreal.engine.results;
 import java.util.ArrayList;
 import java.util.Vector;
 
-import org.surreal.engine.query.QueryBinding;
+import org.surreal.engine.query.QueryInstantiation;
 
 public class SMListResult extends Result {
 	
 	protected ArrayList<String> serviceModes;
 	
-	public SMListResult(QueryBinding qb) {
+	public SMListResult(QueryInstantiation qb) {
 		super(qb);
 		this.serviceModes = new ArrayList<String>();
 	}

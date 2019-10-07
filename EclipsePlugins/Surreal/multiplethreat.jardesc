@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <jardesc>
-    <jar path="/home/stefano/code/github/surreal/site/repository/MultipleThreatImpactSolver.jar"/>
+    <jar path="/home/stefano/code/github/surreal/repository/htdocs/MultipleThreatImpactSolver.jar"/>
     <options buildIfNeeded="true" compress="true" descriptionLocation="/Surreal/multiplethreat.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
     <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
     <selectedProjects/>
@@ -24,7 +24,6 @@
         <file path="/Surreal_Solvers/lib/org.eclipse.emf.mapping.ecore2xml_2.9.0.v20160526-0356.jar"/>
         <file path="/Surreal_Solvers/lib/org.eclipse.emf.ecore_2.11.0.v20150512-0501.jar"/>
         <javaElement handleIdentifier="=Surreal_Solvers/src&lt;org.surreal.engine.solver.specific{StateMachineQuery.java"/>
-        <file path="/Surreal_Solvers/repository.json"/>
         <file path="/Surreal_Solvers/reversibility.jardesc"/>
         <file path="/Surreal_Solvers/lib/json-simple-1.1.jar"/>
         <file path="/Surreal_Solvers/lib/org.eclipse.uml2.uml_5.1.0.v20150906-1225.jar"/>

@@ -19,8 +19,28 @@ public class Dictionary {
 
 	final public static String iniFileName = "configuration.ini";
 	
-	final public static String nusmvDir = "external/nusmv/";
+	final public static String externalDir = "external";
 	
+	final public static String nusmvDir = "nusmv";
+
 	final public static boolean embeddedToolFlag = false;
+	
+	final public static String getExternalDir() {
+		String retval = "";
+		String slash = Dictionary.getSlash();
+		retval = Dictionary.externalDir + slash + Dictionary.nusmvDir + slash;
+		return retval;
+	}
+
+	private static String getSlash() {
+		String slash = "";
+		String osname = System.getProperty("os.name");
+		if (osname.contains("Windows")) {
+			slash = "\\";	
+		} else if (osname.contains("Linux")) {
+			slash = "/";				
+		}
+		return slash;
+	} 
 
 }

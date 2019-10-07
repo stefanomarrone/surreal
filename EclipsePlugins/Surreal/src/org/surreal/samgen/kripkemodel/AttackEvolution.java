@@ -66,7 +66,7 @@ public class AttackEvolution {
 				retval = "(" + this.subject.getName() + " <= (" + max + " - " + target + ")): " + this.subject.getName() + " + " + target;
 			}
 		} else if (this.subject instanceof DiscreteIndex) {
-			//NEXT: scrivere codice per DiscreteIndex
+			//TODO: scrivere codice per DiscreteIndex
 		}
 		return retval;
 	}
@@ -83,7 +83,7 @@ public class AttackEvolution {
 				retval = "(" + this.subject.getName() + " >= (" + target + " + " + min + ")): " + this.subject.getName() + " - " + target;
 			}
 		} else if (this.subject instanceof DiscreteIndex) {
-			//NEXT: scrivere codice per DiscreteIndex
+			//TODO: scrivere codice per DiscreteIndex
 		}
 		return retval;
 	}

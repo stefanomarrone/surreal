@@ -1,5 +1,7 @@
 package org.surreal.samgen.kripkemodel.services;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Vector;
 
 import org.surreal.common.utils.Utils;
@@ -62,12 +64,16 @@ public class Service extends ModelItem {
 	private String prototype(boolean paramFlag) {
 		String retval = "(";
 		String temp = null;
+		List<String> recoveries = new ArrayList<String>();
 		for (Attack a: this.attacks) {
 			temp = (paramFlag) ? Utils.parametrize(a.getName()) : a.getName();
 			retval += temp + ",";
 			for (Recovery r: a.getRecoveryList()) {
 				temp = (paramFlag) ? Utils.parametrize(r.getName()) : r.getName();
-				retval += temp + ",";				
+				if (!recoveries.contains(temp)) {
+					recoveries.add(temp);
+					retval += temp + ",";
+				}
 			}
 		}
 		retval = retval.substring(0,retval.length()-1);

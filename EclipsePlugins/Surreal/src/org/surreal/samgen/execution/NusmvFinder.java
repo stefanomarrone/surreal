@@ -7,6 +7,6 @@ public class NusmvFinder extends ToolFinder {
 		this.checker = new NusmvChecker();
 		this.defaultNames.add("nusmv");
 		this.defaultNames.add("NUSMV");
-//		this.defaultNames.add("NuSMV");
+		this.defaultNames.add("NuSMV");
 	}
 }

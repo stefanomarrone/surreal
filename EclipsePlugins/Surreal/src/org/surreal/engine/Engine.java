@@ -1,8 +1,8 @@
 package org.surreal.engine;
 
 import org.surreal.common.modeloracle.SAMHandler;
-import org.surreal.engine.query.QueryBinding;
 import org.surreal.engine.query.QueryInstantiation;
+import org.surreal.engine.query.QueryInstantiationDocument;
 import org.surreal.engine.results.Result;
 import org.surreal.engine.results.ResultSet;
 import org.surreal.engine.solver.Solver;
@@ -34,10 +34,10 @@ public class Engine {
 	 * @param qiset: set of the queries instantiations to solve
 	 * @return set of the results
 	 */
-	public ResultSet solve(QueryInstantiation qiset) {
+	public ResultSet solve(QueryInstantiationDocument qiset) {
 		ResultSet retval = new ResultSet();
 		for (int i = 0; i < qiset.size(); i++) {
-			QueryBinding qi = qiset.get(i);
+			QueryInstantiation qi = qiset.get(i);
 			String qid = qi.getQueryId();			
 			Solver s = this.rep.getSolver(qid);
 			Result res = s.solve(qi,this.handler);

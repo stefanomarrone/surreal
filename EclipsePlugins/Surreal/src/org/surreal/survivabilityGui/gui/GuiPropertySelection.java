@@ -25,7 +25,7 @@ import org.eclipse.uml2.uml.UMLPackage;
 import org.surreal.common.utils.Configuration;
 import org.surreal.engine.Engine;
 import org.surreal.engine.EngineFactory;
-import org.surreal.engine.query.QueryInstantiation;
+import org.surreal.engine.query.QueryInstantiationDocument;
 import org.surreal.engine.results.ResultSet;
 import org.surreal.survivabilityGui.tools.Resources;
 import org.surreal.survivabilityGui.tools.UmlToGui;
@@ -37,7 +37,8 @@ public class GuiPropertySelection extends JFrame {
 	public static ExecutionEvent executionEvent;
 	public static IStructuredSelection structuredSelection;
 	public static GuiQIData data;
-	private static String report;	
+	private static QueryInstantiationDocument document;
+	public static boolean flag;
 	public static String repository = "http://localhost:8081/repository.json";
 	/**
 	 * Launch the application.
@@ -458,45 +459,42 @@ public class GuiPropertySelection extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				Handler globalExceptionHandler = new Handler();
 				Thread.setDefaultUncaughtExceptionHandler(globalExceptionHandler);
-				String report = null;
-				Engine eng = EngineFactory.generate(GuiPropertySelection.repository,GuiPropertySelection.pathUmlFile);
-				QueryInstantiation qs = GuiPropertySelection.data.generateInstantiation();
-				if (qs.isEmpty()) {
-					report = "No Query Selected!";
-				} else {
-					ResultSet res = eng.solve(qs);
-					report = res.report();					
-				}				
-				GuiPropertySelection.setReport(report);
-				JButton button = (JButton) e.getSource();
-				JFrame frame = (JFrame) button.getParent().getParent().getParent();
-				frame.dispose();
+				QueryInstantiationDocument qs = GuiPropertySelection.data.generateInstantiation();
+				GuiPropertySelection.setDocument(qs);
+				GuiPropertySelection.super.setVisible(false);
+//				JButton button = (JButton) e.getSource();
+//				JFrame frame = (JFrame) button.getParent().getParent().getParent();
+//				frame.dispose();
+				//GuiPropertySelection.flag = true;
+				
 			}
 		});
 		btnCheck.setBounds(409, 770, 117, 30);
 		getContentPane().add(btnCheck);			
 	}
 
-	protected static void setReport(String inboundReport) {
-		GuiPropertySelection.report = inboundReport;
+	protected static void setDocument(QueryInstantiationDocument qid) {
+		GuiPropertySelection.document = qid;
 	}
 
 	public static void go() {
 		try {
 			GuiPropertySelection frame = new GuiPropertySelection();
-			GuiPropertySelection.report = "";
+			//GuiPropertySelection.flag = false;
 			frame.setVisible(true);
-			while (GuiPropertySelection.report.equals("")) {
+			while (frame.isVisible()) {
 				Thread.sleep(1000);
 			}
-			frame.setVisible(false);
+//			while (GuiPropertySelection.flag == false) {
+//				Thread.sleep(1000);
+//			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	public static String getReport() {
-		return GuiPropertySelection.report;
+	public static QueryInstantiationDocument getDocument() {
+		return GuiPropertySelection.document;
 	}
 	
 	

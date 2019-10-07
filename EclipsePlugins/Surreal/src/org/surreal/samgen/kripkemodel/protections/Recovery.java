@@ -66,7 +66,7 @@ public class Recovery extends ModelItem {
 		for (int counter = 0; counter < this.blocked.size(); counter++) {
 			retval += "(" + this.blocked.elementAt(counter).getName() + " = TRUE)";
 			if (counter != this.blocked.size()-1) {
-				retval += " || ";
+				retval += " | ";
 			}
 		}
 		retval += "): ENABLED;\n";

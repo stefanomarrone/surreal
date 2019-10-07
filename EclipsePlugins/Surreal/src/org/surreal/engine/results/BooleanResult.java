@@ -1,12 +1,12 @@
 package org.surreal.engine.results;
 
-import org.surreal.engine.query.QueryBinding;
+import org.surreal.engine.query.QueryInstantiation;
 
 public class BooleanResult extends Result {
 	
 	protected boolean value;
 	
-	public BooleanResult(QueryBinding qb) {
+	public BooleanResult(QueryInstantiation qb) {
 		super(qb);
 	}
 
