@@ -1,0 +1,233 @@
+MODULE AlertDriver(p_InjectMessages,p_HideAlerts)
+VAR
+	ASIL: 0..100;
+	avail: 0..6;
+ASSIGN
+	init(ASIL) := 100;
+	init(avail) := 6;
+	next(ASIL) := case
+		(p_InjectMessages = TRUE) & (ASIL > 50): 50;
+		TRUE: ASIL;
+	esac;
+	next(avail) := case
+		(p_InjectMessages = TRUE) & (p_HideAlerts = KO) & (avail >= (1 + 0)): avail - 1;
+		(p_HideAlerts = OK) & (avail < 0): 0;
+		TRUE: avail;
+	esac;
+
+MODULE MaintainSpeed(p_InjectCommandsViaWifi,p_ManualControl,p_ReconfigureFirmware,p_DisableWiFi,p_SendCraftedDABdata,p_DisableDABReceiver,p_TakeControl)
+VAR
+	ASIL: 0..100;
+ASSIGN
+	init(ASIL) := 100;
+	next(ASIL) := case
+		(p_InjectCommandsViaWifi = TRUE) & (p_ReconfigureFirmware = KO) & (ASIL > 50): 50;
+		(p_ReconfigureFirmware = OK) & (ASIL < 100): 100;
+		(p_InjectCommandsViaWifi = TRUE) & (p_DisableWiFi = KO) & (ASIL > 50): 50;
+		(p_DisableWiFi = OK) & (ASIL < 100): 100;
+		(p_SendCraftedDABdata = TRUE) & (p_DisableDABReceiver = KO) & (ASIL > 50): 50;
+		(p_DisableDABReceiver = OK) & (ASIL < 100): 100;
+		(p_TakeControl = TRUE) & (ASIL > 0): 0;
+		TRUE: ASIL;
+	esac;
+
+MODULE MaintainDistance(p_BlindRadar,p_ManualControl,p_InjectCommandsViaWifi,p_ReconfigureFirmware,p_DisableWiFi,p_SendCraftedDABdata,p_DisableDABReceiver,p_SensorsJamming,p_DiscardSensor,p_TakeControl)
+VAR
+	ASIL: 0..100;
+ASSIGN
+	init(ASIL) := 100;
+	next(ASIL) := case
+		(p_BlindRadar = TRUE) & (ASIL >= (20 + 0)): ASIL - 20;
+		(p_InjectCommandsViaWifi = TRUE) & (p_ReconfigureFirmware = KO) & (ASIL > 50): 50;
+		(p_ReconfigureFirmware = OK) & (ASIL < 100): 100;
+		(p_InjectCommandsViaWifi = TRUE) & (p_DisableWiFi = KO) & (ASIL > 50): 50;
+		(p_DisableWiFi = OK) & (ASIL < 100): 100;
+		(p_SendCraftedDABdata = TRUE) & (p_DisableDABReceiver = KO) & (ASIL > 50): 50;
+		(p_DisableDABReceiver = OK) & (ASIL < 100): 100;
+		(p_SensorsJamming = TRUE) & (p_DiscardSensor = KO) & (ASIL >= (20 + 0)): ASIL - 20;
+		(p_DiscardSensor = OK) & (ASIL <= (100 - 20)): ASIL + 20;
+		(p_TakeControl = TRUE) & (ASIL > 0): 0;
+		TRUE: ASIL;
+	esac;
+
+MODULE EmergencyBraking(p_SendCraftedDABdata,p_DisableDABReceiver,p_SensorsJamming,p_DiscardSensor,p_TakeControl,p_ManualControl)
+VAR
+	ASIL: 0..100;
+ASSIGN
+	init(ASIL) := 100;
+	next(ASIL) := case
+		(p_SendCraftedDABdata = TRUE) & (p_DisableDABReceiver = KO) & (ASIL > 50): 50;
+		(p_DisableDABReceiver = OK) & (ASIL < 100): 100;
+		(p_SensorsJamming = TRUE) & (p_DiscardSensor = KO) & (ASIL >= (20 + 0)): ASIL - 20;
+		(p_DiscardSensor = OK) & (ASIL <= (100 - 20)): ASIL + 20;
+		(p_TakeControl = TRUE) & (ASIL > 0): 0;
+		TRUE: ASIL;
+	esac;
+
+MODULE OnLineInfotaintment(p_InjectCommandsViaWifi,p_ManualControl,p_ReconfigureFirmware,p_DisableWiFi,p_SendCraftedDABdata,p_DisableDABReceiver)
+VAR
+	ASIL: 0..100;
+	avail: 0..6;
+ASSIGN
+	init(ASIL) := 100;
+	init(avail) := 6;
+	next(ASIL) := case
+		(p_InjectCommandsViaWifi = TRUE) & (p_ReconfigureFirmware = KO) & (ASIL > 50): 50;
+		(p_ReconfigureFirmware = OK) & (ASIL < 100): 100;
+		(p_InjectCommandsViaWifi = TRUE) & (p_DisableWiFi = KO) & (ASIL > 50): 50;
+		(p_DisableWiFi = OK) & (ASIL < 100): 100;
+		(p_SendCraftedDABdata = TRUE) & (p_DisableDABReceiver = KO) & (ASIL > 50): 50;
+		(p_DisableDABReceiver = OK) & (ASIL < 100): 100;
+		TRUE: ASIL;
+	esac;
+	next(avail) := case
+		(p_InjectCommandsViaWifi = TRUE) & (p_ManualControl = KO) & (avail >= (1 + 0)): avail - 1;
+		(p_ManualControl = OK) & (avail < 0): 0;
+		(p_InjectCommandsViaWifi = TRUE) & (p_ReconfigureFirmware = KO) & (avail >= (1 + 0)): avail - 1;
+		(p_ReconfigureFirmware = OK) & (avail <= (6 - 1)): avail + 1;
+		(p_SendCraftedDABdata = TRUE) & (avail >= (1 + 0)): avail - 1;
+		TRUE: avail;
+	esac;
+
+MODULE main
+VAR
+	InjectMessages: boolean;
+	TakeControl: boolean;
+	SensorsJamming: boolean;
+	BlindRadar: boolean;
+	SendCraftedDABdata: boolean;
+	InjectCommandsViaWifi: boolean;
+	ReconfigureFirmware: {ENABLED, OK, KO};
+	DisableDABReceiver: {ENABLED, OK, KO};
+	DisableWiFi: {ENABLED, OK, KO};
+	DiscardSensor: {ENABLED, OK, KO};
+	ManualControl: {ENABLED, OK, KO};
+	HideAlerts: {ENABLED, OK, KO};
+	proc_AlertDriver: AlertDriver(InjectMessages,HideAlerts);
+	proc_MaintainSpeed: MaintainSpeed(InjectCommandsViaWifi,ManualControl,ReconfigureFirmware,DisableWiFi,SendCraftedDABdata,DisableDABReceiver,TakeControl);
+	proc_MaintainDistance: MaintainDistance(BlindRadar,ManualControl,InjectCommandsViaWifi,ReconfigureFirmware,DisableWiFi,SendCraftedDABdata,DisableDABReceiver,SensorsJamming,DiscardSensor,TakeControl);
+	proc_EmergencyBraking: EmergencyBraking(SendCraftedDABdata,DisableDABReceiver,SensorsJamming,DiscardSensor,TakeControl,ManualControl);
+	proc_OnLineInfotaintment: OnLineInfotaintment(InjectCommandsViaWifi,ManualControl,ReconfigureFirmware,DisableWiFi,SendCraftedDABdata,DisableDABReceiver);
+ASSIGN
+	init(InjectMessages) := FALSE;
+	next(InjectMessages) := case
+		(InjectMessages_inhibitor = TRUE): FALSE;
+		(InjectMessages_inhibitor = FALSE): {TRUE, FALSE};
+	esac;
+	init(TakeControl) := FALSE;
+	next(TakeControl) := case
+		(TakeControl_inhibitor = TRUE): FALSE;
+		(TakeControl_inhibitor = FALSE): {TRUE, FALSE};
+	esac;
+	init(SensorsJamming) := FALSE;
+	next(SensorsJamming) := case
+		(SensorsJamming_inhibitor = TRUE): FALSE;
+		(SensorsJamming_inhibitor = FALSE): {TRUE, FALSE};
+	esac;
+	init(BlindRadar) := FALSE;
+	next(BlindRadar) := case
+		(BlindRadar_inhibitor = TRUE): FALSE;
+		(BlindRadar_inhibitor = FALSE): {TRUE, FALSE};
+	esac;
+	init(SendCraftedDABdata) := FALSE;
+	next(SendCraftedDABdata) := case
+		(SendCraftedDABdata_inhibitor = TRUE): FALSE;
+		(SendCraftedDABdata_inhibitor = FALSE): {TRUE, FALSE};
+	esac;
+	init(InjectCommandsViaWifi) := FALSE;
+	next(InjectCommandsViaWifi) := case
+		(InjectCommandsViaWifi_inhibitor = TRUE): FALSE;
+		(InjectCommandsViaWifi_inhibitor = FALSE): {TRUE, FALSE};
+	esac;
+	init(ReconfigureFirmware) := KO;
+	init(DisableDABReceiver) := KO;
+	init(DisableWiFi) := KO;
+	init(DiscardSensor) := KO;
+	init(ManualControl) := KO;
+	init(HideAlerts) := KO;
+	next(ReconfigureFirmware) := case
+		(ReconfigureFirmware = KO) & ((InjectCommandsViaWifi = TRUE)): ENABLED;
+		(ReconfigureFirmware = ENABLED): {ENABLED, OK};
+		(ReconfigureFirmware = OK): KO;
+		TRUE: ReconfigureFirmware;
+	esac;
+	next(DisableDABReceiver) := case
+		(DisableDABReceiver = KO) & ((SendCraftedDABdata = TRUE)): ENABLED;
+		(DisableDABReceiver = ENABLED): {ENABLED, OK};
+		(DisableDABReceiver = OK): KO;
+		TRUE: DisableDABReceiver;
+	esac;
+	next(DisableWiFi) := case
+		(DisableWiFi = KO) & ((InjectCommandsViaWifi = TRUE)): ENABLED;
+		(DisableWiFi = ENABLED): {ENABLED, OK};
+		(DisableWiFi = OK): KO;
+		TRUE: DisableWiFi;
+	esac;
+	next(DiscardSensor) := case
+		(DiscardSensor = KO) & ((SensorsJamming = TRUE)): ENABLED;
+		(DiscardSensor = ENABLED): {ENABLED, OK};
+		(DiscardSensor = OK): KO;
+		TRUE: DiscardSensor;
+	esac;
+	next(ManualControl) := case
+		(ManualControl = KO) & ((TakeControl = TRUE) | (BlindRadar = TRUE) | (InjectCommandsViaWifi = TRUE)): ENABLED;
+		(ManualControl = ENABLED): {ENABLED, OK};
+		(ManualControl = OK): KO;
+		TRUE: ManualControl;
+	esac;
+	next(HideAlerts) := case
+		(HideAlerts = KO) & ((InjectMessages = TRUE)): ENABLED;
+		(HideAlerts = ENABLED): {ENABLED, OK};
+		(HideAlerts = OK): KO;
+		TRUE: HideAlerts;
+	esac;
+
+DEFINE
+	InjectMessages_inhibitor := FALSE;
+	TakeControl_inhibitor := FALSE;
+	SensorsJamming_inhibitor := FALSE;
+	BlindRadar_inhibitor := FALSE;
+	SendCraftedDABdata_inhibitor := FALSE;
+	InjectCommandsViaWifi_inhibitor := FALSE;
+
+
+
+DEFINE
+	Optimal := (proc_MaintainSpeed.ASIL > 75) & (proc_MaintainDistance.ASIL > 75) & (proc_EmergencyBraking.ASIL > 75) & (proc_AlertDriver.ASIL > 75) & (proc_OnLineInfotaintment.ASIL > 75) & (proc_AlertDriver.avail > 5) & (proc_OnLineInfotaintment.avail > 5);
+	DegradedICandEN := !(Optimal) & (proc_MaintainSpeed.ASIL > 75) & (proc_MaintainDistance.ASIL > 75) & (proc_EmergencyBraking.ASIL > 75) & (proc_AlertDriver.ASIL > 50) & (proc_OnLineInfotaintment.ASIL > 50) & (proc_AlertDriver.avail > 4) & (proc_OnLineInfotaintment.avail > 4);
+	DegradedASDSafety := !(Optimal | DegradedICandEN) & (proc_MaintainSpeed.ASIL > 50) & (proc_MaintainDistance.ASIL > 50) & (proc_EmergencyBraking.ASIL > 50) & (proc_AlertDriver.ASIL > 75) & (proc_OnLineInfotaintment.ASIL > 75) & (proc_AlertDriver.avail > 5) & (proc_OnLineInfotaintment.avail > 5);
+	Degraded := !(Optimal | DegradedICandEN | DegradedASDSafety) & (proc_MaintainSpeed.ASIL > 50) & (proc_MaintainDistance.ASIL > 50) & (proc_EmergencyBraking.ASIL > 50) & (proc_OnLineInfotaintment.ASIL > 50) & (proc_OnLineInfotaintment.avail > 4) & (proc_AlertDriver.ASIL > 50) & (proc_AlertDriver.avail > 4);
+	VeryDegraded := !(Optimal | DegradedICandEN | DegradedASDSafety | Degraded) & (proc_MaintainSpeed.ASIL > 25) & (proc_MaintainDistance.ASIL > 25) & (proc_EmergencyBraking.ASIL > 25) & (proc_OnLineInfotaintment.ASIL > 25) & (proc_OnLineInfotaintment.avail > 4) & (proc_AlertDriver.ASIL > 25) & (proc_AlertDriver.avail > 4);
+	WorstDegradation := !(Optimal | DegradedICandEN | DegradedASDSafety | Degraded | VeryDegraded);
+
+
+CTLSPEC AG (Optimal -> AX(!DegradedICandEN))
+CTLSPEC AG (Optimal -> AX(!DegradedASDSafety))
+CTLSPEC AG (Optimal -> AX(!Degraded))
+CTLSPEC AG (Optimal -> AX(!VeryDegraded))
+CTLSPEC AG (Optimal -> AX(!WorstDegradation))
+CTLSPEC AG (DegradedICandEN -> AX(!Optimal))
+CTLSPEC AG (DegradedICandEN -> AX(!DegradedASDSafety))
+CTLSPEC AG (DegradedICandEN -> AX(!Degraded))
+CTLSPEC AG (DegradedICandEN -> AX(!VeryDegraded))
+CTLSPEC AG (DegradedICandEN -> AX(!WorstDegradation))
+CTLSPEC AG (DegradedASDSafety -> AX(!Optimal))
+CTLSPEC AG (DegradedASDSafety -> AX(!DegradedICandEN))
+CTLSPEC AG (DegradedASDSafety -> AX(!Degraded))
+CTLSPEC AG (DegradedASDSafety -> AX(!VeryDegraded))
+CTLSPEC AG (DegradedASDSafety -> AX(!WorstDegradation))
+CTLSPEC AG (Degraded -> AX(!Optimal))
+CTLSPEC AG (Degraded -> AX(!DegradedICandEN))
+CTLSPEC AG (Degraded -> AX(!DegradedASDSafety))
+CTLSPEC AG (Degraded -> AX(!VeryDegraded))
+CTLSPEC AG (Degraded -> AX(!WorstDegradation))
+CTLSPEC AG (VeryDegraded -> AX(!Optimal))
+CTLSPEC AG (VeryDegraded -> AX(!DegradedICandEN))
+CTLSPEC AG (VeryDegraded -> AX(!DegradedASDSafety))
+CTLSPEC AG (VeryDegraded -> AX(!Degraded))
+CTLSPEC AG (VeryDegraded -> AX(!WorstDegradation))
+CTLSPEC AG (WorstDegradation -> AX(!Optimal))
+CTLSPEC AG (WorstDegradation -> AX(!DegradedICandEN))
+CTLSPEC AG (WorstDegradation -> AX(!DegradedASDSafety))
+CTLSPEC AG (WorstDegradation -> AX(!Degraded))
+CTLSPEC AG (WorstDegradation -> AX(!VeryDegraded))

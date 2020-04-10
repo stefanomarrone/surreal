@@ -1,0 +1,122 @@
+MODULE ExchangeInformation(p_Jamming,p_ChooseAlternativeCommunication,p_RestoreOriginalCommunication,p_ManipulateInformation,p_RestoreOriginalData)
+VAR
+	avail: 0..100;
+	integLevel: 0..100;
+ASSIGN
+	init(avail) := 100;
+	init(integLevel) := 100;
+	next(avail) := case
+		(p_Jamming = TRUE) & (p_ChooseAlternativeCommunication = KO) & (avail >= (10 + 0)): avail - 10;
+		(p_ChooseAlternativeCommunication = OK) & (avail <= (100 - 10)): avail + 10;
+		(p_Jamming = TRUE) & (p_RestoreOriginalCommunication = KO) & (avail >= (10 + 0)): avail - 10;
+		(p_RestoreOriginalCommunication = OK) & (avail < 100): 100;
+		TRUE: avail;
+	esac;
+	next(integLevel) := case
+		(p_ManipulateInformation = TRUE) & (p_RestoreOriginalData = KO) & (integLevel > 50): 50;
+		(p_RestoreOriginalData = OK) & (integLevel < 100): 100;
+		TRUE: integLevel;
+	esac;
+
+MODULE UpdateMap(p_DestroyNode,p_Reconfigure,p_ManipulateInformation,p_RestoreOriginalData)
+VAR
+	avail: 0..100;
+	integLevel: 0..100;
+ASSIGN
+	init(avail) := 100;
+	init(integLevel) := 100;
+	next(avail) := case
+		(p_DestroyNode = TRUE) & (p_Reconfigure = KO) & (avail > 0): 0;
+		(p_Reconfigure = OK) & (avail < 100): 100;
+		TRUE: avail;
+	esac;
+	next(integLevel) := case
+		(p_DestroyNode = TRUE) & (p_Reconfigure = KO) & (integLevel > 10): 10;
+		(p_Reconfigure = OK) & (integLevel < 90): 90;
+		(p_ManipulateInformation = TRUE) & (p_RestoreOriginalData = KO) & (integLevel > 50): 50;
+		(p_RestoreOriginalData = OK) & (integLevel < 100): 100;
+		TRUE: integLevel;
+	esac;
+
+MODULE main
+VAR
+	Jamming: boolean;
+	ManipulateInformation: boolean;
+	DestroyNode: boolean;
+	RestoreOriginalCommunication: {ENABLED, OK, KO};
+	ChooseAlternativeCommunication: {ENABLED, OK, KO};
+	RestoreOriginalData: {ENABLED, OK, KO};
+	Reconfigure: {ENABLED, OK, KO};
+	proc_ExchangeInformation: ExchangeInformation(Jamming,ChooseAlternativeCommunication,RestoreOriginalCommunication,ManipulateInformation,RestoreOriginalData);
+	proc_UpdateMap: UpdateMap(DestroyNode,Reconfigure,ManipulateInformation,RestoreOriginalData);
+ASSIGN
+	init(Jamming) := FALSE;
+	next(Jamming) := case
+		(Jamming_inhibitor = TRUE): FALSE;
+		(Jamming_inhibitor = FALSE): {TRUE, FALSE};
+	esac;
+	init(ManipulateInformation) := FALSE;
+	next(ManipulateInformation) := case
+		(ManipulateInformation_inhibitor = TRUE): FALSE;
+		(ManipulateInformation_inhibitor = FALSE): {TRUE, FALSE};
+	esac;
+	init(DestroyNode) := FALSE;
+	next(DestroyNode) := case
+		(DestroyNode_inhibitor = TRUE): FALSE;
+		(DestroyNode_inhibitor = FALSE): {TRUE, FALSE};
+	esac;
+	init(RestoreOriginalCommunication) := KO;
+	init(ChooseAlternativeCommunication) := KO;
+	init(RestoreOriginalData) := KO;
+	init(Reconfigure) := KO;
+	next(RestoreOriginalCommunication) := case
+		(RestoreOriginalCommunication = KO) & ((Jamming = TRUE)): ENABLED;
+		(RestoreOriginalCommunication = ENABLED): {ENABLED, OK};
+		(RestoreOriginalCommunication = OK): KO;
+		TRUE: RestoreOriginalCommunication;
+	esac;
+	next(ChooseAlternativeCommunication) := case
+		(ChooseAlternativeCommunication = KO) & ((Jamming = TRUE)): ENABLED;
+		(ChooseAlternativeCommunication = ENABLED): {ENABLED, OK};
+		(ChooseAlternativeCommunication = OK): KO;
+		TRUE: ChooseAlternativeCommunication;
+	esac;
+	next(RestoreOriginalData) := case
+		(RestoreOriginalData = KO) & ((ManipulateInformation = TRUE)): ENABLED;
+		(RestoreOriginalData = ENABLED): {ENABLED, OK};
+		(RestoreOriginalData = OK): KO;
+		TRUE: RestoreOriginalData;
+	esac;
+	next(Reconfigure) := case
+		(Reconfigure = KO) & ((DestroyNode = TRUE)): ENABLED;
+		(Reconfigure = ENABLED): {ENABLED, OK};
+		(Reconfigure = OK): KO;
+		TRUE: Reconfigure;
+	esac;
+
+DEFINE
+	Jamming_inhibitor := FALSE;
+	ManipulateInformation_inhibitor := FALSE;
+	DestroyNode_inhibitor := FALSE;
+
+
+
+DEFINE
+	GS0 := (proc_ExchangeInformation.avail > 90) & (proc_ExchangeInformation.integLevel > 60) & (proc_UpdateMap.avail > 90) & (proc_UpdateMap.integLevel > 60);
+	GS1 := !(GS0) & (proc_ExchangeInformation.avail > 80) & (proc_ExchangeInformation.integLevel > 60) & (proc_UpdateMap.avail > 80) & (proc_UpdateMap.integLevel > 60);
+	GS2 := !(GS0 | GS1) & (proc_ExchangeInformation.avail > 50) & (proc_ExchangeInformation.integLevel > 30) & (proc_UpdateMap.avail > 50) & (proc_UpdateMap.integLevel > 30);
+	GS3 := !(GS0 | GS1 | GS2);
+
+
+CTLSPEC AG (GS0 -> AX(!GS1))
+CTLSPEC AG (GS0 -> AX(!GS2))
+CTLSPEC AG (GS0 -> AX(!GS3))
+CTLSPEC AG (GS1 -> AX(!GS0))
+CTLSPEC AG (GS1 -> AX(!GS2))
+CTLSPEC AG (GS1 -> AX(!GS3))
+CTLSPEC AG (GS2 -> AX(!GS0))
+CTLSPEC AG (GS2 -> AX(!GS1))
+CTLSPEC AG (GS2 -> AX(!GS3))
+CTLSPEC AG (GS3 -> AX(!GS0))
+CTLSPEC AG (GS3 -> AX(!GS1))
+CTLSPEC AG (GS3 -> AX(!GS2))

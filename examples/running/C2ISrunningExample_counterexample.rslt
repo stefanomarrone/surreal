@@ -1,0 +1,556 @@
+*** This is NuSMV 2.6.0 (compiled on Wed Oct 14 15:35:00 2015)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2014, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+WARNING *** This version of NuSMV is linked to the zchaff SAT         ***
+WARNING *** solver (see http://www.princeton.edu/~chaff/zchaff.html). ***
+WARNING *** Zchaff is used in Bounded Model Checking when the         ***
+WARNING *** system variable "sat_solver" is set to "zchaff".          ***
+WARNING *** Notice that zchaff is for non-commercial purposes only.   ***
+WARNING *** NO COMMERCIAL USE OF ZCHAFF IS ALLOWED WITHOUT WRITTEN    ***
+WARNING *** PERMISSION FROM PRINCETON UNIVERSITY.                     ***
+WARNING *** Please contact Sharad Malik (malik@ee.princeton.edu)      ***
+WARNING *** for details.                                              ***
+
+-- specification AG (GS0 -> AX !GS1)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 1.1 <-
+    Jamming = FALSE
+    ManipulateInformation = FALSE
+    DestroyNode = FALSE
+    RestoreOriginalCommunication = KO
+    ChooseAlternativeCommunication = KO
+    RestoreOriginalData = KO
+    Reconfigure = KO
+    proc_ExchangeInformation.avail = 100
+    proc_ExchangeInformation.integLevel = 100
+    proc_UpdateMap.avail = 100
+    proc_UpdateMap.integLevel = 100
+    DestroyNode_inhibitor = FALSE
+    ManipulateInformation_inhibitor = FALSE
+    Jamming_inhibitor = FALSE
+    GS3 = FALSE
+    GS2 = FALSE
+    GS1 = FALSE
+    GS0 = TRUE
+  -> State: 1.2 <-
+    Jamming = TRUE
+  -> State: 1.3 <-
+    Jamming = FALSE
+    RestoreOriginalCommunication = ENABLED
+    ChooseAlternativeCommunication = ENABLED
+    proc_ExchangeInformation.avail = 90
+    GS1 = TRUE
+    GS0 = FALSE
+-- specification AG (GS0 -> AX !GS2)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 2.1 <-
+    Jamming = FALSE
+    ManipulateInformation = FALSE
+    DestroyNode = FALSE
+    RestoreOriginalCommunication = KO
+    ChooseAlternativeCommunication = KO
+    RestoreOriginalData = KO
+    Reconfigure = KO
+    proc_ExchangeInformation.avail = 100
+    proc_ExchangeInformation.integLevel = 100
+    proc_UpdateMap.avail = 100
+    proc_UpdateMap.integLevel = 100
+    DestroyNode_inhibitor = FALSE
+    ManipulateInformation_inhibitor = FALSE
+    Jamming_inhibitor = FALSE
+    GS3 = FALSE
+    GS2 = FALSE
+    GS1 = FALSE
+    GS0 = TRUE
+  -> State: 2.2 <-
+    ManipulateInformation = TRUE
+  -> State: 2.3 <-
+    ManipulateInformation = FALSE
+    RestoreOriginalData = ENABLED
+    proc_ExchangeInformation.integLevel = 50
+    proc_UpdateMap.integLevel = 50
+    GS2 = TRUE
+    GS0 = FALSE
+-- specification AG (GS0 -> AX !GS3)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 3.1 <-
+    Jamming = FALSE
+    ManipulateInformation = FALSE
+    DestroyNode = FALSE
+    RestoreOriginalCommunication = KO
+    ChooseAlternativeCommunication = KO
+    RestoreOriginalData = KO
+    Reconfigure = KO
+    proc_ExchangeInformation.avail = 100
+    proc_ExchangeInformation.integLevel = 100
+    proc_UpdateMap.avail = 100
+    proc_UpdateMap.integLevel = 100
+    DestroyNode_inhibitor = FALSE
+    ManipulateInformation_inhibitor = FALSE
+    Jamming_inhibitor = FALSE
+    GS3 = FALSE
+    GS2 = FALSE
+    GS1 = FALSE
+    GS0 = TRUE
+  -> State: 3.2 <-
+    DestroyNode = TRUE
+  -> State: 3.3 <-
+    DestroyNode = FALSE
+    Reconfigure = ENABLED
+    proc_UpdateMap.avail = 0
+    proc_UpdateMap.integLevel = 10
+    GS3 = TRUE
+    GS0 = FALSE
+-- specification AG (GS1 -> AX !GS0)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -- Loop starts here
+  -> State: 4.1 <-
+    Jamming = FALSE
+    ManipulateInformation = FALSE
+    DestroyNode = FALSE
+    RestoreOriginalCommunication = KO
+    ChooseAlternativeCommunication = KO
+    RestoreOriginalData = KO
+    Reconfigure = KO
+    proc_ExchangeInformation.avail = 100
+    proc_ExchangeInformation.integLevel = 100
+    proc_UpdateMap.avail = 100
+    proc_UpdateMap.integLevel = 100
+    DestroyNode_inhibitor = FALSE
+    ManipulateInformation_inhibitor = FALSE
+    Jamming_inhibitor = FALSE
+    GS3 = FALSE
+    GS2 = FALSE
+    GS1 = FALSE
+    GS0 = TRUE
+  -> State: 4.2 <-
+    Jamming = TRUE
+  -> State: 4.3 <-
+    Jamming = FALSE
+    RestoreOriginalCommunication = ENABLED
+    ChooseAlternativeCommunication = ENABLED
+    proc_ExchangeInformation.avail = 90
+    GS1 = TRUE
+    GS0 = FALSE
+  -> State: 4.4 <-
+    RestoreOriginalCommunication = OK
+    ChooseAlternativeCommunication = OK
+  -> State: 4.5 <-
+    RestoreOriginalCommunication = KO
+    ChooseAlternativeCommunication = KO
+    proc_ExchangeInformation.avail = 100
+    GS1 = FALSE
+    GS0 = TRUE
+-- specification AG (GS1 -> AX !GS2)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 5.1 <-
+    Jamming = FALSE
+    ManipulateInformation = FALSE
+    DestroyNode = FALSE
+    RestoreOriginalCommunication = KO
+    ChooseAlternativeCommunication = KO
+    RestoreOriginalData = KO
+    Reconfigure = KO
+    proc_ExchangeInformation.avail = 100
+    proc_ExchangeInformation.integLevel = 100
+    proc_UpdateMap.avail = 100
+    proc_UpdateMap.integLevel = 100
+    DestroyNode_inhibitor = FALSE
+    ManipulateInformation_inhibitor = FALSE
+    Jamming_inhibitor = FALSE
+    GS3 = FALSE
+    GS2 = FALSE
+    GS1 = FALSE
+    GS0 = TRUE
+  -> State: 5.2 <-
+    Jamming = TRUE
+  -> State: 5.3 <-
+    Jamming = FALSE
+    ManipulateInformation = TRUE
+    RestoreOriginalCommunication = ENABLED
+    ChooseAlternativeCommunication = ENABLED
+    proc_ExchangeInformation.avail = 90
+    GS1 = TRUE
+    GS0 = FALSE
+  -> State: 5.4 <-
+    ManipulateInformation = FALSE
+    RestoreOriginalCommunication = OK
+    ChooseAlternativeCommunication = OK
+    RestoreOriginalData = ENABLED
+    proc_ExchangeInformation.integLevel = 50
+    proc_UpdateMap.integLevel = 50
+    GS2 = TRUE
+    GS1 = FALSE
+-- specification AG (GS1 -> AX !GS3)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 6.1 <-
+    Jamming = FALSE
+    ManipulateInformation = FALSE
+    DestroyNode = FALSE
+    RestoreOriginalCommunication = KO
+    ChooseAlternativeCommunication = KO
+    RestoreOriginalData = KO
+    Reconfigure = KO
+    proc_ExchangeInformation.avail = 100
+    proc_ExchangeInformation.integLevel = 100
+    proc_UpdateMap.avail = 100
+    proc_UpdateMap.integLevel = 100
+    DestroyNode_inhibitor = FALSE
+    ManipulateInformation_inhibitor = FALSE
+    Jamming_inhibitor = FALSE
+    GS3 = FALSE
+    GS2 = FALSE
+    GS1 = FALSE
+    GS0 = TRUE
+  -> State: 6.2 <-
+    Jamming = TRUE
+  -> State: 6.3 <-
+    Jamming = FALSE
+    DestroyNode = TRUE
+    RestoreOriginalCommunication = ENABLED
+    ChooseAlternativeCommunication = ENABLED
+    proc_ExchangeInformation.avail = 90
+    GS1 = TRUE
+    GS0 = FALSE
+  -> State: 6.4 <-
+    DestroyNode = FALSE
+    RestoreOriginalCommunication = OK
+    ChooseAlternativeCommunication = OK
+    Reconfigure = ENABLED
+    proc_UpdateMap.avail = 0
+    proc_UpdateMap.integLevel = 10
+    GS3 = TRUE
+    GS1 = FALSE
+-- specification AG (GS2 -> AX !GS0)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -- Loop starts here
+  -> State: 7.1 <-
+    Jamming = FALSE
+    ManipulateInformation = FALSE
+    DestroyNode = FALSE
+    RestoreOriginalCommunication = KO
+    ChooseAlternativeCommunication = KO
+    RestoreOriginalData = KO
+    Reconfigure = KO
+    proc_ExchangeInformation.avail = 100
+    proc_ExchangeInformation.integLevel = 100
+    proc_UpdateMap.avail = 100
+    proc_UpdateMap.integLevel = 100
+    DestroyNode_inhibitor = FALSE
+    ManipulateInformation_inhibitor = FALSE
+    Jamming_inhibitor = FALSE
+    GS3 = FALSE
+    GS2 = FALSE
+    GS1 = FALSE
+    GS0 = TRUE
+  -> State: 7.2 <-
+    Jamming = TRUE
+    ManipulateInformation = TRUE
+  -> State: 7.3 <-
+    Jamming = FALSE
+    ManipulateInformation = FALSE
+    RestoreOriginalCommunication = ENABLED
+    ChooseAlternativeCommunication = ENABLED
+    RestoreOriginalData = ENABLED
+    proc_ExchangeInformation.avail = 90
+    proc_ExchangeInformation.integLevel = 50
+    proc_UpdateMap.integLevel = 50
+    GS2 = TRUE
+    GS0 = FALSE
+  -> State: 7.4 <-
+    Jamming = TRUE
+    RestoreOriginalCommunication = OK
+    ChooseAlternativeCommunication = OK
+    RestoreOriginalData = OK
+  -> State: 7.5 <-
+    Jamming = FALSE
+    RestoreOriginalCommunication = KO
+    ChooseAlternativeCommunication = KO
+    RestoreOriginalData = KO
+    proc_ExchangeInformation.avail = 100
+    proc_ExchangeInformation.integLevel = 100
+    proc_UpdateMap.integLevel = 100
+    GS2 = FALSE
+    GS0 = TRUE
+-- specification AG (GS2 -> AX !GS1)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 8.1 <-
+    Jamming = FALSE
+    ManipulateInformation = FALSE
+    DestroyNode = FALSE
+    RestoreOriginalCommunication = KO
+    ChooseAlternativeCommunication = KO
+    RestoreOriginalData = KO
+    Reconfigure = KO
+    proc_ExchangeInformation.avail = 100
+    proc_ExchangeInformation.integLevel = 100
+    proc_UpdateMap.avail = 100
+    proc_UpdateMap.integLevel = 100
+    DestroyNode_inhibitor = FALSE
+    ManipulateInformation_inhibitor = FALSE
+    Jamming_inhibitor = FALSE
+    GS3 = FALSE
+    GS2 = FALSE
+    GS1 = FALSE
+    GS0 = TRUE
+  -> State: 8.2 <-
+    ManipulateInformation = TRUE
+  -> State: 8.3 <-
+    ManipulateInformation = FALSE
+    RestoreOriginalData = ENABLED
+    proc_ExchangeInformation.integLevel = 50
+    proc_UpdateMap.integLevel = 50
+    GS2 = TRUE
+    GS0 = FALSE
+  -> State: 8.4 <-
+    Jamming = TRUE
+    RestoreOriginalData = OK
+  -> State: 8.5 <-
+    Jamming = FALSE
+    RestoreOriginalCommunication = ENABLED
+    ChooseAlternativeCommunication = ENABLED
+    RestoreOriginalData = KO
+    proc_ExchangeInformation.avail = 90
+    proc_ExchangeInformation.integLevel = 100
+    proc_UpdateMap.integLevel = 100
+    GS2 = FALSE
+    GS1 = TRUE
+-- specification AG (GS2 -> AX !GS3)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 9.1 <-
+    Jamming = FALSE
+    ManipulateInformation = FALSE
+    DestroyNode = FALSE
+    RestoreOriginalCommunication = KO
+    ChooseAlternativeCommunication = KO
+    RestoreOriginalData = KO
+    Reconfigure = KO
+    proc_ExchangeInformation.avail = 100
+    proc_ExchangeInformation.integLevel = 100
+    proc_UpdateMap.avail = 100
+    proc_UpdateMap.integLevel = 100
+    DestroyNode_inhibitor = FALSE
+    ManipulateInformation_inhibitor = FALSE
+    Jamming_inhibitor = FALSE
+    GS3 = FALSE
+    GS2 = FALSE
+    GS1 = FALSE
+    GS0 = TRUE
+  -> State: 9.2 <-
+    ManipulateInformation = TRUE
+  -> State: 9.3 <-
+    ManipulateInformation = FALSE
+    DestroyNode = TRUE
+    RestoreOriginalData = ENABLED
+    proc_ExchangeInformation.integLevel = 50
+    proc_UpdateMap.integLevel = 50
+    GS2 = TRUE
+    GS0 = FALSE
+  -> State: 9.4 <-
+    DestroyNode = FALSE
+    RestoreOriginalData = OK
+    Reconfigure = ENABLED
+    proc_UpdateMap.avail = 0
+    proc_UpdateMap.integLevel = 10
+    GS3 = TRUE
+    GS2 = FALSE
+-- specification AG (GS3 -> AX !GS0)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 10.1 <-
+    Jamming = FALSE
+    ManipulateInformation = FALSE
+    DestroyNode = FALSE
+    RestoreOriginalCommunication = KO
+    ChooseAlternativeCommunication = KO
+    RestoreOriginalData = KO
+    Reconfigure = KO
+    proc_ExchangeInformation.avail = 100
+    proc_ExchangeInformation.integLevel = 100
+    proc_UpdateMap.avail = 100
+    proc_UpdateMap.integLevel = 100
+    DestroyNode_inhibitor = FALSE
+    ManipulateInformation_inhibitor = FALSE
+    Jamming_inhibitor = FALSE
+    GS3 = FALSE
+    GS2 = FALSE
+    GS1 = FALSE
+    GS0 = TRUE
+  -> State: 10.2 <-
+    Jamming = TRUE
+    ManipulateInformation = TRUE
+    DestroyNode = TRUE
+  -> State: 10.3 <-
+    Jamming = FALSE
+    ManipulateInformation = FALSE
+    DestroyNode = FALSE
+    RestoreOriginalCommunication = ENABLED
+    ChooseAlternativeCommunication = ENABLED
+    RestoreOriginalData = ENABLED
+    Reconfigure = ENABLED
+    proc_ExchangeInformation.avail = 90
+    proc_ExchangeInformation.integLevel = 50
+    proc_UpdateMap.avail = 0
+    proc_UpdateMap.integLevel = 10
+    GS3 = TRUE
+    GS0 = FALSE
+  -> State: 10.4 <-
+    Jamming = TRUE
+    ManipulateInformation = TRUE
+    RestoreOriginalCommunication = OK
+    ChooseAlternativeCommunication = OK
+    RestoreOriginalData = OK
+    Reconfigure = OK
+  -> State: 10.5 <-
+    Jamming = FALSE
+    ManipulateInformation = FALSE
+    RestoreOriginalCommunication = KO
+    ChooseAlternativeCommunication = KO
+    RestoreOriginalData = KO
+    Reconfigure = KO
+    proc_ExchangeInformation.avail = 100
+    proc_ExchangeInformation.integLevel = 100
+    proc_UpdateMap.avail = 100
+    proc_UpdateMap.integLevel = 90
+    GS3 = FALSE
+    GS0 = TRUE
+-- specification AG (GS3 -> AX !GS1)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 11.1 <-
+    Jamming = FALSE
+    ManipulateInformation = FALSE
+    DestroyNode = FALSE
+    RestoreOriginalCommunication = KO
+    ChooseAlternativeCommunication = KO
+    RestoreOriginalData = KO
+    Reconfigure = KO
+    proc_ExchangeInformation.avail = 100
+    proc_ExchangeInformation.integLevel = 100
+    proc_UpdateMap.avail = 100
+    proc_UpdateMap.integLevel = 100
+    DestroyNode_inhibitor = FALSE
+    ManipulateInformation_inhibitor = FALSE
+    Jamming_inhibitor = FALSE
+    GS3 = FALSE
+    GS2 = FALSE
+    GS1 = FALSE
+    GS0 = TRUE
+  -> State: 11.2 <-
+    ManipulateInformation = TRUE
+    DestroyNode = TRUE
+  -> State: 11.3 <-
+    ManipulateInformation = FALSE
+    DestroyNode = FALSE
+    RestoreOriginalData = ENABLED
+    Reconfigure = ENABLED
+    proc_ExchangeInformation.integLevel = 50
+    proc_UpdateMap.avail = 0
+    proc_UpdateMap.integLevel = 10
+    GS3 = TRUE
+    GS0 = FALSE
+  -> State: 11.4 <-
+    Jamming = TRUE
+    ManipulateInformation = TRUE
+    RestoreOriginalData = OK
+    Reconfigure = OK
+  -> State: 11.5 <-
+    Jamming = FALSE
+    ManipulateInformation = FALSE
+    RestoreOriginalCommunication = ENABLED
+    ChooseAlternativeCommunication = ENABLED
+    RestoreOriginalData = KO
+    Reconfigure = KO
+    proc_ExchangeInformation.avail = 90
+    proc_ExchangeInformation.integLevel = 100
+    proc_UpdateMap.avail = 100
+    proc_UpdateMap.integLevel = 90
+    GS3 = FALSE
+    GS1 = TRUE
+-- specification AG (GS3 -> AX !GS2)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 12.1 <-
+    Jamming = FALSE
+    ManipulateInformation = FALSE
+    DestroyNode = FALSE
+    RestoreOriginalCommunication = KO
+    ChooseAlternativeCommunication = KO
+    RestoreOriginalData = KO
+    Reconfigure = KO
+    proc_ExchangeInformation.avail = 100
+    proc_ExchangeInformation.integLevel = 100
+    proc_UpdateMap.avail = 100
+    proc_UpdateMap.integLevel = 100
+    DestroyNode_inhibitor = FALSE
+    ManipulateInformation_inhibitor = FALSE
+    Jamming_inhibitor = FALSE
+    GS3 = FALSE
+    GS2 = FALSE
+    GS1 = FALSE
+    GS0 = TRUE
+  -> State: 12.2 <-
+    Jamming = TRUE
+    DestroyNode = TRUE
+  -> State: 12.3 <-
+    Jamming = FALSE
+    DestroyNode = FALSE
+    RestoreOriginalCommunication = ENABLED
+    ChooseAlternativeCommunication = ENABLED
+    Reconfigure = ENABLED
+    proc_ExchangeInformation.avail = 90
+    proc_UpdateMap.avail = 0
+    proc_UpdateMap.integLevel = 10
+    GS3 = TRUE
+    GS0 = FALSE
+  -> State: 12.4 <-
+    ManipulateInformation = TRUE
+    RestoreOriginalCommunication = OK
+    ChooseAlternativeCommunication = OK
+    Reconfigure = OK
+  -> State: 12.5 <-
+    ManipulateInformation = FALSE
+    RestoreOriginalCommunication = KO
+    ChooseAlternativeCommunication = KO
+    RestoreOriginalData = ENABLED
+    Reconfigure = KO
+    proc_ExchangeInformation.avail = 100
+    proc_ExchangeInformation.integLevel = 50
+    proc_UpdateMap.avail = 100
+    proc_UpdateMap.integLevel = 90
+    GS3 = FALSE
+    GS2 = TRUE

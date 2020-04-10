@@ -1,0 +1,2324 @@
+*** This is NuSMV 2.6.0 (compiled on Wed Oct 14 15:35:00 2015)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2014, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+WARNING *** This version of NuSMV is linked to the zchaff SAT         ***
+WARNING *** solver (see http://www.princeton.edu/~chaff/zchaff.html). ***
+WARNING *** Zchaff is used in Bounded Model Checking when the         ***
+WARNING *** system variable "sat_solver" is set to "zchaff".          ***
+WARNING *** Notice that zchaff is for non-commercial purposes only.   ***
+WARNING *** NO COMMERCIAL USE OF ZCHAFF IS ALLOWED WITHOUT WRITTEN    ***
+WARNING *** PERMISSION FROM PRINCETON UNIVERSITY.                     ***
+WARNING *** Please contact Sharad Malik (malik@ee.princeton.edu)      ***
+WARNING *** for details.                                              ***
+
+-- specification AG (Optimal -> AX !DegradedICandEN)  is true
+-- specification AG (Optimal -> AX !DegradedASDSafety)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 1.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 1.2 <-
+    BlindRadar = TRUE
+  -> State: 1.3 <-
+    SensorsJamming = TRUE
+    ManualControl = ENABLED
+    proc_MaintainDistance.ASIL = 80
+  -> State: 1.4 <-
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    DiscardSensor = ENABLED
+    ManualControl = OK
+    proc_MaintainDistance.ASIL = 60
+    proc_EmergencyBraking.ASIL = 80
+    DegradedASDSafety = TRUE
+    Optimal = FALSE
+-- specification AG (Optimal -> AX !Degraded)  is true
+-- specification AG (Optimal -> AX !VeryDegraded)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 2.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 2.2 <-
+    InjectMessages = TRUE
+    TakeControl = TRUE
+    SensorsJamming = TRUE
+    SendCraftedDABdata = TRUE
+  -> State: 2.3 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    SendCraftedDABdata = FALSE
+    DisableDABReceiver = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    HideAlerts = ENABLED
+    proc_AlertDriver.ASIL = 50
+    proc_AlertDriver.avail = 5
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+-- specification AG (Optimal -> AX !WorstDegradation)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 3.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 3.2 <-
+    TakeControl = TRUE
+    SensorsJamming = TRUE
+  -> State: 3.3 <-
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 0
+    proc_MaintainDistance.ASIL = 80
+    proc_EmergencyBraking.ASIL = 80
+    WorstDegradation = TRUE
+    Optimal = FALSE
+-- specification AG (DegradedICandEN -> AX !Optimal)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 4.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 4.2 <-
+    SensorsJamming = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 4.3 <-
+    TakeControl = TRUE
+    SensorsJamming = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 4.4 <-
+    TakeControl = FALSE
+    SensorsJamming = TRUE
+    BlindRadar = TRUE
+    DisableDABReceiver = OK
+    proc_MaintainSpeed.ASIL = 0
+    proc_MaintainDistance.ASIL = 0
+    proc_EmergencyBraking.ASIL = 0
+    WorstDegradation = TRUE
+    VeryDegraded = FALSE
+  -> State: 4.5 <-
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    InjectCommandsViaWifi = TRUE
+    ReconfigureFirmware = OK
+    DisableDABReceiver = KO
+    DisableWiFi = OK
+    ManualControl = OK
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    WorstDegradation = FALSE
+    DegradedICandEN = TRUE
+  -> State: 4.6 <-
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableWiFi = KO
+    DiscardSensor = OK
+    ManualControl = KO
+    proc_OnLineInfotaintment.avail = 6
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+-- specification AG (DegradedICandEN -> AX !DegradedASDSafety)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 5.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 5.2 <-
+    SensorsJamming = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 5.3 <-
+    TakeControl = TRUE
+    SensorsJamming = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 5.4 <-
+    TakeControl = FALSE
+    SensorsJamming = TRUE
+    BlindRadar = TRUE
+    DisableDABReceiver = OK
+    proc_MaintainSpeed.ASIL = 0
+    proc_MaintainDistance.ASIL = 0
+    proc_EmergencyBraking.ASIL = 0
+    WorstDegradation = TRUE
+    VeryDegraded = FALSE
+  -> State: 5.5 <-
+    SensorsJamming = FALSE
+    DisableDABReceiver = KO
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    WorstDegradation = FALSE
+    DegradedICandEN = TRUE
+  -> State: 5.6 <-
+    InjectCommandsViaWifi = TRUE
+    ReconfigureFirmware = OK
+    DisableWiFi = OK
+    DiscardSensor = OK
+    ManualControl = OK
+    proc_MaintainDistance.ASIL = 80
+  -> State: 5.7 <-
+    BlindRadar = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    proc_MaintainDistance.ASIL = 60
+    proc_OnLineInfotaintment.avail = 6
+    DegradedASDSafety = TRUE
+    DegradedICandEN = FALSE
+-- specification AG (DegradedICandEN -> AX !Degraded)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 6.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 6.2 <-
+    SensorsJamming = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 6.3 <-
+    TakeControl = TRUE
+    SensorsJamming = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 6.4 <-
+    TakeControl = FALSE
+    SensorsJamming = TRUE
+    BlindRadar = TRUE
+    DisableDABReceiver = OK
+    proc_MaintainSpeed.ASIL = 0
+    proc_MaintainDistance.ASIL = 0
+    proc_EmergencyBraking.ASIL = 0
+    WorstDegradation = TRUE
+    VeryDegraded = FALSE
+  -> State: 6.5 <-
+    SensorsJamming = FALSE
+    DisableDABReceiver = KO
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    WorstDegradation = FALSE
+    DegradedICandEN = TRUE
+  -> State: 6.6 <-
+    SensorsJamming = TRUE
+    InjectCommandsViaWifi = TRUE
+    DisableWiFi = OK
+    DiscardSensor = OK
+    ManualControl = OK
+    proc_MaintainDistance.ASIL = 80
+  -> State: 6.7 <-
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = OK
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    proc_MaintainDistance.ASIL = 60
+    Degraded = TRUE
+    DegradedICandEN = FALSE
+-- specification AG (DegradedICandEN -> AX !VeryDegraded)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 7.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 7.2 <-
+    SensorsJamming = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 7.3 <-
+    TakeControl = TRUE
+    SensorsJamming = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 7.4 <-
+    TakeControl = FALSE
+    SensorsJamming = TRUE
+    BlindRadar = TRUE
+    DisableDABReceiver = OK
+    proc_MaintainSpeed.ASIL = 0
+    proc_MaintainDistance.ASIL = 0
+    proc_EmergencyBraking.ASIL = 0
+    WorstDegradation = TRUE
+    VeryDegraded = FALSE
+  -> State: 7.5 <-
+    InjectMessages = TRUE
+    TakeControl = TRUE
+    BlindRadar = FALSE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+    ReconfigureFirmware = OK
+    DisableDABReceiver = KO
+    DisableWiFi = OK
+    ManualControl = OK
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    WorstDegradation = FALSE
+    DegradedICandEN = TRUE
+  -> State: 7.6 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = ENABLED
+    DisableWiFi = KO
+    DiscardSensor = OK
+    ManualControl = KO
+    HideAlerts = ENABLED
+    proc_AlertDriver.ASIL = 50
+    proc_AlertDriver.avail = 5
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 6
+    VeryDegraded = TRUE
+    DegradedICandEN = FALSE
+-- specification AG (DegradedICandEN -> AX !WorstDegradation)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 8.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 8.2 <-
+    SensorsJamming = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 8.3 <-
+    TakeControl = TRUE
+    SensorsJamming = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 8.4 <-
+    TakeControl = FALSE
+    SensorsJamming = TRUE
+    BlindRadar = TRUE
+    DisableDABReceiver = OK
+    ManualControl = OK
+    proc_MaintainSpeed.ASIL = 0
+    proc_MaintainDistance.ASIL = 0
+    proc_EmergencyBraking.ASIL = 0
+    WorstDegradation = TRUE
+    VeryDegraded = FALSE
+  -> State: 8.5 <-
+    TakeControl = TRUE
+    BlindRadar = FALSE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+    ReconfigureFirmware = OK
+    DisableDABReceiver = KO
+    DisableWiFi = OK
+    ManualControl = KO
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    WorstDegradation = FALSE
+    DegradedICandEN = TRUE
+  -> State: 8.6 <-
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = ENABLED
+    DisableWiFi = KO
+    DiscardSensor = OK
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 4
+    WorstDegradation = TRUE
+    DegradedICandEN = FALSE
+-- specification AG (DegradedASDSafety -> AX !Optimal)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 9.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 9.2 <-
+    SensorsJamming = TRUE
+    BlindRadar = TRUE
+  -> State: 9.3 <-
+    SensorsJamming = FALSE
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainDistance.ASIL = 80
+    proc_EmergencyBraking.ASIL = 80
+  -> State: 9.4 <-
+    BlindRadar = FALSE
+    DiscardSensor = OK
+    ManualControl = OK
+    proc_MaintainDistance.ASIL = 60
+    DegradedASDSafety = TRUE
+    Optimal = FALSE
+  -> State: 9.5 <-
+    DiscardSensor = KO
+    ManualControl = KO
+    proc_MaintainDistance.ASIL = 80
+    proc_EmergencyBraking.ASIL = 100
+    DegradedASDSafety = FALSE
+    Optimal = TRUE
+-- specification AG (DegradedASDSafety -> AX !DegradedICandEN)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 10.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 10.2 <-
+    SensorsJamming = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 10.3 <-
+    SensorsJamming = FALSE
+    BlindRadar = TRUE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 10.4 <-
+    BlindRadar = FALSE
+    ReconfigureFirmware = OK
+    DiscardSensor = OK
+    proc_MaintainDistance.ASIL = 30
+  -> State: 10.5 <-
+    BlindRadar = TRUE
+    SendCraftedDABdata = TRUE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = OK
+    DiscardSensor = KO
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 70
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    VeryDegraded = FALSE
+    DegradedASDSafety = TRUE
+  -> State: 10.6 <-
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    DisableDABReceiver = KO
+    DisableWiFi = OK
+    ManualControl = OK
+    proc_MaintainDistance.ASIL = 80
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.avail = 5
+    DegradedASDSafety = FALSE
+    DegradedICandEN = TRUE
+-- specification AG (DegradedASDSafety -> AX !Degraded)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 11.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 11.2 <-
+    SensorsJamming = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 11.3 <-
+    SensorsJamming = FALSE
+    BlindRadar = TRUE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 11.4 <-
+    BlindRadar = FALSE
+    ReconfigureFirmware = OK
+    DiscardSensor = OK
+    proc_MaintainDistance.ASIL = 30
+  -> State: 11.5 <-
+    BlindRadar = TRUE
+    SendCraftedDABdata = TRUE
+    ReconfigureFirmware = KO
+    DiscardSensor = KO
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 70
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    VeryDegraded = FALSE
+    DegradedASDSafety = TRUE
+  -> State: 11.6 <-
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    DisableDABReceiver = OK
+    DisableWiFi = OK
+    ManualControl = OK
+    proc_MaintainDistance.ASIL = 80
+    proc_OnLineInfotaintment.avail = 5
+    Degraded = TRUE
+    DegradedASDSafety = FALSE
+-- specification AG (DegradedASDSafety -> AX !VeryDegraded)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 12.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 12.2 <-
+    SensorsJamming = TRUE
+    BlindRadar = TRUE
+  -> State: 12.3 <-
+    SensorsJamming = FALSE
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainDistance.ASIL = 80
+    proc_EmergencyBraking.ASIL = 80
+  -> State: 12.4 <-
+    InjectMessages = TRUE
+    TakeControl = TRUE
+    SensorsJamming = TRUE
+    BlindRadar = FALSE
+    SendCraftedDABdata = TRUE
+    DiscardSensor = OK
+    ManualControl = OK
+    proc_MaintainDistance.ASIL = 60
+    DegradedASDSafety = TRUE
+    Optimal = FALSE
+  -> State: 12.5 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    SendCraftedDABdata = FALSE
+    DisableDABReceiver = ENABLED
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = ENABLED
+    proc_AlertDriver.ASIL = 50
+    proc_AlertDriver.avail = 5
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    DegradedASDSafety = FALSE
+-- specification AG (DegradedASDSafety -> AX !WorstDegradation)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 13.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 13.2 <-
+    BlindRadar = TRUE
+  -> State: 13.3 <-
+    SensorsJamming = TRUE
+    ManualControl = ENABLED
+    proc_MaintainDistance.ASIL = 80
+  -> State: 13.4 <-
+    TakeControl = TRUE
+    BlindRadar = FALSE
+    InjectCommandsViaWifi = TRUE
+    DiscardSensor = ENABLED
+    ManualControl = OK
+    proc_MaintainDistance.ASIL = 60
+    proc_EmergencyBraking.ASIL = 80
+    DegradedASDSafety = TRUE
+    Optimal = FALSE
+  -> State: 13.5 <-
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = OK
+    ManualControl = KO
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 0
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    WorstDegradation = TRUE
+    DegradedASDSafety = FALSE
+-- specification AG (Degraded -> AX !Optimal)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 14.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 14.2 <-
+    SensorsJamming = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 14.3 <-
+    SensorsJamming = FALSE
+    BlindRadar = TRUE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 14.4 <-
+    BlindRadar = FALSE
+    DisableWiFi = OK
+    DiscardSensor = OK
+    proc_MaintainDistance.ASIL = 30
+  -> State: 14.5 <-
+    BlindRadar = TRUE
+    ReconfigureFirmware = OK
+    DisableDABReceiver = OK
+    DisableWiFi = KO
+    DiscardSensor = KO
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 70
+    proc_OnLineInfotaintment.ASIL = 100
+    VeryDegraded = FALSE
+    Degraded = TRUE
+  -> State: 14.6 <-
+    BlindRadar = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    ManualControl = OK
+    proc_MaintainDistance.ASIL = 80
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    Degraded = FALSE
+    Optimal = TRUE
+-- specification AG (Degraded -> AX !DegradedICandEN)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 15.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 15.2 <-
+    SensorsJamming = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 15.3 <-
+    TakeControl = TRUE
+    SensorsJamming = FALSE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 80
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 15.4 <-
+    TakeControl = FALSE
+    BlindRadar = TRUE
+    SendCraftedDABdata = FALSE
+    ReconfigureFirmware = OK
+    DisableDABReceiver = ENABLED
+    DiscardSensor = OK
+    proc_MaintainSpeed.ASIL = 0
+    proc_MaintainDistance.ASIL = 0
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.avail = 4
+    WorstDegradation = TRUE
+    VeryDegraded = FALSE
+  -> State: 15.5 <-
+    ReconfigureFirmware = KO
+    DisableDABReceiver = OK
+    DiscardSensor = KO
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 70
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 5
+    WorstDegradation = FALSE
+    Degraded = TRUE
+  -> State: 15.6 <-
+    BlindRadar = FALSE
+    DisableDABReceiver = KO
+    DisableWiFi = OK
+    ManualControl = OK
+    proc_MaintainDistance.ASIL = 80
+    proc_EmergencyBraking.ASIL = 100
+    Degraded = FALSE
+    DegradedICandEN = TRUE
+-- specification AG (Degraded -> AX !DegradedASDSafety)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 16.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 16.2 <-
+    SensorsJamming = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 16.3 <-
+    SensorsJamming = FALSE
+    BlindRadar = TRUE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 16.4 <-
+    BlindRadar = FALSE
+    DisableWiFi = OK
+    DiscardSensor = OK
+    proc_MaintainDistance.ASIL = 30
+  -> State: 16.5 <-
+    BlindRadar = TRUE
+    ReconfigureFirmware = OK
+    DisableWiFi = KO
+    DiscardSensor = KO
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 70
+    proc_OnLineInfotaintment.ASIL = 100
+    VeryDegraded = FALSE
+    Degraded = TRUE
+  -> State: 16.6 <-
+    BlindRadar = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = OK
+    ManualControl = OK
+    proc_MaintainDistance.ASIL = 80
+    proc_OnLineInfotaintment.avail = 6
+    Degraded = FALSE
+    DegradedASDSafety = TRUE
+-- specification AG (Degraded -> AX !VeryDegraded)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 17.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 17.2 <-
+    SensorsJamming = TRUE
+    BlindRadar = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 17.3 <-
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 80
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 17.4 <-
+    BlindRadar = TRUE
+    DisableWiFi = OK
+    DiscardSensor = OK
+  -> State: 17.5 <-
+    InjectMessages = TRUE
+    TakeControl = TRUE
+    SensorsJamming = TRUE
+    BlindRadar = FALSE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+    ReconfigureFirmware = OK
+    DisableDABReceiver = OK
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = OK
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 60
+    proc_EmergencyBraking.ASIL = 70
+    proc_OnLineInfotaintment.ASIL = 100
+    VeryDegraded = FALSE
+    Degraded = TRUE
+  -> State: 17.6 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = KO
+    HideAlerts = ENABLED
+    proc_AlertDriver.ASIL = 50
+    proc_AlertDriver.avail = 5
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 6
+    VeryDegraded = TRUE
+    Degraded = FALSE
+-- specification AG (Degraded -> AX !WorstDegradation)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 18.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 18.2 <-
+    SensorsJamming = TRUE
+    BlindRadar = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 18.3 <-
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 80
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 18.4 <-
+    BlindRadar = TRUE
+    DisableWiFi = OK
+    DiscardSensor = OK
+    ManualControl = OK
+  -> State: 18.5 <-
+    TakeControl = TRUE
+    SensorsJamming = TRUE
+    BlindRadar = FALSE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+    ReconfigureFirmware = OK
+    DisableDABReceiver = OK
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 60
+    proc_EmergencyBraking.ASIL = 70
+    proc_OnLineInfotaintment.ASIL = 100
+    VeryDegraded = FALSE
+    Degraded = TRUE
+  -> State: 18.6 <-
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 4
+    WorstDegradation = TRUE
+    Degraded = FALSE
+-- specification AG (VeryDegraded -> AX !Optimal)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -- Loop starts here
+  -> State: 19.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 19.2 <-
+    SensorsJamming = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 19.3 <-
+    SensorsJamming = FALSE
+    BlindRadar = TRUE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 19.4 <-
+    TakeControl = TRUE
+    SensorsJamming = TRUE
+    BlindRadar = FALSE
+    SendCraftedDABdata = TRUE
+    ReconfigureFirmware = OK
+    DisableDABReceiver = OK
+    DisableWiFi = OK
+    DiscardSensor = OK
+    ManualControl = OK
+    proc_MaintainDistance.ASIL = 30
+  -> State: 19.5 <-
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    SendCraftedDABdata = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    VeryDegraded = FALSE
+    Optimal = TRUE
+-- specification AG (VeryDegraded -> AX !DegradedICandEN)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 20.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 20.2 <-
+    SensorsJamming = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 20.3 <-
+    SensorsJamming = FALSE
+    BlindRadar = TRUE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 20.4 <-
+    TakeControl = TRUE
+    SensorsJamming = TRUE
+    BlindRadar = FALSE
+    InjectCommandsViaWifi = TRUE
+    DisableDABReceiver = OK
+    DisableWiFi = OK
+    DiscardSensor = OK
+    ManualControl = OK
+    proc_MaintainDistance.ASIL = 30
+  -> State: 20.5 <-
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = OK
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    VeryDegraded = FALSE
+    DegradedICandEN = TRUE
+-- specification AG (VeryDegraded -> AX !DegradedASDSafety)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 21.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 21.2 <-
+    SensorsJamming = TRUE
+    BlindRadar = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 21.3 <-
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 80
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 21.4 <-
+    TakeControl = TRUE
+    SensorsJamming = TRUE
+    BlindRadar = TRUE
+    SendCraftedDABdata = TRUE
+    ReconfigureFirmware = OK
+    DisableDABReceiver = OK
+    DisableWiFi = OK
+    ManualControl = OK
+  -> State: 21.5 <-
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = OK
+    ManualControl = KO
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 60
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    VeryDegraded = FALSE
+    DegradedASDSafety = TRUE
+-- specification AG (VeryDegraded -> AX !Degraded)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 22.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 22.2 <-
+    SensorsJamming = TRUE
+    BlindRadar = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 22.3 <-
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 80
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 22.4 <-
+    TakeControl = TRUE
+    SensorsJamming = TRUE
+    BlindRadar = TRUE
+    InjectCommandsViaWifi = TRUE
+    DisableDABReceiver = OK
+    DisableWiFi = OK
+    ManualControl = OK
+  -> State: 22.5 <-
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = OK
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = OK
+    ManualControl = KO
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 60
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    VeryDegraded = FALSE
+    Degraded = TRUE
+-- specification AG (VeryDegraded -> AX !WorstDegradation)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 23.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 23.2 <-
+    SensorsJamming = TRUE
+    SendCraftedDABdata = TRUE
+  -> State: 23.3 <-
+    TakeControl = TRUE
+    DisableDABReceiver = ENABLED
+    DiscardSensor = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 23.4 <-
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    SendCraftedDABdata = FALSE
+    DisableDABReceiver = OK
+    DiscardSensor = OK
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 0
+    proc_MaintainDistance.ASIL = 0
+    proc_EmergencyBraking.ASIL = 0
+    proc_OnLineInfotaintment.avail = 4
+    WorstDegradation = TRUE
+    VeryDegraded = FALSE
+-- specification AG (WorstDegradation -> AX !Optimal)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 24.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 24.2 <-
+    SensorsJamming = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 24.3 <-
+    TakeControl = TRUE
+    SensorsJamming = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 24.4 <-
+    BlindRadar = TRUE
+    ReconfigureFirmware = OK
+    DisableDABReceiver = OK
+    DisableWiFi = OK
+    ManualControl = OK
+    proc_MaintainSpeed.ASIL = 0
+    proc_MaintainDistance.ASIL = 0
+    proc_EmergencyBraking.ASIL = 0
+    WorstDegradation = TRUE
+    VeryDegraded = FALSE
+  -> State: 24.5 <-
+    TakeControl = FALSE
+    BlindRadar = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = OK
+    ManualControl = KO
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    WorstDegradation = FALSE
+    Optimal = TRUE
+-- specification AG (WorstDegradation -> AX !DegradedICandEN)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 25.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 25.2 <-
+    SensorsJamming = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 25.3 <-
+    TakeControl = TRUE
+    SensorsJamming = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 25.4 <-
+    BlindRadar = TRUE
+    ReconfigureFirmware = OK
+    DisableDABReceiver = OK
+    DisableWiFi = OK
+    ManualControl = OK
+    proc_MaintainSpeed.ASIL = 0
+    proc_MaintainDistance.ASIL = 0
+    proc_EmergencyBraking.ASIL = 0
+    proc_OnLineInfotaintment.avail = 4
+    WorstDegradation = TRUE
+    VeryDegraded = FALSE
+  -> State: 25.5 <-
+    TakeControl = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = OK
+    ManualControl = KO
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 5
+    WorstDegradation = FALSE
+    DegradedICandEN = TRUE
+-- specification AG (WorstDegradation -> AX !DegradedASDSafety)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 26.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 26.2 <-
+    SensorsJamming = TRUE
+    BlindRadar = TRUE
+  -> State: 26.3 <-
+    TakeControl = TRUE
+    SensorsJamming = FALSE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainDistance.ASIL = 80
+    proc_EmergencyBraking.ASIL = 80
+  -> State: 26.4 <-
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = OK
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 60
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 26.5 <-
+    SensorsJamming = TRUE
+    BlindRadar = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+    ReconfigureFirmware = OK
+    DisableDABReceiver = OK
+    DisableWiFi = OK
+    DiscardSensor = KO
+    ManualControl = OK
+    proc_MaintainSpeed.ASIL = 0
+    proc_MaintainDistance.ASIL = 80
+    proc_EmergencyBraking.ASIL = 70
+    WorstDegradation = TRUE
+    VeryDegraded = FALSE
+  -> State: 26.6 <-
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = ENABLED
+    ManualControl = KO
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 60
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    WorstDegradation = FALSE
+    DegradedASDSafety = TRUE
+-- specification AG (WorstDegradation -> AX !Degraded)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 27.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 27.2 <-
+    SensorsJamming = TRUE
+    BlindRadar = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 27.3 <-
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 80
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 27.4 <-
+    BlindRadar = TRUE
+    SendCraftedDABdata = FALSE
+    ReconfigureFirmware = OK
+    DisableDABReceiver = OK
+    DisableWiFi = OK
+    ManualControl = OK
+    proc_OnLineInfotaintment.avail = 4
+    WorstDegradation = TRUE
+    VeryDegraded = FALSE
+  -> State: 27.5 <-
+    BlindRadar = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = OK
+    ManualControl = KO
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 60
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 5
+    WorstDegradation = FALSE
+    Degraded = TRUE
+-- specification AG (WorstDegradation -> AX !VeryDegraded)  is false
+-- as demonstrated by the following execution sequence
+Trace Description: CTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 28.1 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_AlertDriver.ASIL = 100
+    proc_AlertDriver.avail = 6
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 100
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 6
+    InjectCommandsViaWifi_inhibitor = FALSE
+    SendCraftedDABdata_inhibitor = FALSE
+    BlindRadar_inhibitor = FALSE
+    SensorsJamming_inhibitor = FALSE
+    TakeControl_inhibitor = FALSE
+    InjectMessages_inhibitor = FALSE
+    WorstDegradation = FALSE
+    VeryDegraded = FALSE
+    Degraded = FALSE
+    DegradedASDSafety = FALSE
+    DegradedICandEN = FALSE
+    Optimal = TRUE
+  -> State: 28.2 <-
+    InjectMessages = TRUE
+    SensorsJamming = TRUE
+    SendCraftedDABdata = TRUE
+    InjectCommandsViaWifi = TRUE
+  -> State: 28.3 <-
+    InjectMessages = FALSE
+    SensorsJamming = FALSE
+    InjectCommandsViaWifi = FALSE
+    ReconfigureFirmware = ENABLED
+    DisableDABReceiver = ENABLED
+    DisableWiFi = ENABLED
+    DiscardSensor = ENABLED
+    ManualControl = ENABLED
+    HideAlerts = ENABLED
+    proc_AlertDriver.ASIL = 50
+    proc_AlertDriver.avail = 5
+    proc_MaintainSpeed.ASIL = 50
+    proc_MaintainDistance.ASIL = 50
+    proc_EmergencyBraking.ASIL = 50
+    proc_OnLineInfotaintment.ASIL = 50
+    proc_OnLineInfotaintment.avail = 5
+    VeryDegraded = TRUE
+    Optimal = FALSE
+  -> State: 28.4 <-
+    InjectMessages = TRUE
+    TakeControl = TRUE
+    SensorsJamming = TRUE
+    BlindRadar = TRUE
+    ReconfigureFirmware = OK
+    DisableDABReceiver = OK
+    DisableWiFi = OK
+    DiscardSensor = OK
+    ManualControl = OK
+    HideAlerts = OK
+    proc_OnLineInfotaintment.avail = 4
+    WorstDegradation = TRUE
+    VeryDegraded = FALSE
+  -> State: 28.5 <-
+    InjectMessages = FALSE
+    TakeControl = FALSE
+    SensorsJamming = FALSE
+    BlindRadar = FALSE
+    SendCraftedDABdata = FALSE
+    ReconfigureFirmware = KO
+    DisableDABReceiver = KO
+    DisableWiFi = KO
+    DiscardSensor = KO
+    ManualControl = KO
+    HideAlerts = KO
+    proc_MaintainSpeed.ASIL = 100
+    proc_MaintainDistance.ASIL = 30
+    proc_EmergencyBraking.ASIL = 100
+    proc_OnLineInfotaintment.ASIL = 100
+    proc_OnLineInfotaintment.avail = 5
+    WorstDegradation = FALSE
+    VeryDegraded = TRUE
